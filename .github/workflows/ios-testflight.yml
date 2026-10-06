@@ -1,0 +1,784 @@
+name: iOS TestFlight
+
+on:
+  workflow_dispatch:
+    inputs:
+      apk_test_complete:
+        description: 'I finished testing the APK for this exact commit'
+        required: true
+        type: boolean
+        default: false
+      release_approved:
+        description: 'User explicitly approved this exact source for test distribution before completing APK testing'
+        type: boolean
+        default: false
+      tested_commit:
+        description: 'Full 40-character SHA of the tested or explicitly approved source (must equal this workflow commit)'
+        required: false
+        type: string
+      preview_without_app_group:
+        description: 'Upload a preview signed without App Group access'
+        type: boolean
+        default: false
+      status_only:
+        description: 'Check an existing build without uploading'
+        type: boolean
+        default: false
+      status_build_number:
+        description: 'Existing TestFlight build number to check'
+        type: string
+        default: ''
+      assign_external_preview:
+        description: 'Assign the checked build to the existing public beta group'
+        type: boolean
+        default: false
+      submit_external_review:
+        description: 'Submit the checked build for external TestFlight review'
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ios-testflight
+  cancel-in-progress: false
+
+jobs:
+  resolve_build_number:
+    if: ${{ !inputs.status_only && (inputs.apk_test_complete == true || inputs.release_approved == true) && inputs.tested_commit == github.sha }}
+    name: Resolve iOS build number
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    environment: testflight
+    outputs:
+      build_number: ${{ steps.resolve.outputs.build_number }}
+      source_build_count: ${{ steps.resolve.outputs.source_build_count }}
+    steps:
+      - name: Checkout
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+
+      - name: Select next App Store Connect build number
+        id: resolve
+        env:
+          APPSTORE_ISSUER_ID: ${{ vars.APPSTORE_ISSUER_ID }}
+          APPSTORE_API_KEY_ID: ${{ vars.APPSTORE_API_KEY_ID }}
+          APPSTORE_API_PRIVATE_KEY: ${{ secrets.APPSTORE_API_PRIVATE_KEY }}
+        run: python3 tools/resolve-ios-build-number.py
+
+  upload:
+    needs: resolve_build_number
+    if: ${{ !inputs.status_only && needs.resolve_build_number.result == 'success' && (inputs.apk_test_complete == true || inputs.release_approved == true) && inputs.tested_commit == github.sha }}
+    name: Archive and upload
+    runs-on: macos-26
+    timeout-minutes: 45
+    environment: testflight
+    outputs:
+      build_number: ${{ needs.resolve_build_number.outputs.build_number }}
+    env:
+      APPSTORE_ISSUER_ID: ${{ vars.APPSTORE_ISSUER_ID }}
+      APPSTORE_API_KEY_ID: ${{ vars.APPSTORE_API_KEY_ID }}
+      APPLE_TEAM_ID: ${{ vars.APPLE_TEAM_ID }}
+      IOS_APP_PROFILE_UUID: ${{ vars.IOS_APP_PROFILE_UUID }}
+      IOS_EXTENSION_PROFILE_UUID: ${{ vars.IOS_EXTENSION_PROFILE_UUID }}
+      BUILD_NUMBER: ${{ needs.resolve_build_number.outputs.build_number }}
+      PREVIEW_WITHOUT_APP_GROUP: ${{ inputs.preview_without_app_group }}
+      KK_ADMOB_IOS_APP_ID: ${{ vars.KK_ADMOB_IOS_APP_ID }}
+      KK_ADMOB_IOS_REWARDED_ID: ${{ vars.KK_ADMOB_IOS_REWARDED_ID }}
+      KK_ADMOB_IOS_INTERSTITIAL_ID: ${{ vars.KK_ADMOB_IOS_INTERSTITIAL_ID }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+
+      - name: Validate production AdMob IDs
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import os
+          import re
+          import sys
+
+          names = (
+              "KK_ADMOB_IOS_APP_ID",
+              "KK_ADMOB_IOS_REWARDED_ID",
+              "KK_ADMOB_IOS_INTERSTITIAL_ID",
+          )
+          values = {name: (os.environ.get(name) or "") for name in names}
+          missing = [name for name, value in values.items() if not value]
+          if missing:
+              print(
+                  "Missing production AdMob configuration: "
+                  + ", ".join(missing)
+                  + ". Set KK_ADMOB_IOS_APP_ID, KK_ADMOB_IOS_REWARDED_ID and "
+                  + "KK_ADMOB_IOS_INTERSTITIAL_ID repository variables.",
+                  file=sys.stderr,
+              )
+              raise SystemExit(1)
+          if not re.fullmatch(r"ca-app-pub-[0-9]+~[0-9]+", values["KK_ADMOB_IOS_APP_ID"]):
+              print(
+                  "Invalid KK_ADMOB_IOS_APP_ID: expected format ca-app-pub-<digits>~<digits>.",
+                  file=sys.stderr,
+              )
+              raise SystemExit(1)
+          for name in ("KK_ADMOB_IOS_REWARDED_ID", "KK_ADMOB_IOS_INTERSTITIAL_ID"):
+              if not re.fullmatch(r"ca-app-pub-[0-9]+/[0-9]+", values[name]):
+                  print(
+                      f"Invalid {name}: expected format ca-app-pub-<digits>/<digits>.",
+                      file=sys.stderr,
+                  )
+                  raise SystemExit(1)
+
+          def publisher(value):
+              return value.removeprefix("ca-app-pub-").split("~")[0].split("/")[0]
+
+          publishers = {publisher(value) for value in values.values()}
+          if "3940256099942544" in publishers:
+              print(
+                  "Invalid production AdMob configuration: sample publisher IDs are not "
+                  "allowed in Release. Set KK_ADMOB_IOS_APP_ID, KK_ADMOB_IOS_REWARDED_ID and "
+                  "KK_ADMOB_IOS_INTERSTITIAL_ID to actual operating IDs.",
+                  file=sys.stderr,
+              )
+              raise SystemExit(1)
+          if len(publishers) != 1:
+              print(
+                  "Invalid production AdMob configuration: KK_ADMOB_IOS_APP_ID, "
+                  "KK_ADMOB_IOS_REWARDED_ID and KK_ADMOB_IOS_INTERSTITIAL_ID must share "
+                  "the same publisher ID.",
+                  file=sys.stderr,
+              )
+              raise SystemExit(1)
+          print("Production AdMob IDs are present with matching publisher.")
+          PY
+
+      - name: Record build number provenance
+        shell: bash
+        run: |
+          set -euo pipefail
+          printf 'source=App Store Connect all builds\nbundle_id=com.ghtnql.kkkeyboard\nsource_build_count=%s\nassigned_build_number=%s\ngit_sha=%s\n' \
+            '${{ needs.resolve_build_number.outputs.source_build_count }}' \
+            "$BUILD_NUMBER" "$GITHUB_SHA" > "$RUNNER_TEMP/BUILD_SOURCE.txt"
+
+      - name: Set up JDK 17
+        uses: actions/setup-java@cf277c60eb25467037889841efdb72551f06f6c3 # v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Set up Android SDK for KMP Gradle configuration
+        uses: android-actions/setup-android@9fc6c4e9069bf8d3d10b2204b1fb8f6ef7065407 # v3
+        with:
+          packages: platform-tools
+
+      - name: Install Android SDK 36
+        run: sdkmanager 'platforms;android-36' 'build-tools;36.0.0'
+
+      - name: Set up Gradle 8.13
+        uses: gradle/actions/setup-gradle@ed408507eac070d1f99cc633dbcf757c94c7933a # v4
+        with:
+          gradle-version: '8.13'
+
+      - name: Select Xcode 26.6
+        uses: maxim-lobanov/setup-xcode@ed7a3b1fda3918c0306d1b724322adc0b8cc0a90 # v1.7.0
+        with:
+          xcode-version: '26.6'
+
+      - name: Check deployment credentials
+        shell: bash
+        env:
+          APPSTORE_API_PRIVATE_KEY: ${{ secrets.APPSTORE_API_PRIVATE_KEY }}
+          IOS_DISTRIBUTION_P12_BASE64: ${{ secrets.IOS_DISTRIBUTION_P12_BASE64 }}
+          IOS_DISTRIBUTION_P12_PASSWORD: ${{ secrets.IOS_DISTRIBUTION_P12_PASSWORD }}
+          IOS_APP_PROVISIONING_PROFILE_BASE64: ${{ secrets.IOS_APP_PROVISIONING_PROFILE_BASE64 }}
+          IOS_EXTENSION_PROVISIONING_PROFILE_BASE64: ${{ secrets.IOS_EXTENSION_PROVISIONING_PROFILE_BASE64 }}
+        run: |
+          set -euo pipefail
+          for name in \
+            APPSTORE_ISSUER_ID APPSTORE_API_KEY_ID APPLE_TEAM_ID \
+            IOS_APP_PROFILE_UUID IOS_EXTENSION_PROFILE_UUID \
+            APPSTORE_API_PRIVATE_KEY IOS_DISTRIBUTION_P12_BASE64 \
+            IOS_DISTRIBUTION_P12_PASSWORD IOS_APP_PROVISIONING_PROFILE_BASE64 \
+            IOS_EXTENSION_PROVISIONING_PROFILE_BASE64; do
+            if [[ -z "${!name:-}" ]]; then
+              echo "Missing testflight environment credential: $name" >&2
+              exit 1
+            fi
+          done
+
+      - name: Install XcodeGen 2.46.0
+        shell: bash
+        run: |
+          set -euo pipefail
+          archive="$RUNNER_TEMP/xcodegen.zip"
+          curl -fsSL \
+            https://github.com/yonaskolb/XcodeGen/releases/download/2.46.0/xcodegen.zip \
+            -o "$archive"
+          echo '4d9e34b62172d645eed6457cac13fc222569974098ef4ee9c3368bedf0196806  '"$archive" | shasum -a 256 -c -
+          unzip -q "$archive" -d "$RUNNER_TEMP"
+          echo "$RUNNER_TEMP/xcodegen/bin" >> "$GITHUB_PATH"
+          "$RUNNER_TEMP/xcodegen/bin/xcodegen" --version
+
+      - name: Prepare App Store Connect key
+        id: appstore-key
+        shell: bash
+        env:
+          APPSTORE_API_PRIVATE_KEY: ${{ secrets.APPSTORE_API_PRIVATE_KEY }}
+        run: |
+          set -euo pipefail
+          umask 077
+          key_path="$RUNNER_TEMP/AuthKey_${APPSTORE_API_KEY_ID}.p8"
+          printf '%s' "$APPSTORE_API_PRIVATE_KEY" > "$key_path"
+          echo "key-path=$key_path" >> "$GITHUB_OUTPUT"
+
+      - name: Install distribution signing assets
+        id: signing-assets
+        shell: bash
+        env:
+          IOS_DISTRIBUTION_P12_BASE64: ${{ secrets.IOS_DISTRIBUTION_P12_BASE64 }}
+          IOS_DISTRIBUTION_P12_PASSWORD: ${{ secrets.IOS_DISTRIBUTION_P12_PASSWORD }}
+          IOS_APP_PROVISIONING_PROFILE_BASE64: ${{ secrets.IOS_APP_PROVISIONING_PROFILE_BASE64 }}
+          IOS_EXTENSION_PROVISIONING_PROFILE_BASE64: ${{ secrets.IOS_EXTENSION_PROVISIONING_PROFILE_BASE64 }}
+        run: |
+          set -euo pipefail
+          umask 077
+          p12_path="$RUNNER_TEMP/distribution.p12"
+          keychain_path="$RUNNER_TEMP/kkkeyboard-signing.keychain-db"
+          keychain_password="$(openssl rand -hex 32)"
+          profiles_dir="$HOME/Library/MobileDevice/Provisioning Profiles"
+          mkdir -p "$profiles_dir"
+          printf '%s' "$IOS_DISTRIBUTION_P12_BASE64" | base64 --decode > "$p12_path"
+          printf '%s' "$IOS_APP_PROVISIONING_PROFILE_BASE64" | base64 --decode \
+            > "$profiles_dir/$IOS_APP_PROFILE_UUID.mobileprovision"
+          printf '%s' "$IOS_EXTENSION_PROVISIONING_PROFILE_BASE64" | base64 --decode \
+            > "$profiles_dir/$IOS_EXTENSION_PROFILE_UUID.mobileprovision"
+          security create-keychain -p "$keychain_password" "$keychain_path"
+          security set-keychain-settings -lut 21600 "$keychain_path"
+          security unlock-keychain -p "$keychain_password" "$keychain_path"
+          security import "$p12_path" \
+            -P "$IOS_DISTRIBUTION_P12_PASSWORD" \
+            -A -t cert -f pkcs12 \
+            -k "$keychain_path"
+          security set-key-partition-list \
+            -S apple-tool:,apple: \
+            -s -k "$keychain_password" \
+            "$keychain_path"
+          security list-keychains -d user -s "$keychain_path"
+          security find-identity -v -p codesigning "$keychain_path"
+          echo "keychain-path=$keychain_path" >> "$GITHUB_OUTPUT"
+          echo "p12-path=$p12_path" >> "$GITHUB_OUTPUT"
+
+      - name: Verify distribution provisioning
+        shell: bash
+        run: |
+          set -euo pipefail
+          profiles_dir="$HOME/Library/MobileDevice/Provisioning Profiles"
+          for target in app extension; do
+            if [[ "$target" == app ]]; then
+              profile_uuid="$IOS_APP_PROFILE_UUID"
+              bundle_id="com.ghtnql.kkkeyboard"
+            else
+              profile_uuid="$IOS_EXTENSION_PROFILE_UUID"
+              bundle_id="com.ghtnql.kkkeyboard.keyboard"
+            fi
+            profile_plist="$RUNNER_TEMP/$target-profile.plist"
+            security cms -D -i "$profiles_dir/$profile_uuid.mobileprovision" > "$profile_plist"
+            test "$(/usr/libexec/PlistBuddy -c 'Print :UUID' "$profile_plist")" = "$profile_uuid"
+            test "$(/usr/libexec/PlistBuddy -c 'Print :TeamIdentifier:0' "$profile_plist")" = "$APPLE_TEAM_ID"
+            test "$(/usr/libexec/PlistBuddy -c 'Print :Entitlements:application-identifier' "$profile_plist")" = "$APPLE_TEAM_ID.$bundle_id"
+            if [[ "$PREVIEW_WITHOUT_APP_GROUP" == "true" ]]; then
+              echo "::warning::Preview build: App Group access is disabled for $target; shared settings and phrases will not sync."
+            elif ! python3 -c 'import plistlib, sys; data = plistlib.load(open(sys.argv[1], "rb")); sys.exit("group.com.ghtnql.kkkeyboard" not in data["Entitlements"].get("com.apple.security.application-groups", []))' "$profile_plist"; then
+              echo "$target provisioning profile is missing group.com.ghtnql.kkkeyboard" >&2
+              exit 1
+            fi
+            rm "$profile_plist"
+          done
+
+      - name: Remove App Group capability for preview
+        if: ${{ inputs.preview_without_app_group }}
+        working-directory: ios
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          from pathlib import Path
+
+          project = Path("project.yml")
+          contents = project.read_text()
+          for target, path in (
+              ("app", "App/KKKeyboardApp.entitlements"),
+              ("extension", "KeyboardExtension/KKKeyboardExtension.entitlements"),
+          ):
+              block = (
+                  "    entitlements:\n"
+                  f"      path: {path}\n"
+                  "      properties:\n"
+                  "        com.apple.security.application-groups:\n"
+                  "          - group.com.ghtnql.kkkeyboard\n"
+              )
+              if contents.count(block) != 1:
+                  raise SystemExit(f"Expected exactly one {target} App Group declaration")
+              contents = contents.replace(block, "", 1)
+          project.write_text(contents)
+          print("Preview project has no app or extension App Group capability")
+          PY
+
+      - name: Generate Xcode project
+        working-directory: ios
+        run: xcodegen generate
+
+      - name: Select test destination
+        id: test-destination
+        working-directory: ios
+        run: |
+          set -euo pipefail
+
+          simulator_udid="$({
+            xcrun simctl list devices available -j | python3 -c '
+          import json, sys
+          data = json.load(sys.stdin)
+          for runtime_devices in data.get("devices", {}).values():
+              for device in runtime_devices:
+                  if device.get("isAvailable") and device.get("name", "").startswith("iPhone"):
+                      print(device["udid"])
+                      raise SystemExit
+          '
+          } || true)"
+
+          if [[ -n "$simulator_udid" ]]; then
+            destination="id=$simulator_udid"
+            echo "Using available iPhone simulator: $destination"
+          else
+            mac_destination_id="$({
+              xcodebuild \
+                -project KKKeyboard.xcodeproj \
+                -scheme KKKeyboardPhraseTests \
+                -showdestinations 2>/dev/null \
+                | sed -n 's/.*platform:macOS.*id:\([^,}]*\).*/\1/p' \
+                | head -n 1 \
+                | xargs
+            } || true)"
+
+            if [[ -z "$mac_destination_id" ]]; then
+              echo "No runnable iPhone simulator or Designed-for-iPhone/iPad Mac destination is available." >&2
+              xcodebuild -project KKKeyboard.xcodeproj -scheme KKKeyboard -showdestinations >&2
+              exit 1
+            fi
+
+            destination="id=$mac_destination_id"
+            echo "No iPhone simulator is installed; using Xcode-provided Mac destination: $destination"
+          fi
+
+          echo "destination=$destination" >> "$GITHUB_OUTPUT"
+
+      - name: Verify native keyboard and settings boundaries
+        working-directory: ios
+        shell: bash
+        run: |
+          set -euo pipefail
+          xcodebuild \
+            -project KKKeyboard.xcodeproj \
+            -scheme KKKeyboardPhraseTests \
+            -configuration Debug \
+            -destination '${{ steps.test-destination.outputs.destination }}' \
+            -only-testing:KKKeyboardTests/UserPhraseStoreTests \
+            -only-testing:KKKeyboardTests/KeyboardLayoutSettingsTests \
+            -only-testing:KKKeyboardTests/KeyboardThemeSettingsTests \
+            -only-testing:KKKeyboardTests/KeyboardThemeCatalogTests \
+            -only-testing:KKKeyboardTests/CheonjiinKeyboardRenderingTests \
+            -only-testing:KKKeyboardTests/SharedCoreInteropTests \
+            -only-testing:KKKeyboardTests/KeyboardInputModeSettingsTests \
+            -only-testing:KKKeyboardTests/KeyboardFlickSelectionTests \
+            -only-testing:KKKeyboardTests/KeyboardToolbarRoutingTests \
+            -only-testing:KKKeyboardTests/AppPresentationContextTests \
+            -only-testing:KKKeyboardTests/KeyboardCursorRepeatTests \
+            -only-testing:KKKeyboardTests/SymbolLayoutTests \
+            -only-testing:KKKeyboardTests/LongPressKeyButtonTests \
+            -only-testing:KKKeyboardTests/IOSUiLanguageBridgeTests \
+            -resultBundlePath "$RUNNER_TEMP/PhraseTests.xcresult" \
+            CODE_SIGNING_ALLOWED=NO \
+            test 2>&1 | tee "$RUNNER_TEMP/xcodebuild-phrase-test.log"
+
+      - name: Export native keyboard rendering evidence
+        if: always()
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [[ ! -d "$RUNNER_TEMP/PhraseTests.xcresult" ]]; then exit 0; fi
+          xcrun xcresulttool export attachments \
+            --path "$RUNNER_TEMP/PhraseTests.xcresult" \
+            --output-path "$RUNNER_TEMP/ios-native-attachments"
+          xcrun xcresulttool get test-results summary \
+            --path "$RUNNER_TEMP/PhraseTests.xcresult" \
+            > "$RUNNER_TEMP/ios-native-test-summary.json"
+
+      - name: Set TestFlight build number
+        working-directory: ios
+        shell: bash
+        run: |
+          set -euo pipefail
+          /usr/libexec/PlistBuddy -c "Set :CFBundleVersion $BUILD_NUMBER" App/Info.plist
+          /usr/libexec/PlistBuddy -c 'Set :KKUseTestAds false' App/Info.plist 2>/dev/null || /usr/libexec/PlistBuddy -c 'Add :KKUseTestAds bool false' App/Info.plist
+          /usr/libexec/PlistBuddy -c "Set :GADApplicationIdentifier $KK_ADMOB_IOS_APP_ID" App/Info.plist 2>/dev/null || /usr/libexec/PlistBuddy -c "Add :GADApplicationIdentifier string $KK_ADMOB_IOS_APP_ID" App/Info.plist
+          /usr/libexec/PlistBuddy -c "Set :KKRewardedAdUnitID $KK_ADMOB_IOS_REWARDED_ID" App/Info.plist 2>/dev/null || /usr/libexec/PlistBuddy -c "Add :KKRewardedAdUnitID string $KK_ADMOB_IOS_REWARDED_ID" App/Info.plist
+          /usr/libexec/PlistBuddy -c "Set :KKInterstitialAdUnitID $KK_ADMOB_IOS_INTERSTITIAL_ID" App/Info.plist 2>/dev/null || /usr/libexec/PlistBuddy -c "Add :KKInterstitialAdUnitID string $KK_ADMOB_IOS_INTERSTITIAL_ID" App/Info.plist
+          /usr/libexec/PlistBuddy -c "Set :CFBundleVersion $BUILD_NUMBER" KeyboardExtension/Info.plist
+
+      - name: Archive app and keyboard extension
+        working-directory: ios
+        shell: bash
+        run: |
+          set -euo pipefail
+          set -o pipefail
+          xcodebuild_args=( \
+            -project KKKeyboard.xcodeproj \
+            -scheme KKKeyboard \
+            -configuration Release \
+            -destination 'generic/platform=iOS' \
+            -archivePath "$RUNNER_TEMP/KKKeyboard.xcarchive" \
+            -allowProvisioningUpdates \
+            -authenticationKeyPath '${{ steps.appstore-key.outputs.key-path }}' \
+            -authenticationKeyID "$APPSTORE_API_KEY_ID" \
+            -authenticationKeyIssuerID "$APPSTORE_ISSUER_ID" \
+            DEVELOPMENT_TEAM="$APPLE_TEAM_ID" \
+            IOS_APP_PROFILE_UUID="$IOS_APP_PROFILE_UUID" \
+            IOS_EXTENSION_PROFILE_UUID="$IOS_EXTENSION_PROFILE_UUID" \
+            CODE_SIGN_STYLE=Manual \
+            CODE_SIGN_IDENTITY="Apple Distribution" \
+            CODE_SIGNING_ALLOWED=YES \
+            CODE_SIGNING_REQUIRED=YES \
+            CURRENT_PROJECT_VERSION="$BUILD_NUMBER" \
+            ADMOB_APP_ID="$KK_ADMOB_IOS_APP_ID" \
+            REWARDED_AD_UNIT_ID="$KK_ADMOB_IOS_REWARDED_ID" \
+            INTERSTITIAL_AD_UNIT_ID="$KK_ADMOB_IOS_INTERSTITIAL_ID" )
+          if [[ "$PREVIEW_WITHOUT_APP_GROUP" == "true" ]]; then
+            xcodebuild_args+=(CODE_SIGN_ENTITLEMENTS=)
+          fi
+          xcodebuild "${xcodebuild_args[@]}" clean archive | tee "$RUNNER_TEMP/xcodebuild-archive.log"
+
+      - name: Verify signed archive
+        shell: bash
+        run: |
+          set -euo pipefail
+          app="$RUNNER_TEMP/KKKeyboard.xcarchive/Products/Applications/KKKeyboardApp.app"
+          extension="$app/PlugIns/KKKeyboardExtension.appex"
+          test -d "$extension"
+          codesign --verify --deep --strict --verbose=2 "$app"
+          app_bundle_id="$(/usr/libexec/PlistBuddy -c 'Print :CFBundleIdentifier' "$app/Info.plist")"
+          extension_bundle_id="$(/usr/libexec/PlistBuddy -c 'Print :CFBundleIdentifier' "$extension/Info.plist")"
+          app_build="$(/usr/libexec/PlistBuddy -c 'Print :CFBundleVersion' "$app/Info.plist")"
+          extension_build="$(/usr/libexec/PlistBuddy -c 'Print :CFBundleVersion' "$extension/Info.plist")"
+          printf 'Archive app=%s extension=%s builds=%s/%s expected=%s\n' \
+            "$app_bundle_id" "$extension_bundle_id" "$app_build" "$extension_build" "$BUILD_NUMBER"
+          test "$app_bundle_id" = "com.ghtnql.kkkeyboard"
+          test "$extension_bundle_id" = "com.ghtnql.kkkeyboard.keyboard"
+          test "$app_build" = "$BUILD_NUMBER"
+          test "$extension_build" = "$BUILD_NUMBER"
+          /usr/libexec/PlistBuddy -c 'Print :UILaunchScreen' "$app/Info.plist" >/dev/null
+          /usr/libexec/PlistBuddy -c 'Print :UISupportedInterfaceOrientations:0' "$app/Info.plist" >/dev/null
+          test "$(/usr/libexec/PlistBuddy -c 'Print :NSExtension:NSExtensionPointIdentifier' "$extension/Info.plist")" = "com.apple.keyboard-service"
+          for target in app extension; do
+            bundle="$app"
+            [[ "$target" == extension ]] && bundle="$extension"
+            entitlements="$RUNNER_TEMP/archive-$target-entitlements.plist"
+            codesign -d --entitlements :- "$bundle" > "$entitlements" 2>/dev/null || true
+            python3 - "$entitlements" "$PREVIEW_WITHOUT_APP_GROUP" "$target" <<'PY'
+          import os, plistlib, sys
+          path, preview, target = sys.argv[1:]
+          data = plistlib.load(open(path, "rb")) if os.path.getsize(path) else {}
+          has_group = "group.com.ghtnql.kkkeyboard" in data.get("com.apple.security.application-groups", [])
+          assert has_group == (preview != "true"), f"{target} archive App Group entitlement mismatch"
+          PY
+          done
+
+      - name: Create export options
+        shell: bash
+        run: |
+          set -euo pipefail
+          export_options="$RUNNER_TEMP/ExportOptions.plist"
+          /usr/libexec/PlistBuddy -c 'Add :method string app-store-connect' "$export_options"
+          /usr/libexec/PlistBuddy -c 'Add :destination string export' "$export_options"
+          /usr/libexec/PlistBuddy -c 'Add :signingStyle string manual' "$export_options"
+          /usr/libexec/PlistBuddy -c 'Add :signingCertificate string Apple Distribution' "$export_options"
+          /usr/libexec/PlistBuddy -c "Add :teamID string $APPLE_TEAM_ID" "$export_options"
+          /usr/libexec/PlistBuddy -c 'Add :provisioningProfiles dict' "$export_options"
+          /usr/libexec/PlistBuddy -c "Add :provisioningProfiles:com.ghtnql.kkkeyboard string $IOS_APP_PROFILE_UUID" "$export_options"
+          /usr/libexec/PlistBuddy -c "Add :provisioningProfiles:com.ghtnql.kkkeyboard.keyboard string $IOS_EXTENSION_PROFILE_UUID" "$export_options"
+          /usr/libexec/PlistBuddy -c 'Add :manageAppVersionAndBuildNumber bool false' "$export_options"
+          /usr/libexec/PlistBuddy -c 'Add :stripSwiftSymbols bool true' "$export_options"
+          /usr/libexec/PlistBuddy -c 'Add :uploadSymbols bool true' "$export_options"
+
+      - name: Export IPA
+        shell: bash
+        run: |
+          set -euo pipefail
+          set -o pipefail
+          xcodebuild \
+            -exportArchive \
+            -archivePath "$RUNNER_TEMP/KKKeyboard.xcarchive" \
+            -exportPath "$RUNNER_TEMP/export" \
+            -exportOptionsPlist "$RUNNER_TEMP/ExportOptions.plist" \
+            -allowProvisioningUpdates \
+            -authenticationKeyPath '${{ steps.appstore-key.outputs.key-path }}' \
+            -authenticationKeyID "$APPSTORE_API_KEY_ID" \
+            -authenticationKeyIssuerID "$APPSTORE_ISSUER_ID" \
+            | tee "$RUNNER_TEMP/xcodebuild-export.log"
+          ipa_path="$(find "$RUNNER_TEMP/export" -maxdepth 1 -name '*.ipa' -print -quit)"
+          test -n "$ipa_path"
+          echo "IPA_PATH=$ipa_path" >> "$GITHUB_ENV"
+
+      - name: Verify exported IPA
+        shell: bash
+        run: |
+          set -euo pipefail
+          unpacked="$RUNNER_TEMP/exported-ipa"
+          ditto -x -k "$IPA_PATH" "$unpacked"
+          app="$(find "$unpacked/Payload" -maxdepth 1 -name '*.app' -print -quit)"
+          extension="$(find "$app/PlugIns" -maxdepth 1 -name '*.appex' -print -quit)"
+          test -n "$app"
+          test -n "$extension"
+          codesign --verify --deep --strict --verbose=2 "$app"
+          test "$(/usr/libexec/PlistBuddy -c 'Print :CFBundleIdentifier' "$app/Info.plist")" = "com.ghtnql.kkkeyboard"
+          test "$(/usr/libexec/PlistBuddy -c 'Print :CFBundleIdentifier' "$extension/Info.plist")" = "com.ghtnql.kkkeyboard.keyboard"
+          test "$(/usr/libexec/PlistBuddy -c 'Print :CFBundleVersion' "$app/Info.plist")" = "$BUILD_NUMBER"
+          test "$(/usr/libexec/PlistBuddy -c 'Print :CFBundleVersion' "$extension/Info.plist")" = "$BUILD_NUMBER"
+          test -f "$app/Assets.car"
+          test -f "$extension/PrivacyInfo.xcprivacy"
+          for target in app extension; do
+            bundle="$app"
+            [[ "$target" == extension ]] && bundle="$extension"
+            entitlements="$RUNNER_TEMP/exported-$target-entitlements.plist"
+            codesign -d --entitlements :- "$bundle" > "$entitlements" 2>/dev/null || true
+            python3 - "$entitlements" "$PREVIEW_WITHOUT_APP_GROUP" "$target" <<'PY'
+          import os, plistlib, sys
+          path, preview, target = sys.argv[1:]
+          data = plistlib.load(open(path, "rb")) if os.path.getsize(path) else {}
+          has_group = "group.com.ghtnql.kkkeyboard" in data.get("com.apple.security.application-groups", [])
+          assert has_group == (preview != "true"), f"{target} exported IPA App Group entitlement mismatch"
+          PY
+          done
+          python3 tools/verify-ios-release.py --app "$app" --source-root "$GITHUB_WORKSPACE" --build-number "$BUILD_NUMBER" --output "$RUNNER_TEMP/ios-release-manifest.json"
+
+      - name: Upload to TestFlight
+        uses: Apple-Actions/upload-testflight-build@1fc69ca369a60b813eaaa2d936eda22794b52e17 # v5.4.0
+        with:
+          app-path: ${{ env.IPA_PATH }}
+          issuer-id: ${{ env.APPSTORE_ISSUER_ID }}
+          api-key-id: ${{ env.APPSTORE_API_KEY_ID }}
+          api-private-key: ${{ secrets.APPSTORE_API_PRIVATE_KEY }}
+          uses-non-exempt-encryption: 'false'
+          wait-for-processing: 'false'
+
+      - name: Remove signing credentials
+        if: always()
+        shell: bash
+        run: |
+          rm -f '${{ steps.appstore-key.outputs.key-path }}'
+          rm -f '${{ steps.signing-assets.outputs.p12-path }}'
+          rm -f "$HOME/Library/MobileDevice/Provisioning Profiles/$IOS_APP_PROFILE_UUID.mobileprovision"
+          rm -f "$HOME/Library/MobileDevice/Provisioning Profiles/$IOS_EXTENSION_PROFILE_UUID.mobileprovision"
+          security delete-keychain '${{ steps.signing-assets.outputs.keychain-path }}' 2>/dev/null || true
+
+      - name: Upload deployment diagnostics
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: ios-testflight-diagnostics-${{ github.run_number }}-${{ github.run_attempt }}
+          path: |
+            ${{ runner.temp }}/xcodebuild-phrase-test.log
+            ${{ runner.temp }}/PhraseTests.xcresult
+            ${{ runner.temp }}/ios-native-attachments
+            ${{ runner.temp }}/ios-native-test-summary.json
+            sharedUI/build/xcode-frameworks/**/Headers/*.h
+            ${{ runner.temp }}/xcodebuild-archive.log
+            ${{ runner.temp }}/xcodebuild-export.log
+            ${{ runner.temp }}/export/DistributionSummary.plist
+            ${{ runner.temp }}/export/ExportOptions.plist
+            ${{ runner.temp }}/export/Packaging.log
+            ${{ runner.temp }}/BUILD_SOURCE.txt
+            ${{ runner.temp }}/ios-release-manifest.json
+          if-no-files-found: warn
+          retention-days: 7
+
+  status:
+    needs: [resolve_build_number, upload]
+    if: ${{ always() && ((inputs.status_only && (!inputs.assign_external_preview && !inputs.submit_external_review || (inputs.apk_test_complete == true || inputs.release_approved == true) && inputs.tested_commit == github.sha)) || (!inputs.status_only && needs.upload.result == 'success' && (inputs.apk_test_complete == true || inputs.release_approved == true) && inputs.tested_commit == github.sha)) }}
+    name: Check TestFlight build status
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    environment: testflight
+    env:
+      APPSTORE_ISSUER_ID: ${{ vars.APPSTORE_ISSUER_ID }}
+      APPSTORE_API_KEY_ID: ${{ vars.APPSTORE_API_KEY_ID }}
+      APPSTORE_API_PRIVATE_KEY: ${{ secrets.APPSTORE_API_PRIVATE_KEY }}
+      STATUS_BUILD_NUMBER: ${{ inputs.status_only && inputs.status_build_number || needs.upload.outputs.build_number }}
+      AUTO_AFTER_UPLOAD: ${{ !inputs.status_only }}
+      ASSIGN_EXTERNAL_PREVIEW: ${{ inputs.status_only && inputs.assign_external_preview || !inputs.status_only }}
+      SUBMIT_EXTERNAL_REVIEW: ${{ inputs.status_only && inputs.submit_external_review || !inputs.status_only }}
+    steps:
+      - name: Read build status and group access
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import base64
+          import json
+          import os
+          import subprocess
+          import time
+          import urllib.parse
+          import urllib.request
+          from pathlib import Path
+
+          def b64(data):
+              return base64.urlsafe_b64encode(data).rstrip(b"=")
+
+          key_path = Path(os.environ["RUNNER_TEMP"]) / "asc-status-key.p8"
+          key_path.write_text(os.environ["APPSTORE_API_PRIVATE_KEY"])
+          key_path.chmod(0o600)
+          now = int(time.time())
+          header = {"alg": "ES256", "kid": os.environ["APPSTORE_API_KEY_ID"], "typ": "JWT"}
+          payload = {"iss": os.environ["APPSTORE_ISSUER_ID"], "iat": now,
+                     "exp": now + 1140, "aud": "appstoreconnect-v1"}
+          signing_input = b".".join(b64(json.dumps(x, separators=(",", ":")).encode())
+                                    for x in (header, payload))
+          try:
+              der = subprocess.run(
+                  ["openssl", "dgst", "-sha256", "-sign", str(key_path)],
+                  input=signing_input, check=True, capture_output=True
+              ).stdout
+          finally:
+              key_path.unlink(missing_ok=True)
+
+          def length(data, pos):
+              value = data[pos]
+              pos += 1
+              if value < 128:
+                  return value, pos
+              count = value & 127
+              return int.from_bytes(data[pos:pos + count], "big"), pos + count
+
+          assert der[0] == 0x30
+          _, pos = length(der, 1)
+          values = []
+          for _ in range(2):
+              assert der[pos] == 0x02
+              size, pos = length(der, pos + 1)
+              values.append(int.from_bytes(der[pos:pos + size], "big"))
+              pos += size
+          signature = b"".join(value.to_bytes(32, "big") for value in values)
+          token = (signing_input + b"." + b64(signature)).decode()
+
+          def get(path, params=None):
+              url = "https://api.appstoreconnect.apple.com" + path
+              if params:
+                  url += "?" + urllib.parse.urlencode(params)
+              request = urllib.request.Request(
+                  url, headers={"Authorization": "Bearer " + token,
+                                "Accept": "application/json"})
+              with urllib.request.urlopen(request, timeout=30) as response:
+                  return json.load(response)
+
+          def post(path, body, expected_status=204):
+              request = urllib.request.Request(
+                  "https://api.appstoreconnect.apple.com" + path,
+                  data=json.dumps(body).encode(),
+                  headers={"Authorization": "Bearer " + token,
+                           "Content-Type": "application/json",
+                           "Accept": "application/json"},
+                  method="POST")
+              with urllib.request.urlopen(request, timeout=30) as response:
+                  assert response.status == expected_status
+                  return json.load(response) if expected_status == 201 else None
+
+          apps = get("/v1/apps", {"filter[bundleId]": "com.ghtnql.kkkeyboard"})
+          assert len(apps["data"]) == 1, "Expected one KKKeyboard app"
+          app_id = apps["data"][0]["id"]
+          build_number = os.environ["STATUS_BUILD_NUMBER"]
+          assert build_number, "Provide an existing build number for a status-only check"
+          auto_after_upload = os.environ["AUTO_AFTER_UPLOAD"] == "true"
+          deadline = time.monotonic() + 15 * 60 if auto_after_upload else None
+          while True:
+              builds = get("/v1/builds", {"filter[app]": app_id,
+                                         "filter[version]": build_number})
+              if builds["data"]:
+                  state = builds["data"][0]["attributes"]["processingState"]
+                  if not auto_after_upload or state == "VALID":
+                      break
+                  if state not in ("PROCESSING", "FAILED", "INVALID"):
+                      print(f"Build {build_number} processing state: {state}")
+                  if state in ("FAILED", "INVALID"):
+                      raise RuntimeError(f"Build {build_number} processing failed: {state}")
+              if deadline is None:
+                  assert os.environ["ASSIGN_EXTERNAL_PREVIEW"] != "true"
+                  assert os.environ["SUBMIT_EXTERNAL_REVIEW"] != "true"
+                  print(f"Build {build_number} is not visible in App Store Connect yet")
+                  raise SystemExit(0)
+              assert time.monotonic() < deadline, f"Build {build_number} did not finish processing within 15 minutes"
+              time.sleep(30)
+          assert len(builds["data"]) == 1, f"Expected one build {build_number}"
+          build = builds["data"][0]
+          build_id = build["id"]
+          print(f"Build {build_number}:", json.dumps(build["attributes"], sort_keys=True))
+          beta = get(f"/v1/builds/{build_id}/buildBetaDetail")
+          print("Beta status:", json.dumps(beta["data"]["attributes"], sort_keys=True))
+          groups = get(f"/v1/apps/{app_id}/betaGroups", {"limit": 200})
+          external_target = []
+          for group in groups["data"]:
+              group_id = group["id"]
+              attrs = group["attributes"]
+              linked = get(f"/v1/betaGroups/{group_id}/relationships/builds",
+                           {"limit": 200})
+              assigned = any(item["id"] == build_id for item in linked["data"])
+              print("Group:", json.dumps({
+                  "name": attrs.get("name"),
+                  "internal": attrs.get("isInternalGroup"),
+                  "allBuilds": attrs.get("hasAccessToAllBuilds"),
+                  "buildAssigned": assigned,
+              }, sort_keys=True))
+              if attrs.get("name") == "공개 테스트" and attrs.get("isInternalGroup") is False:
+                  external_target.append((group_id, assigned))
+          if os.environ["ASSIGN_EXTERNAL_PREVIEW"] == "true":
+              assert build["attributes"]["processingState"] == "VALID", "Build is not valid"
+              assert len(external_target) == 1, "Expected one public test group"
+              group_id, assigned = external_target[0]
+              if not assigned:
+                  post(f"/v1/betaGroups/{group_id}/relationships/builds",
+                       {"data": [{"type": "builds", "id": build_id}]})
+              linked = get(f"/v1/betaGroups/{group_id}/relationships/builds",
+                           {"limit": 200})
+              assigned = any(item["id"] == build_id for item in linked["data"])
+              assert assigned
+              external_target = [(group_id, assigned)]
+              print(f"Build {build_number} assigned to public test group")
+          if os.environ["SUBMIT_EXTERNAL_REVIEW"] == "true":
+              assert build["attributes"]["processingState"] == "VALID", "Build is not valid"
+              assert len(external_target) == 1 and external_target[0][1], (
+                  "Build must already be assigned to public test group")
+              submissions = get("/v1/betaAppReviewSubmissions",
+                                {"filter[build]": build_id})
+              if submissions["data"]:
+                  print("Existing beta review submission:",
+                        json.dumps(submissions["data"][0]["attributes"],
+                                   sort_keys=True))
+              else:
+                  result = post(
+                      "/v1/betaAppReviewSubmissions",
+                      {"data": {
+                          "type": "betaAppReviewSubmissions",
+                          "relationships": {
+                              "build": {"data": {"type": "builds", "id": build_id}}
+                          },
+                      }},
+                      expected_status=201)
+                  print(f"Submitted build {build_number} for beta review:",
+                        json.dumps(result["data"]["attributes"], sort_keys=True))
+          external_state = get(f"/v1/builds/{build_id}/buildBetaDetail")["data"]["attributes"].get("externalBuildState")
+          if external_state == "IN_BETA_TESTING":
+              print(f"Build {build_number} is available to external testers (Apple state: {external_state})")
+          else:
+              print(f"Build {build_number} is not yet confirmed available to external testers "
+                    f"(Apple state: {external_state or 'unknown'}); beta review or activation may still be pending")
+          PY

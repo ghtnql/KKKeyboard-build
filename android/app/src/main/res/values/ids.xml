@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="flick_left" type="id" />
+    <item name="flick_up" type="id" />
+    <item name="flick_right" type="id" />
+    <item name="flick_down" type="id" />
+    <item name="open_app_settings" type="id" />
+    <item name="keyboard_test_field" type="id" />
+    <item name="progress_summary" type="id" />
+    <item name="practice_prompt" type="id" />
+    <item name="practice_answer" type="id" />
+    <item name="practice_feedback" type="id" />
+    <item name="practice_style" type="id" />
+    <item name="result_accuracy" type="id" />
+    <item name="rain_hud" type="id" />
+    <item name="rain_time" type="id" />
+    <item name="rain_lives" type="id" />
+    <item name="rain_arena" type="id" />
+    <item name="rain_answer" type="id" />
+    <item name="rain_submit" type="id" />
+    <item name="rain_mute" type="id" />
+    <item name="rain_pause" type="id" />
+    <item name="cafe_scene" type="id" />
+    <item name="cafe_order" type="id" />
+    <item name="cafe_score" type="id" />
+    <item name="cafe_patience" type="id" />
+    <item name="cafe_difficulty" type="id" />
+    <item name="cafe_answer" type="id" />
+    <item name="cafe_submit" type="id" />
+    <item name="settings_scroll" type="id" />
+    <item name="settings_orientation_content" type="id" />
+    <item name="phrase_list" type="id" />
+    <item name="phrase_add" type="id" />
+    <item name="phrase_title_input" type="id" />
+    <item name="phrase_content_input" type="id" />
+    <item name="key_phrases" type="id" />
+    <item name="key_themes" type="id" />
+</resources>

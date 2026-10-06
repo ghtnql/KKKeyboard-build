@@ -1,0 +1,10 @@
+"onboarding.title" = "ㅋㅋ키보드 시작하기";
+"onboarding.instructions" = "1. 설정 > 일반 > 키보드 > 키보드에서 ‘새로운 키보드 추가’를 선택하세요.\n2. ㅋㅋ키보드를 추가하세요.\n3. 아래 입력칸을 눌러 🌐 키로 ㅋㅋ키보드를 선택하고 입력을 확인하세요.\n\n핵심 입력에는 전체 접근 허용이 필요하지 않습니다.";
+"onboarding.settings_button" = "설정 열기";
+"onboarding.test_placeholder" = "여기서 키보드 입력 테스트";
+"onboarding.test_accessibility" = "ㅋㅋ키보드 입력 테스트";
+"language.setting.title" = "앱 표시 언어";
+"language.setting.accessibility" = "앱 표시 언어";
+"language.option.korean" = "한국어";
+"language.option.japanese" = "일본어";
+"language.option.english" = "영어";

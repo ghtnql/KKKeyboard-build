@@ -1,0 +1,38 @@
+{
+  "version": 1,
+  "sourceBranch": "migration/kmp-compose",
+  "existingAssets": [
+    {
+      "theme": "seoul_day",
+      "keyboardBackground": "shared/themes/images/seoul_day_background.jpg",
+      "preview": "shared/themes/images/preview_seoul_day.png",
+      "composePreview": "sharedUI/src/commonMain/composeResources/drawable/theme_preview_seoul_day.png",
+      "designSource": "design_mockups/09_Seoul_Day_Keyboard.png"
+    },
+    {
+      "theme": "seoul_night",
+      "keyboardBackground": "shared/themes/images/seoul_night_background.jpg",
+      "preview": "shared/themes/images/preview_seoul_night.png",
+      "composePreview": "sharedUI/src/commonMain/composeResources/drawable/theme_preview_seoul_night.png",
+      "designSource": "design_mockups/10_Seoul_Night_Keyboard.png"
+    },
+    {
+      "theme": "basic_dark",
+      "preview": "shared/themes/images/preview_basic_dark.png",
+      "composePreview": "sharedUI/src/commonMain/composeResources/drawable/theme_preview_basic_dark.png"
+    }
+  ],
+  "gameAssetsDoNotReplace": [
+    "sharedUI/src/commonMain/composeResources/drawable/rain_city_alley.png",
+    "sharedUI/src/commonMain/composeResources/drawable/cafe_background.png",
+    "sharedUI/src/commonMain/composeResources/drawable/cafe_customers.png"
+  ],
+  "appBackgroundIntegration": {
+    "strategy": "Reuse approved Seoul runtime artwork; expose copies as Compose resources only if sharedUI cannot load the canonical runtime path directly.",
+    "seoul_day_target": "sharedUI/src/commonMain/composeResources/drawable/seoul_day_app_background.jpg",
+    "seoul_night_target": "sharedUI/src/commonMain/composeResources/drawable/seoul_night_app_background.jpg",
+    "doNotGenerateNewCityArtworkWithoutNeed": true,
+    "doNotBakeTextIntoArtwork": true,
+    "doNotBakeUIControlsIntoArtwork": true
+  }
+}
