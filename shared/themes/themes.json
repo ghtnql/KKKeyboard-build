@@ -1,0 +1,160 @@
+{
+  "version": 1,
+  "themes": [
+    {
+      "id": "system",
+      "titleKo": "시스템",
+      "kind": "system",
+      "unlock": "free",
+      "available": true
+    },
+    {
+      "id": "basic_light",
+      "titleKo": "라이트",
+      "kind": "palette",
+      "unlock": "free",
+      "palette": {
+        "keyboardSurface": "#ECEEF1",
+        "keySurface": "#FFFFFF",
+        "controlSurface": "#DCE1E7",
+        "border": "#C7CDD4",
+        "text": "#20242A",
+        "accent": "#216B57",
+        "onAccent": "#FFFFFF",
+        "ripple": "#30216B57",
+        "flickHint": "#52606A",
+        "flickSelected": "#D7EBE3"
+      },
+      "available": true,
+      "previewAsset": "preview_basic_light.png"
+    },
+    {
+      "id": "basic_dark",
+      "titleKo": "다크",
+      "kind": "palette",
+      "unlock": "free",
+      "palette": {
+        "keyboardSurface": "#161A1D",
+        "keySurface": "#2B3136",
+        "controlSurface": "#3A4248",
+        "border": "#56616A",
+        "text": "#F5F7F8",
+        "accent": "#5AC8A8",
+        "onAccent": "#0B211A",
+        "ripple": "#405AC8A8",
+        "flickHint": "#B4BFC7",
+        "flickSelected": "#375B51"
+      },
+      "available": true,
+      "previewAsset": "preview_basic_dark.png"
+    },
+    {
+      "id": "seoul_day",
+      "titleKo": "서울의 낮",
+      "kind": "image",
+      "unlock": "launch_set",
+      "palette": {
+        "keyboardSurface": "#D8E7ED",
+        "keySurface": "#C6FAFCFD",
+        "controlSurface": "#BED7EBF7",
+        "border": "#7EB1D0",
+        "text": "#1C3043",
+        "accent": "#4484B4",
+        "onAccent": "#113652",
+        "ripple": "#37539BC6",
+        "flickHint": "#475E6E",
+        "flickSelected": "#CBE4E8"
+      },
+      "available": true,
+      "image": "seoul_day_background.jpg",
+      "scrimAlpha": 0,
+      "previewAsset": "preview_seoul_day.png"
+    },
+    {
+      "id": "seoul_night",
+      "titleKo": "서울의 밤",
+      "kind": "image",
+      "unlock": "launch_set",
+      "image": "seoul_night_background.jpg",
+      "scrimAlpha": 0,
+      "palette": {
+        "keyboardSurface": "#182540",
+        "keySurface": "#9E5C6796",
+        "controlSurface": "#A634416F",
+        "border": "#BECFFF",
+        "text": "#FFFFFF",
+        "accent": "#5D79C0",
+        "onAccent": "#FFFFFF",
+        "ripple": "#4CB2C6FF",
+        "flickHint": "#DCE1F7",
+        "flickSelected": "#5467A3"
+      },
+      "available": true,
+      "previewAsset": "preview_seoul_night.png"
+    },
+    {
+      "id": "taegeuk_default",
+      "titleKo": "태극",
+      "kind": "image",
+      "unlock": "free",
+      "image": "taegeuk_artwork.png",
+      "scrimAlpha": 85,
+      "palette": {
+        "keyboardSurface": "#F1EEE6",
+        "keySurface": "#FFFFFF",
+        "controlSurface": "#E2DAC6",
+        "border": "#B9AE94",
+        "text": "#1E2A44",
+        "accent": "#D63A4E",
+        "onAccent": "#FFFFFF",
+        "ripple": "#30D63A4E",
+        "flickHint": "#5F6E8C",
+        "flickSelected": "#D9E2F2"
+      },
+      "available": false,
+      "previewAsset": "taegeuk_artwork.png"
+    },
+    {
+      "id": "busan_ocean",
+      "titleKo": "부산의 밤",
+      "kind": "image",
+      "unlock": "free",
+      "image": "busan_ocean.jpg",
+      "scrimAlpha": 82,
+      "palette": {
+        "keyboardSurface": "#0C1F2B",
+        "keySurface": "#16303F",
+        "controlSurface": "#1F4256",
+        "border": "#3E6B84",
+        "text": "#EFF8FF",
+        "accent": "#3EC6E0",
+        "onAccent": "#06202A",
+        "ripple": "#303EC6E0",
+        "flickHint": "#9FD6E3",
+        "flickSelected": "#164E5B"
+      },
+      "available": false
+    },
+    {
+      "id": "jeju_default",
+      "titleKo": "제주",
+      "kind": "image",
+      "unlock": "free",
+      "image": "jeju_default.jpg",
+      "scrimAlpha": 82,
+      "palette": {
+        "keyboardSurface": "#1A2E1F",
+        "keySurface": "#2A422F",
+        "controlSurface": "#3A5A41",
+        "border": "#6B8F71",
+        "text": "#F4F7F4",
+        "accent": "#FDB022",
+        "onAccent": "#231303",
+        "ripple": "#30FDB022",
+        "flickHint": "#B7C9B7",
+        "flickSelected": "#3F5A36"
+      },
+      "available": false
+    }
+  ]
+}

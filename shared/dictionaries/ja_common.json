@@ -1,0 +1,7170 @@
+{
+  "version": 1,
+  "ranking": "Manually curated everyday-vocabulary priority; not measured corpus frequency.",
+  "reviewStatus": "mixed_machine_checked_and_review_required",
+  "entries": [
+    {
+      "id": "ohayou",
+      "priority": 10,
+      "aliases": [
+        "오하요",
+        "오하요우",
+        "오하이오",
+        "오하이요"
+      ],
+      "surfaces": [
+        "おはよう"
+      ]
+    },
+    {
+      "id": "ohayou_gozaimasu",
+      "priority": 11,
+      "aliases": [
+        "오하요고자이마스",
+        "오하요우고자이마스",
+        "오하이오고자이마스",
+        "오하이요고자이마스",
+        "오하요고자이마쓰",
+        "오하요우고자이마쓰"
+      ],
+      "surfaces": [
+        "おはようございます"
+      ]
+    },
+    {
+      "id": "arigatou",
+      "priority": 12,
+      "aliases": [
+        "아리가토",
+        "아리가토우",
+        "아리가또",
+        "아리가또우",
+        "아리카토",
+        "아리카토우"
+      ],
+      "surfaces": [
+        "ありがとう"
+      ]
+    },
+    {
+      "id": "arigatou_gozaimasu",
+      "priority": 13,
+      "aliases": [
+        "아리가토고자이마스",
+        "아리가토우고자이마스",
+        "아리가또고자이마스",
+        "아리카토고자이마스",
+        "아리가토오고자이마스"
+      ],
+      "surfaces": [
+        "ありがとうございます"
+      ]
+    },
+    {
+      "id": "konnichiwa",
+      "priority": 14,
+      "aliases": [
+        "곤니치와",
+        "콘니치와",
+        "곤니찌와",
+        "콘니찌와",
+        "곤니치하",
+        "콘니치하"
+      ],
+      "surfaces": [
+        "こんにちは"
+      ]
+    },
+    {
+      "id": "konbanwa",
+      "priority": 15,
+      "aliases": [
+        "곤반와",
+        "콘반와",
+        "콤방와",
+        "곤방와",
+        "콘방와",
+        "곤방하"
+      ],
+      "surfaces": [
+        "こんばんは"
+      ]
+    },
+    {
+      "id": "sumimasen",
+      "priority": 16,
+      "aliases": [
+        "스미마센",
+        "스미마셍",
+        "스미마생"
+      ],
+      "surfaces": [
+        "すみません"
+      ]
+    },
+    {
+      "id": "gomennasai",
+      "priority": 17,
+      "aliases": [
+        "고멘나사이",
+        "고멘나싸이",
+        "고멩나사이"
+      ],
+      "surfaces": [
+        "ごめんなさい"
+      ]
+    },
+    {
+      "id": "gomenn",
+      "priority": 18,
+      "aliases": [
+        "고멘",
+        "고멩"
+      ],
+      "surfaces": [
+        "ごめん"
+      ]
+    },
+    {
+      "id": "hisashiburi",
+      "priority": 19,
+      "aliases": [
+        "히사시부리",
+        "히사시브리"
+      ],
+      "surfaces": [
+        "ひさしぶり",
+        "久しぶり"
+      ]
+    },
+    {
+      "id": "hisashiburidesu",
+      "priority": 20,
+      "aliases": [
+        "히사시부리데스",
+        "히사시브리데스"
+      ],
+      "surfaces": [
+        "ひさしぶりです",
+        "久しぶりです"
+      ]
+    },
+    {
+      "id": "gozaimasu",
+      "priority": 21,
+      "aliases": [
+        "고자이마스",
+        "고자이마쓰",
+        "코자이마스"
+      ],
+      "surfaces": [
+        "ございます"
+      ]
+    },
+    {
+      "id": "onegaishimasu",
+      "priority": 22,
+      "aliases": [
+        "오네가이시마스",
+        "오네가이시마쓰",
+        "오네가이시마수"
+      ],
+      "surfaces": [
+        "おねがいします",
+        "お願いします"
+      ]
+    },
+    {
+      "id": "yoroshiku",
+      "priority": 23,
+      "aliases": [
+        "요로시쿠",
+        "요로시꾸"
+      ],
+      "surfaces": [
+        "よろしく"
+      ]
+    },
+    {
+      "id": "yoroshiku_onegaishimasu",
+      "priority": 24,
+      "aliases": [
+        "요로시쿠오네가이시마스",
+        "요로시꾸오네가이시마스"
+      ],
+      "surfaces": [
+        "よろしくお願いします"
+      ]
+    },
+    {
+      "id": "hajimemashite",
+      "priority": 25,
+      "aliases": [
+        "하지메마시테",
+        "하지메마시떼"
+      ],
+      "surfaces": [
+        "はじめまして"
+      ]
+    },
+    {
+      "id": "oyasumi",
+      "priority": 26,
+      "aliases": [
+        "오야스미"
+      ],
+      "surfaces": [
+        "おやすみ"
+      ]
+    },
+    {
+      "id": "oyasuminasai",
+      "priority": 27,
+      "aliases": [
+        "오야스미나사이"
+      ],
+      "surfaces": [
+        "おやすみなさい"
+      ]
+    },
+    {
+      "id": "sayounara",
+      "priority": 28,
+      "aliases": [
+        "사요나라",
+        "사요우나라",
+        "사요오나라"
+      ],
+      "surfaces": [
+        "さようなら"
+      ]
+    },
+    {
+      "id": "matane",
+      "priority": 29,
+      "aliases": [
+        "마타네",
+        "마따네"
+      ],
+      "surfaces": [
+        "またね"
+      ]
+    },
+    {
+      "id": "mataashita",
+      "priority": 30,
+      "aliases": [
+        "마타아시타",
+        "마따아시타"
+      ],
+      "surfaces": [
+        "またあした",
+        "また明日"
+      ]
+    },
+    {
+      "id": "jaane",
+      "priority": 31,
+      "aliases": [
+        "자네",
+        "쟈네",
+        "자아네",
+        "쟈아네"
+      ],
+      "surfaces": [
+        "じゃあね"
+      ]
+    },
+    {
+      "id": "tadaima",
+      "priority": 32,
+      "aliases": [
+        "타다이마",
+        "다다이마"
+      ],
+      "surfaces": [
+        "ただいま"
+      ]
+    },
+    {
+      "id": "okaeri",
+      "priority": 33,
+      "aliases": [
+        "오카에리",
+        "오까에리"
+      ],
+      "surfaces": [
+        "おかえり"
+      ]
+    },
+    {
+      "id": "okaerinasai",
+      "priority": 34,
+      "aliases": [
+        "오카에리나사이",
+        "오까에리나사이"
+      ],
+      "surfaces": [
+        "おかえりなさい"
+      ]
+    },
+    {
+      "id": "ittekimasu",
+      "priority": 35,
+      "aliases": [
+        "잇테키마스",
+        "잇떼키마스",
+        "이테키마스"
+      ],
+      "surfaces": [
+        "いってきます",
+        "行ってきます"
+      ]
+    },
+    {
+      "id": "itterasshai",
+      "priority": 36,
+      "aliases": [
+        "잇테랏샤이",
+        "잇떼랏샤이",
+        "이테라샤이"
+      ],
+      "surfaces": [
+        "いってらっしゃい"
+      ]
+    },
+    {
+      "id": "itadakimasu",
+      "priority": 37,
+      "aliases": [
+        "이타다키마스",
+        "이따다끼마스"
+      ],
+      "surfaces": [
+        "いただきます"
+      ]
+    },
+    {
+      "id": "gochisousama",
+      "priority": 38,
+      "aliases": [
+        "고치소사마",
+        "고치소우사마",
+        "고치소오사마"
+      ],
+      "surfaces": [
+        "ごちそうさま"
+      ]
+    },
+    {
+      "id": "gochisousamadeshita",
+      "priority": 39,
+      "aliases": [
+        "고치소사마데시타",
+        "고치소우사마데시타"
+      ],
+      "surfaces": [
+        "ごちそうさまでした"
+      ]
+    },
+    {
+      "id": "otsukaresama",
+      "priority": 40,
+      "aliases": [
+        "오츠카레사마",
+        "오쯔카레사마",
+        "오츠카레"
+      ],
+      "surfaces": [
+        "おつかれさま",
+        "お疲れ様"
+      ]
+    },
+    {
+      "id": "omedetou",
+      "priority": 41,
+      "aliases": [
+        "오메데토",
+        "오메데토우",
+        "오메데또"
+      ],
+      "surfaces": [
+        "おめでとう"
+      ]
+    },
+    {
+      "id": "daijoubu",
+      "priority": 42,
+      "aliases": [
+        "다이조부",
+        "다이죠부",
+        "다이조우부",
+        "다이죠우부"
+      ],
+      "surfaces": [
+        "だいじょうぶ",
+        "大丈夫"
+      ]
+    },
+    {
+      "id": "daijoubudesu",
+      "priority": 43,
+      "aliases": [
+        "다이조부데스",
+        "다이죠부데스",
+        "다이조우부데스"
+      ],
+      "surfaces": [
+        "だいじょうぶです",
+        "大丈夫です"
+      ]
+    },
+    {
+      "id": "wakarimashita",
+      "priority": 44,
+      "aliases": [
+        "와카리마시타",
+        "와까리마시따"
+      ],
+      "surfaces": [
+        "わかりました",
+        "分かりました"
+      ]
+    },
+    {
+      "id": "wakarimasen",
+      "priority": 45,
+      "aliases": [
+        "와카리마센",
+        "와까리마센"
+      ],
+      "surfaces": [
+        "わかりません",
+        "分かりません"
+      ]
+    },
+    {
+      "id": "chottomatte",
+      "priority": 46,
+      "aliases": [
+        "춋토맛테",
+        "쵸토마테",
+        "촛토맛테",
+        "춋또맛떼",
+        "춋토마테",
+        "춋토마떼"
+      ],
+      "surfaces": [
+        "ちょっとまって",
+        "ちょっと待って"
+      ]
+    },
+    {
+      "id": "kudasai",
+      "priority": 47,
+      "aliases": [
+        "쿠다사이",
+        "구다사이",
+        "쿠다싸이"
+      ],
+      "surfaces": [
+        "ください"
+      ]
+    },
+    {
+      "id": "douzo",
+      "priority": 48,
+      "aliases": [
+        "도조",
+        "도우조",
+        "도오조"
+      ],
+      "surfaces": [
+        "どうぞ"
+      ]
+    },
+    {
+      "id": "doumo",
+      "priority": 49,
+      "aliases": [
+        "도모",
+        "도우모",
+        "도오모"
+      ],
+      "surfaces": [
+        "どうも"
+      ]
+    },
+    {
+      "id": "hai",
+      "priority": 50,
+      "aliases": [
+        "하이"
+      ],
+      "surfaces": [
+        "はい"
+      ]
+    },
+    {
+      "id": "iie",
+      "priority": 51,
+      "aliases": [
+        "이이에",
+        "이이예"
+      ],
+      "surfaces": [
+        "いいえ"
+      ]
+    },
+    {
+      "id": "sou",
+      "priority": 52,
+      "aliases": [
+        "소우",
+        "소오"
+      ],
+      "surfaces": [
+        "そう"
+      ]
+    },
+    {
+      "id": "soudesu",
+      "priority": 53,
+      "aliases": [
+        "소데스",
+        "소우데스",
+        "소오데스"
+      ],
+      "surfaces": [
+        "そうです"
+      ]
+    },
+    {
+      "id": "soudesune",
+      "priority": 54,
+      "aliases": [
+        "소데스네",
+        "소우데스네"
+      ],
+      "surfaces": [
+        "そうですね"
+      ]
+    },
+    {
+      "id": "desu",
+      "priority": 55,
+      "aliases": [
+        "데스"
+      ],
+      "surfaces": [
+        "です"
+      ]
+    },
+    {
+      "id": "deshita",
+      "priority": 56,
+      "aliases": [
+        "데시타",
+        "데시따"
+      ],
+      "surfaces": [
+        "でした"
+      ]
+    },
+    {
+      "id": "suki",
+      "priority": 57,
+      "aliases": [
+        "스키",
+        "스끼"
+      ],
+      "surfaces": [
+        "すき",
+        "好き"
+      ]
+    },
+    {
+      "id": "daisuki",
+      "priority": 58,
+      "aliases": [
+        "다이스키",
+        "다이스끼"
+      ],
+      "surfaces": [
+        "だいすき",
+        "大好き"
+      ]
+    },
+    {
+      "id": "oishii",
+      "priority": 59,
+      "aliases": [
+        "오이시",
+        "오이시이",
+        "오이씨"
+      ],
+      "surfaces": [
+        "おいしい",
+        "美味しい"
+      ]
+    },
+    {
+      "id": "kawaii",
+      "priority": 60,
+      "aliases": [
+        "카와이",
+        "카와이이",
+        "가와이"
+      ],
+      "surfaces": [
+        "かわいい",
+        "可愛い"
+      ]
+    },
+    {
+      "id": "sugoi",
+      "priority": 61,
+      "aliases": [
+        "스고이",
+        "스꼬이"
+      ],
+      "surfaces": [
+        "すごい"
+      ]
+    },
+    {
+      "id": "tanoshii",
+      "priority": 62,
+      "aliases": [
+        "타노시",
+        "타노시이",
+        "다노시이"
+      ],
+      "surfaces": [
+        "たのしい",
+        "楽しい"
+      ]
+    },
+    {
+      "id": "genki",
+      "priority": 63,
+      "aliases": [
+        "겐키",
+        "겡키",
+        "겐끼"
+      ],
+      "surfaces": [
+        "げんき",
+        "元気"
+      ]
+    },
+    {
+      "id": "watashi",
+      "priority": 64,
+      "aliases": [
+        "와타시",
+        "와따시"
+      ],
+      "surfaces": [
+        "わたし",
+        "私"
+      ]
+    },
+    {
+      "id": "anata",
+      "priority": 65,
+      "aliases": [
+        "아나타",
+        "아나따"
+      ],
+      "surfaces": [
+        "あなた"
+      ]
+    },
+    {
+      "id": "tomodachi",
+      "priority": 66,
+      "aliases": [
+        "토모다치",
+        "도모다치"
+      ],
+      "surfaces": [
+        "ともだち",
+        "友達"
+      ]
+    },
+    {
+      "id": "sensei",
+      "priority": 67,
+      "aliases": [
+        "센세",
+        "센세이",
+        "센쎄"
+      ],
+      "surfaces": [
+        "せんせい",
+        "先生"
+      ]
+    },
+    {
+      "id": "gakkou",
+      "priority": 68,
+      "aliases": [
+        "각코",
+        "각코우",
+        "갓코",
+        "갓코우",
+        "갓꼬"
+      ],
+      "surfaces": [
+        "がっこう",
+        "学校"
+      ]
+    },
+    {
+      "id": "gakusei",
+      "priority": 69,
+      "aliases": [
+        "가쿠세",
+        "가쿠세이",
+        "각세이"
+      ],
+      "surfaces": [
+        "がくせい",
+        "学生"
+      ]
+    },
+    {
+      "id": "nihon",
+      "priority": 70,
+      "aliases": [
+        "니혼",
+        "닛폰",
+        "닛뽄"
+      ],
+      "surfaces": [
+        "にほん",
+        "日本"
+      ]
+    },
+    {
+      "id": "nihongo",
+      "priority": 71,
+      "aliases": [
+        "니혼고"
+      ],
+      "surfaces": [
+        "にほんご",
+        "日本語"
+      ]
+    },
+    {
+      "id": "kankoku",
+      "priority": 72,
+      "aliases": [
+        "칸코쿠",
+        "칸코꾸",
+        "캉코쿠",
+        "한국"
+      ],
+      "surfaces": [
+        "かんこく",
+        "韓国"
+      ]
+    },
+    {
+      "id": "kankokugo",
+      "priority": 73,
+      "aliases": [
+        "칸코쿠고",
+        "캉코쿠고",
+        "한국어"
+      ],
+      "surfaces": [
+        "かんこくご",
+        "韓国語"
+      ]
+    },
+    {
+      "id": "tokyo",
+      "priority": 74,
+      "aliases": [
+        "도쿄",
+        "토쿄",
+        "토우쿄우",
+        "도오쿄오"
+      ],
+      "surfaces": [
+        "とうきょう",
+        "東京"
+      ]
+    },
+    {
+      "id": "kyoto",
+      "priority": 75,
+      "aliases": [
+        "쿄토",
+        "교토",
+        "쿄우토",
+        "쿄오토"
+      ],
+      "surfaces": [
+        "きょうと",
+        "京都"
+      ]
+    },
+    {
+      "id": "osaka",
+      "priority": 76,
+      "aliases": [
+        "오사카",
+        "오오사카"
+      ],
+      "surfaces": [
+        "おおさか",
+        "大阪"
+      ]
+    },
+    {
+      "id": "shashin",
+      "priority": 77,
+      "aliases": [
+        "샤신",
+        "샤싱"
+      ],
+      "surfaces": [
+        "しゃしん",
+        "写真"
+      ]
+    },
+    {
+      "id": "ryokou",
+      "priority": 78,
+      "aliases": [
+        "료코",
+        "료코우",
+        "료코오",
+        "료꼬"
+      ],
+      "surfaces": [
+        "りょこう"
+      ]
+    },
+    {
+      "id": "sushi",
+      "priority": 79,
+      "aliases": [
+        "스시",
+        "스씨"
+      ],
+      "surfaces": [
+        "すし",
+        "寿司"
+      ]
+    },
+    {
+      "id": "koohii",
+      "priority": 80,
+      "aliases": [
+        "코히",
+        "코히이",
+        "코오히",
+        "코오히이",
+        "코피"
+      ],
+      "surfaces": [
+        "コーヒー"
+      ]
+    },
+    {
+      "id": "kitte",
+      "priority": 81,
+      "aliases": [
+        "킷테",
+        "킷떼",
+        "키테"
+      ],
+      "surfaces": [
+        "きって"
+      ]
+    },
+    {
+      "id": "onna",
+      "priority": 82,
+      "aliases": [
+        "온나"
+      ],
+      "surfaces": [
+        "おんな"
+      ]
+    },
+    {
+      "id": "ramen",
+      "priority": 84,
+      "aliases": [
+        "라멘",
+        "라면",
+        "라아멘"
+      ],
+      "surfaces": [
+        "ラーメン"
+      ]
+    },
+    {
+      "id": "udon",
+      "priority": 85,
+      "aliases": [
+        "우동",
+        "우돈"
+      ],
+      "surfaces": [
+        "うどん"
+      ]
+    },
+    {
+      "id": "gohan",
+      "priority": 86,
+      "aliases": [
+        "고한",
+        "고항"
+      ],
+      "surfaces": [
+        "ごはん",
+        "ご飯"
+      ]
+    },
+    {
+      "id": "mizu",
+      "priority": 87,
+      "aliases": [
+        "미즈"
+      ],
+      "surfaces": [
+        "みず",
+        "水"
+      ]
+    },
+    {
+      "id": "ocha",
+      "priority": 88,
+      "aliases": [
+        "오차",
+        "오챠"
+      ],
+      "surfaces": [
+        "おちゃ",
+        "お茶"
+      ]
+    },
+    {
+      "id": "eki",
+      "priority": 89,
+      "aliases": [
+        "에키",
+        "에끼"
+      ],
+      "surfaces": [
+        "えき",
+        "駅"
+      ]
+    },
+    {
+      "id": "densha",
+      "priority": 90,
+      "aliases": [
+        "덴샤",
+        "덴차"
+      ],
+      "surfaces": [
+        "でんしゃ",
+        "電車"
+      ]
+    },
+    {
+      "id": "kuukou",
+      "priority": 91,
+      "aliases": [
+        "쿠코",
+        "쿠우코우",
+        "쿠우코",
+        "쿠코우"
+      ],
+      "surfaces": [
+        "くうこう",
+        "空港"
+      ]
+    },
+    {
+      "id": "hoteru",
+      "priority": 92,
+      "aliases": [
+        "호테루",
+        "호텔"
+      ],
+      "surfaces": [
+        "ホテル"
+      ]
+    },
+    {
+      "id": "toile",
+      "priority": 93,
+      "aliases": [
+        "토이레",
+        "도이레"
+      ],
+      "surfaces": [
+        "トイレ"
+      ]
+    },
+    {
+      "id": "ikura",
+      "priority": 94,
+      "aliases": [
+        "이쿠라",
+        "이꾸라"
+      ],
+      "surfaces": [
+        "いくら"
+      ]
+    },
+    {
+      "id": "doko",
+      "priority": 95,
+      "aliases": [
+        "도코",
+        "도꼬"
+      ],
+      "surfaces": [
+        "どこ"
+      ]
+    },
+    {
+      "id": "kore",
+      "priority": 96,
+      "aliases": [
+        "코레",
+        "고레"
+      ],
+      "surfaces": [
+        "これ"
+      ]
+    },
+    {
+      "id": "sore",
+      "priority": 97,
+      "aliases": [
+        "소레"
+      ],
+      "surfaces": [
+        "それ"
+      ]
+    },
+    {
+      "id": "are",
+      "priority": 98,
+      "aliases": [
+        "아레"
+      ],
+      "surfaces": [
+        "あれ"
+      ]
+    },
+    {
+      "id": "kyou",
+      "priority": 99,
+      "aliases": [
+        "쿄우",
+        "쿄오"
+      ],
+      "surfaces": [
+        "きょう",
+        "今日"
+      ]
+    },
+    {
+      "id": "ashita",
+      "priority": 100,
+      "aliases": [
+        "아시타",
+        "아시따"
+      ],
+      "surfaces": [
+        "あした",
+        "明日"
+      ]
+    },
+    {
+      "id": "kinou",
+      "priority": 101,
+      "aliases": [
+        "키노",
+        "키노우",
+        "키노오"
+      ],
+      "surfaces": [
+        "きのう",
+        "昨日"
+      ]
+    },
+    {
+      "id": "ima",
+      "priority": 102,
+      "aliases": [
+        "이마"
+      ],
+      "surfaces": [
+        "いま",
+        "今"
+      ]
+    },
+    {
+      "id": "jikan",
+      "priority": 103,
+      "aliases": [
+        "지칸",
+        "지깐"
+      ],
+      "surfaces": [
+        "じかん",
+        "時間"
+      ]
+    },
+    {
+      "id": "tenki",
+      "priority": 104,
+      "aliases": [
+        "텐키",
+        "텐끼"
+      ],
+      "surfaces": [
+        "てんき",
+        "天気"
+      ]
+    },
+    {
+      "id": "denki",
+      "priority": 105,
+      "aliases": [
+        "덴키",
+        "덴끼"
+      ],
+      "surfaces": [
+        "でんき",
+        "電気"
+      ]
+    },
+    {
+      "id": "ame_rain",
+      "priority": 106,
+      "aliases": [
+        "아메"
+      ],
+      "surfaces": [
+        "あめ",
+        "雨"
+      ]
+    },
+    {
+      "id": "ame_candy",
+      "priority": 120,
+      "aliases": [
+        "아메"
+      ],
+      "surfaces": [
+        "飴"
+      ]
+    },
+    {
+      "id": "hashi_chopsticks",
+      "priority": 107,
+      "aliases": [
+        "하시"
+      ],
+      "surfaces": [
+        "はし",
+        "箸"
+      ]
+    },
+    {
+      "id": "hashi_bridge",
+      "priority": 121,
+      "aliases": [
+        "하시"
+      ],
+      "surfaces": [
+        "橋"
+      ]
+    },
+    {
+      "id": "namae",
+      "priority": 108,
+      "aliases": [
+        "나마에"
+      ],
+      "surfaces": [
+        "なまえ",
+        "名前"
+      ]
+    },
+    {
+      "id": "dict_ja_greeting_001",
+      "priority": 201,
+      "aliases": [
+        "곤반와",
+        "콘반와"
+      ],
+      "surfaces": [
+        "こんばんは"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "こんばんは",
+        "part_of_speech": "expression",
+        "homophone_group": null,
+        "usage_domain": "greeting",
+        "politeness": "neutral_polite",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요; ん, 끝 は의 /wa/ 발음 주의"
+      }
+    },
+    {
+      "id": "dict_ja_greeting_002",
+      "priority": 202,
+      "aliases": [
+        "오야스미"
+      ],
+      "surfaces": [
+        "おやすみ"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "おやすみ",
+        "part_of_speech": "expression",
+        "homophone_group": null,
+        "usage_domain": "greeting",
+        "politeness": "casual",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_greeting_003",
+      "priority": 203,
+      "aliases": [
+        "마타네"
+      ],
+      "surfaces": [
+        "またね"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "またね",
+        "part_of_speech": "expression",
+        "homophone_group": null,
+        "usage_domain": "greeting",
+        "politeness": "casual",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_greeting_004",
+      "priority": 204,
+      "aliases": [
+        "자아네"
+      ],
+      "surfaces": [
+        "じゃあね"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "じゃあね",
+        "part_of_speech": "expression",
+        "homophone_group": null,
+        "usage_domain": "greeting",
+        "politeness": "casual",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요; 요음 주의"
+      }
+    },
+    {
+      "id": "dict_ja_greeting_005",
+      "priority": 205,
+      "aliases": [
+        "하지메마시테"
+      ],
+      "surfaces": [
+        "はじめまして"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "はじめまして",
+        "part_of_speech": "expression",
+        "homophone_group": null,
+        "usage_domain": "greeting",
+        "politeness": "polite",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_greeting_006",
+      "priority": 206,
+      "aliases": [
+        "요로시쿠"
+      ],
+      "surfaces": [
+        "よろしく"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "よろしく",
+        "part_of_speech": "expression",
+        "homophone_group": null,
+        "usage_domain": "greeting",
+        "politeness": "casual",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_greeting_007",
+      "priority": 207,
+      "aliases": [
+        "요로시쿠오네가이시마스"
+      ],
+      "surfaces": [
+        "よろしくお願いします"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "よろしくおねがいします",
+        "part_of_speech": "expression",
+        "homophone_group": null,
+        "usage_domain": "greeting",
+        "politeness": "polite",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_greeting_008",
+      "priority": 208,
+      "aliases": [
+        "오히사시부리"
+      ],
+      "surfaces": [
+        "お久しぶり",
+        "おひさしぶり"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "おひさしぶり",
+        "part_of_speech": "expression",
+        "homophone_group": null,
+        "usage_domain": "greeting",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_greeting_009",
+      "priority": 209,
+      "aliases": [
+        "겐키"
+      ],
+      "surfaces": [
+        "元気？",
+        "げんき？"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "げんき",
+        "part_of_speech": "expression",
+        "homophone_group": null,
+        "usage_domain": "greeting",
+        "politeness": "casual",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요; ん 주의"
+      }
+    },
+    {
+      "id": "dict_ja_greeting_010",
+      "priority": 210,
+      "aliases": [
+        "겐키데스"
+      ],
+      "surfaces": [
+        "元気です",
+        "げんきです"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "げんきです",
+        "part_of_speech": "expression",
+        "homophone_group": null,
+        "usage_domain": "greeting",
+        "politeness": "polite",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요; ん 주의"
+      }
+    },
+    {
+      "id": "dict_ja_greeting_011",
+      "priority": 1011,
+      "aliases": [
+        "잇테키마스"
+      ],
+      "surfaces": [
+        "行ってきます",
+        "いってきます"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "いってきます",
+        "part_of_speech": "expression",
+        "homophone_group": null,
+        "usage_domain": "greeting",
+        "politeness": "polite",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요; 촉음 주의"
+      }
+    },
+    {
+      "id": "dict_ja_greeting_012",
+      "priority": 1012,
+      "aliases": [
+        "잇테랏샤이"
+      ],
+      "surfaces": [
+        "行ってらっしゃい",
+        "いってらっしゃい"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "いってらっしゃい",
+        "part_of_speech": "expression",
+        "homophone_group": null,
+        "usage_domain": "greeting",
+        "politeness": "polite",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요; 촉음, 요음 주의"
+      }
+    },
+    {
+      "id": "dict_ja_greeting_013",
+      "priority": 1013,
+      "aliases": [
+        "타다이마"
+      ],
+      "surfaces": [
+        "ただいま"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "ただいま",
+        "part_of_speech": "expression",
+        "homophone_group": null,
+        "usage_domain": "greeting",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_greeting_014",
+      "priority": 1014,
+      "aliases": [
+        "오카에리"
+      ],
+      "surfaces": [
+        "お帰り",
+        "おかえり"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "おかえり",
+        "part_of_speech": "expression",
+        "homophone_group": null,
+        "usage_domain": "greeting",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_greeting_015",
+      "priority": 1015,
+      "aliases": [
+        "시츠레이시마스"
+      ],
+      "surfaces": [
+        "失礼します",
+        "しつれいします"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "しつれいします",
+        "part_of_speech": "expression",
+        "homophone_group": null,
+        "usage_domain": "greeting",
+        "politeness": "polite",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_greeting_016",
+      "priority": 1016,
+      "aliases": [
+        "오츠카레사마"
+      ],
+      "surfaces": [
+        "お疲れさま",
+        "おつかれさま"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "おつかれさま",
+        "part_of_speech": "expression",
+        "homophone_group": null,
+        "usage_domain": "greeting",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_greeting_017",
+      "priority": 1017,
+      "aliases": [
+        "오츠카레사마데스"
+      ],
+      "surfaces": [
+        "お疲れさまです",
+        "おつかれさまです"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "おつかれさまです",
+        "part_of_speech": "expression",
+        "homophone_group": null,
+        "usage_domain": "greeting",
+        "politeness": "polite",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_greeting_018",
+      "priority": 2018,
+      "aliases": [
+        "고멘"
+      ],
+      "surfaces": [
+        "ごめん"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "ごめん",
+        "part_of_speech": "expression",
+        "homophone_group": null,
+        "usage_domain": "greeting",
+        "politeness": "casual",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요; ん 주의"
+      }
+    },
+    {
+      "id": "dict_ja_greeting_019",
+      "priority": 2019,
+      "aliases": [
+        "고멘나사이"
+      ],
+      "surfaces": [
+        "ごめんなさい"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "ごめんなさい",
+        "part_of_speech": "expression",
+        "homophone_group": null,
+        "usage_domain": "greeting",
+        "politeness": "polite",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요; ん 주의"
+      }
+    },
+    {
+      "id": "dict_ja_greeting_020",
+      "priority": 2020,
+      "aliases": [
+        "도오이타시마시테"
+      ],
+      "surfaces": [
+        "どういたしまして"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "どういたしまして",
+        "part_of_speech": "expression",
+        "homophone_group": null,
+        "usage_domain": "greeting",
+        "politeness": "polite",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_reaction_001",
+      "priority": 221,
+      "aliases": [
+        "운"
+      ],
+      "surfaces": [
+        "うん"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "うん",
+        "part_of_speech": "interjection",
+        "homophone_group": null,
+        "usage_domain": "reaction",
+        "politeness": "casual",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요; ん 주의"
+      }
+    },
+    {
+      "id": "dict_ja_reaction_002",
+      "priority": 222,
+      "aliases": [
+        "우운"
+      ],
+      "surfaces": [
+        "ううん"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "ううん",
+        "part_of_speech": "interjection",
+        "homophone_group": null,
+        "usage_domain": "reaction",
+        "politeness": "casual",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요; ん, 장음 주의"
+      }
+    },
+    {
+      "id": "dict_ja_reaction_003",
+      "priority": 223,
+      "aliases": [
+        "하이"
+      ],
+      "surfaces": [
+        "はい"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "はい",
+        "part_of_speech": "interjection",
+        "homophone_group": null,
+        "usage_domain": "reaction",
+        "politeness": "polite",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_reaction_004",
+      "priority": 224,
+      "aliases": [
+        "이이에"
+      ],
+      "surfaces": [
+        "いいえ"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "いいえ",
+        "part_of_speech": "interjection",
+        "homophone_group": null,
+        "usage_domain": "reaction",
+        "politeness": "polite",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_reaction_005",
+      "priority": 225,
+      "aliases": [
+        "소오"
+      ],
+      "surfaces": [
+        "そう"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "そう",
+        "part_of_speech": "interjection",
+        "homophone_group": null,
+        "usage_domain": "reaction",
+        "politeness": "casual",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요; 장음 주의"
+      }
+    },
+    {
+      "id": "dict_ja_reaction_006",
+      "priority": 226,
+      "aliases": [
+        "소오다네"
+      ],
+      "surfaces": [
+        "そうだね"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "そうだね",
+        "part_of_speech": "expression",
+        "homophone_group": null,
+        "usage_domain": "reaction",
+        "politeness": "casual",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요; 장음 주의"
+      }
+    },
+    {
+      "id": "dict_ja_reaction_007",
+      "priority": 227,
+      "aliases": [
+        "소오데스네"
+      ],
+      "surfaces": [
+        "そうですね"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "そうですね",
+        "part_of_speech": "expression",
+        "homophone_group": null,
+        "usage_domain": "reaction",
+        "politeness": "polite",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요; 장음 주의"
+      }
+    },
+    {
+      "id": "dict_ja_reaction_008",
+      "priority": 228,
+      "aliases": [
+        "나루호도"
+      ],
+      "surfaces": [
+        "なるほど"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "なるほど",
+        "part_of_speech": "interjection",
+        "homophone_group": null,
+        "usage_domain": "reaction",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_reaction_009",
+      "priority": 229,
+      "aliases": [
+        "혼토오"
+      ],
+      "surfaces": [
+        "本当？",
+        "ほんと？",
+        "ほんとう？"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "ほんとう",
+        "part_of_speech": "expression",
+        "homophone_group": null,
+        "usage_domain": "reaction",
+        "politeness": "casual",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요; ん, 장음 주의"
+      }
+    },
+    {
+      "id": "dict_ja_reaction_010",
+      "priority": 230,
+      "aliases": [
+        "마지"
+      ],
+      "surfaces": [
+        "まじ？",
+        "マジ？"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "まじ",
+        "part_of_speech": "interjection",
+        "homophone_group": null,
+        "usage_domain": "reaction",
+        "politeness": "casual",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_reaction_011",
+      "priority": 1031,
+      "aliases": [
+        "타시카니"
+      ],
+      "surfaces": [
+        "たしかに",
+        "確かに"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "たしかに",
+        "part_of_speech": "adverb",
+        "homophone_group": null,
+        "usage_domain": "reaction",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_reaction_012",
+      "priority": 1032,
+      "aliases": [
+        "와캇타"
+      ],
+      "surfaces": [
+        "わかった",
+        "分かった"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "わかった",
+        "part_of_speech": "expression",
+        "homophone_group": null,
+        "usage_domain": "reaction",
+        "politeness": "casual",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요; 촉음 주의"
+      }
+    },
+    {
+      "id": "dict_ja_reaction_013",
+      "priority": 1033,
+      "aliases": [
+        "와카리마시타"
+      ],
+      "surfaces": [
+        "わかりました",
+        "分かりました"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "わかりました",
+        "part_of_speech": "expression",
+        "homophone_group": null,
+        "usage_domain": "reaction",
+        "politeness": "polite",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_reaction_014",
+      "priority": 1034,
+      "aliases": [
+        "료오카이"
+      ],
+      "surfaces": [
+        "了解",
+        "りょうかい"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "りょうかい",
+        "part_of_speech": "noun_expression",
+        "homophone_group": null,
+        "usage_domain": "reaction",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요; 요음, 장음 주의"
+      }
+    },
+    {
+      "id": "dict_ja_reaction_015",
+      "priority": 1035,
+      "aliases": [
+        "료오카이데스"
+      ],
+      "surfaces": [
+        "了解です",
+        "りょうかいです"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "りょうかいです",
+        "part_of_speech": "expression",
+        "homophone_group": null,
+        "usage_domain": "reaction",
+        "politeness": "polite",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요; 요음, 장음 주의"
+      }
+    },
+    {
+      "id": "dict_ja_reaction_016",
+      "priority": 1036,
+      "aliases": [
+        "모치론"
+      ],
+      "surfaces": [
+        "もちろん"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "もちろん",
+        "part_of_speech": "adverb",
+        "homophone_group": null,
+        "usage_domain": "reaction",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요; ん 주의"
+      }
+    },
+    {
+      "id": "dict_ja_reaction_017",
+      "priority": 1037,
+      "aliases": [
+        "이이네"
+      ],
+      "surfaces": [
+        "いいね"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "いいね",
+        "part_of_speech": "expression",
+        "homophone_group": null,
+        "usage_domain": "reaction",
+        "politeness": "casual",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_reaction_018",
+      "priority": 2038,
+      "aliases": [
+        "스고이"
+      ],
+      "surfaces": [
+        "すごい"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "すごい",
+        "part_of_speech": "i_adjective",
+        "homophone_group": null,
+        "usage_domain": "reaction",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_reaction_019",
+      "priority": 2039,
+      "aliases": [
+        "야바이"
+      ],
+      "surfaces": [
+        "やばい"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "やばい",
+        "part_of_speech": "i_adjective",
+        "homophone_group": null,
+        "usage_domain": "reaction",
+        "politeness": "casual",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_reaction_020",
+      "priority": 2040,
+      "aliases": [
+        "엣"
+      ],
+      "surfaces": [
+        "えっ"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "えっ",
+        "part_of_speech": "interjection",
+        "homophone_group": null,
+        "usage_domain": "reaction",
+        "politeness": "casual",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요; 촉음 주의"
+      }
+    },
+    {
+      "id": "dict_ja_emotion_001",
+      "priority": 241,
+      "aliases": [
+        "우레시이"
+      ],
+      "surfaces": [
+        "うれしい",
+        "嬉しい"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "うれしい",
+        "part_of_speech": "i_adjective",
+        "homophone_group": null,
+        "usage_domain": "emotion",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_emotion_002",
+      "priority": 242,
+      "aliases": [
+        "타노시이"
+      ],
+      "surfaces": [
+        "楽しい",
+        "たのしい"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "たのしい",
+        "part_of_speech": "i_adjective",
+        "homophone_group": null,
+        "usage_domain": "emotion",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_emotion_003",
+      "priority": 243,
+      "aliases": [
+        "카나시이"
+      ],
+      "surfaces": [
+        "悲しい",
+        "かなしい"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "かなしい",
+        "part_of_speech": "i_adjective",
+        "homophone_group": null,
+        "usage_domain": "emotion",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_emotion_004",
+      "priority": 244,
+      "aliases": [
+        "사비시이"
+      ],
+      "surfaces": [
+        "寂しい",
+        "さびしい"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "さびしい",
+        "part_of_speech": "i_adjective",
+        "homophone_group": null,
+        "usage_domain": "emotion",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_emotion_005",
+      "priority": 245,
+      "aliases": [
+        "코와이"
+      ],
+      "surfaces": [
+        "怖い",
+        "こわい"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "こわい",
+        "part_of_speech": "i_adjective",
+        "homophone_group": null,
+        "usage_domain": "emotion",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_emotion_006",
+      "priority": 246,
+      "aliases": [
+        "후안"
+      ],
+      "surfaces": [
+        "不安",
+        "ふあん"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "ふあん",
+        "part_of_speech": "na_adjective_noun",
+        "homophone_group": null,
+        "usage_domain": "emotion",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요; ん 주의"
+      }
+    },
+    {
+      "id": "dict_ja_emotion_007",
+      "priority": 247,
+      "aliases": [
+        "킨초오스루"
+      ],
+      "surfaces": [
+        "緊張する",
+        "きんちょうする"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "きんちょうする",
+        "part_of_speech": "verb",
+        "homophone_group": null,
+        "usage_domain": "emotion",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요; 요음, ん, 장음 주의"
+      }
+    },
+    {
+      "id": "dict_ja_emotion_008",
+      "priority": 248,
+      "aliases": [
+        "안신시타"
+      ],
+      "surfaces": [
+        "安心した",
+        "あんしんした"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "あんしんした",
+        "part_of_speech": "expression",
+        "homophone_group": null,
+        "usage_domain": "emotion",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요; ん 주의"
+      }
+    },
+    {
+      "id": "dict_ja_emotion_009",
+      "priority": 249,
+      "aliases": [
+        "빗쿠리시타"
+      ],
+      "surfaces": [
+        "びっくりした"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "びっくりした",
+        "part_of_speech": "expression",
+        "homophone_group": null,
+        "usage_domain": "emotion",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요; 촉음 주의"
+      }
+    },
+    {
+      "id": "dict_ja_emotion_010",
+      "priority": 250,
+      "aliases": [
+        "하즈카시이"
+      ],
+      "surfaces": [
+        "恥ずかしい",
+        "はずかしい"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "はずかしい",
+        "part_of_speech": "i_adjective",
+        "homophone_group": null,
+        "usage_domain": "emotion",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_emotion_011",
+      "priority": 1051,
+      "aliases": [
+        "하라가타츠"
+      ],
+      "surfaces": [
+        "腹が立つ",
+        "はらがたつ"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "はらがたつ",
+        "part_of_speech": "expression",
+        "homophone_group": null,
+        "usage_domain": "emotion",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_emotion_012",
+      "priority": 1052,
+      "aliases": [
+        "이라이라스루"
+      ],
+      "surfaces": [
+        "イライラする",
+        "いらいらする"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "いらいらする",
+        "part_of_speech": "verb",
+        "homophone_group": null,
+        "usage_domain": "emotion",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_emotion_013",
+      "priority": 1053,
+      "aliases": [
+        "츠카레타"
+      ],
+      "surfaces": [
+        "疲れた",
+        "つかれた"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "つかれた",
+        "part_of_speech": "expression",
+        "homophone_group": null,
+        "usage_domain": "emotion",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_emotion_014",
+      "priority": 1054,
+      "aliases": [
+        "네무이"
+      ],
+      "surfaces": [
+        "眠い",
+        "ねむい"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "ねむい",
+        "part_of_speech": "i_adjective",
+        "homophone_group": null,
+        "usage_domain": "emotion",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_emotion_015",
+      "priority": 1055,
+      "aliases": [
+        "츠라이"
+      ],
+      "surfaces": [
+        "つらい"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "つらい",
+        "part_of_speech": "i_adjective",
+        "homophone_group": null,
+        "usage_domain": "emotion",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_emotion_016",
+      "priority": 1056,
+      "aliases": [
+        "시아와세"
+      ],
+      "surfaces": [
+        "幸せ",
+        "しあわせ"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "しあわせ",
+        "part_of_speech": "na_adjective_noun",
+        "homophone_group": null,
+        "usage_domain": "emotion",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_emotion_017",
+      "priority": 1057,
+      "aliases": [
+        "다이스키"
+      ],
+      "surfaces": [
+        "大好き",
+        "だいすき"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "だいすき",
+        "part_of_speech": "na_adjective",
+        "homophone_group": null,
+        "usage_domain": "emotion",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_emotion_018",
+      "priority": 2058,
+      "aliases": [
+        "스키"
+      ],
+      "surfaces": [
+        "好き",
+        "すき"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "すき",
+        "part_of_speech": "na_adjective",
+        "homophone_group": null,
+        "usage_domain": "emotion",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_emotion_019",
+      "priority": 2059,
+      "aliases": [
+        "니가테"
+      ],
+      "surfaces": [
+        "苦手",
+        "にがて"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "にがて",
+        "part_of_speech": "na_adjective_noun",
+        "homophone_group": null,
+        "usage_domain": "emotion",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_emotion_020",
+      "priority": 2060,
+      "aliases": [
+        "신파이"
+      ],
+      "surfaces": [
+        "心配",
+        "しんぱい"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "しんぱい",
+        "part_of_speech": "na_adjective_noun",
+        "homophone_group": null,
+        "usage_domain": "emotion",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요; ん 주의"
+      }
+    },
+    {
+      "id": "dict_ja_plans_001",
+      "priority": 261,
+      "aliases": [
+        "쿄오아에루"
+      ],
+      "surfaces": [
+        "今日会える？",
+        "きょうあえる？"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "きょうあえる",
+        "part_of_speech": "expression",
+        "homophone_group": null,
+        "usage_domain": "plans",
+        "politeness": "casual",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요; 요음, 장음 주의"
+      }
+    },
+    {
+      "id": "dict_ja_plans_002",
+      "priority": 262,
+      "aliases": [
+        "아시타아오오"
+      ],
+      "surfaces": [
+        "明日会おう",
+        "あしたあおう"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "あしたあおう",
+        "part_of_speech": "expression",
+        "homophone_group": null,
+        "usage_domain": "plans",
+        "politeness": "casual",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요; 장음 주의"
+      }
+    },
+    {
+      "id": "dict_ja_plans_003",
+      "priority": 263,
+      "aliases": [
+        "난지가이이"
+      ],
+      "surfaces": [
+        "何時がいい？",
+        "なんじがいい？"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "なんじがいい",
+        "part_of_speech": "expression",
+        "homophone_group": null,
+        "usage_domain": "plans",
+        "politeness": "casual",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요; ん 주의"
+      }
+    },
+    {
+      "id": "dict_ja_plans_004",
+      "priority": 264,
+      "aliases": [
+        "이츠아이테루"
+      ],
+      "surfaces": [
+        "いつ空いてる？",
+        "いつあいてる？"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "いつあいてる",
+        "part_of_speech": "expression",
+        "homophone_group": null,
+        "usage_domain": "plans",
+        "politeness": "casual",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_plans_005",
+      "priority": 265,
+      "aliases": [
+        "요테이아루"
+      ],
+      "surfaces": [
+        "予定ある？",
+        "よていある？"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "よていある",
+        "part_of_speech": "expression",
+        "homophone_group": null,
+        "usage_domain": "plans",
+        "politeness": "casual",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_plans_006",
+      "priority": 266,
+      "aliases": [
+        "요테이나이"
+      ],
+      "surfaces": [
+        "予定ない",
+        "よていない"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "よていない",
+        "part_of_speech": "expression",
+        "homophone_group": null,
+        "usage_domain": "plans",
+        "politeness": "casual",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_plans_007",
+      "priority": 267,
+      "aliases": [
+        "야쿠소쿠시요오"
+      ],
+      "surfaces": [
+        "約束しよう",
+        "やくそくしよう"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "やくそくしよう",
+        "part_of_speech": "expression",
+        "homophone_group": null,
+        "usage_domain": "plans",
+        "politeness": "casual",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_plans_008",
+      "priority": 268,
+      "aliases": [
+        "마타콘도"
+      ],
+      "surfaces": [
+        "また今度",
+        "またこんど"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "またこんど",
+        "part_of_speech": "expression",
+        "homophone_group": null,
+        "usage_domain": "plans",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요; ん 주의"
+      }
+    },
+    {
+      "id": "dict_ja_plans_009",
+      "priority": 269,
+      "aliases": [
+        "아토데렌라쿠스루"
+      ],
+      "surfaces": [
+        "後で連絡する",
+        "あとでれんらくする"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "あとでれんらくする",
+        "part_of_speech": "expression",
+        "homophone_group": null,
+        "usage_domain": "plans",
+        "politeness": "casual",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요; ん 주의"
+      }
+    },
+    {
+      "id": "dict_ja_plans_010",
+      "priority": 270,
+      "aliases": [
+        "츠이타라렌라쿠시테"
+      ],
+      "surfaces": [
+        "着いたら連絡して",
+        "ついたられんらくして"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "ついたられんらくして",
+        "part_of_speech": "expression",
+        "homophone_group": null,
+        "usage_domain": "plans",
+        "politeness": "casual",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요; ん 주의"
+      }
+    },
+    {
+      "id": "dict_ja_plans_011",
+      "priority": 1071,
+      "aliases": [
+        "스코시오쿠레루"
+      ],
+      "surfaces": [
+        "少し遅れる",
+        "すこしおくれる"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "すこしおくれる",
+        "part_of_speech": "expression",
+        "homophone_group": null,
+        "usage_domain": "plans",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_plans_012",
+      "priority": 1072,
+      "aliases": [
+        "모오스구츠쿠"
+      ],
+      "surfaces": [
+        "もうすぐ着く",
+        "もうすぐつく"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "もうすぐつく",
+        "part_of_speech": "expression",
+        "homophone_group": null,
+        "usage_domain": "plans",
+        "politeness": "casual",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_plans_013",
+      "priority": 1073,
+      "aliases": [
+        "맛테테"
+      ],
+      "surfaces": [
+        "待ってて",
+        "まってて"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "まってて",
+        "part_of_speech": "expression",
+        "homophone_group": null,
+        "usage_domain": "plans",
+        "politeness": "casual",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요; 촉음 주의"
+      }
+    },
+    {
+      "id": "dict_ja_plans_014",
+      "priority": 1074,
+      "aliases": [
+        "사키니잇테"
+      ],
+      "surfaces": [
+        "先に行って",
+        "さきにいって"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "さきにいって",
+        "part_of_speech": "expression",
+        "homophone_group": null,
+        "usage_domain": "plans",
+        "politeness": "casual",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요; 촉음 주의"
+      }
+    },
+    {
+      "id": "dict_ja_plans_015",
+      "priority": 1075,
+      "aliases": [
+        "잇쇼니이코오"
+      ],
+      "surfaces": [
+        "一緒に行こう",
+        "いっしょにいこう"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "いっしょにいこう",
+        "part_of_speech": "expression",
+        "homophone_group": null,
+        "usage_domain": "plans",
+        "politeness": "casual",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요; 촉음, 요음, 장음 주의"
+      }
+    },
+    {
+      "id": "dict_ja_plans_016",
+      "priority": 1076,
+      "aliases": [
+        "요테이오이레타"
+      ],
+      "surfaces": [
+        "予定を入れた",
+        "よていをいれた"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "よていをいれた",
+        "part_of_speech": "expression",
+        "homophone_group": null,
+        "usage_domain": "plans",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_plans_017",
+      "priority": 1077,
+      "aliases": [
+        "캰세루스루"
+      ],
+      "surfaces": [
+        "キャンセルする",
+        "きゃんせるする"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "きゃんせるする",
+        "part_of_speech": "verb",
+        "homophone_group": null,
+        "usage_domain": "plans",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요; 요음, ん 주의"
+      }
+    },
+    {
+      "id": "dict_ja_plans_018",
+      "priority": 2078,
+      "aliases": [
+        "헨코오데키루"
+      ],
+      "surfaces": [
+        "変更できる？",
+        "へんこうできる？"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "へんこうできる",
+        "part_of_speech": "expression",
+        "homophone_group": null,
+        "usage_domain": "plans",
+        "politeness": "casual",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요; ん, 장음 주의"
+      }
+    },
+    {
+      "id": "dict_ja_plans_019",
+      "priority": 2079,
+      "aliases": [
+        "다이조오부나히오오시에테"
+      ],
+      "surfaces": [
+        "大丈夫な日を教えて",
+        "だいじょうぶなひをおしえて"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "だいじょうぶなひをおしえて",
+        "part_of_speech": "expression",
+        "homophone_group": null,
+        "usage_domain": "plans",
+        "politeness": "casual",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요; 요음, 장음 주의"
+      }
+    },
+    {
+      "id": "dict_ja_plans_020",
+      "priority": 2080,
+      "aliases": [
+        "라이슈우도오"
+      ],
+      "surfaces": [
+        "来週どう？",
+        "らいしゅうどう？"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "らいしゅうどう",
+        "part_of_speech": "expression",
+        "homophone_group": null,
+        "usage_domain": "plans",
+        "politeness": "casual",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요; 요음, 장음 주의"
+      }
+    },
+    {
+      "id": "dict_ja_time_001",
+      "priority": 281,
+      "aliases": [
+        "이마"
+      ],
+      "surfaces": [
+        "今",
+        "いま"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "いま",
+        "part_of_speech": "noun_adverb",
+        "homophone_group": null,
+        "usage_domain": "time",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_time_002",
+      "priority": 282,
+      "aliases": [
+        "쿄오"
+      ],
+      "surfaces": [
+        "今日",
+        "きょう"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "きょう",
+        "part_of_speech": "noun_adverb",
+        "homophone_group": null,
+        "usage_domain": "time",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요; 요음, 장음 주의"
+      }
+    },
+    {
+      "id": "dict_ja_time_003",
+      "priority": 283,
+      "aliases": [
+        "아시타"
+      ],
+      "surfaces": [
+        "明日",
+        "あした"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "あした",
+        "part_of_speech": "noun_adverb",
+        "homophone_group": null,
+        "usage_domain": "time",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_time_004",
+      "priority": 284,
+      "aliases": [
+        "키노오"
+      ],
+      "surfaces": [
+        "昨日",
+        "きのう"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "きのう",
+        "part_of_speech": "noun_adverb",
+        "homophone_group": null,
+        "usage_domain": "time",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_time_005",
+      "priority": 285,
+      "aliases": [
+        "아사"
+      ],
+      "surfaces": [
+        "朝",
+        "あさ"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "あさ",
+        "part_of_speech": "noun",
+        "homophone_group": null,
+        "usage_domain": "time",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_time_006",
+      "priority": 286,
+      "aliases": [
+        "히루"
+      ],
+      "surfaces": [
+        "昼",
+        "ひる"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "ひる",
+        "part_of_speech": "noun",
+        "homophone_group": null,
+        "usage_domain": "time",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_time_007",
+      "priority": 287,
+      "aliases": [
+        "요루"
+      ],
+      "surfaces": [
+        "夜",
+        "よる"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "よる",
+        "part_of_speech": "noun",
+        "homophone_group": null,
+        "usage_domain": "time",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_time_008",
+      "priority": 288,
+      "aliases": [
+        "고젠"
+      ],
+      "surfaces": [
+        "午前",
+        "ごぜん"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "ごぜん",
+        "part_of_speech": "noun",
+        "homophone_group": null,
+        "usage_domain": "time",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요; ん 주의"
+      }
+    },
+    {
+      "id": "dict_ja_time_009",
+      "priority": 289,
+      "aliases": [
+        "고고"
+      ],
+      "surfaces": [
+        "午後",
+        "ごご"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "ごご",
+        "part_of_speech": "noun",
+        "homophone_group": null,
+        "usage_domain": "time",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_time_010",
+      "priority": 290,
+      "aliases": [
+        "난지"
+      ],
+      "surfaces": [
+        "何時",
+        "なんじ"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "なんじ",
+        "part_of_speech": "noun",
+        "homophone_group": null,
+        "usage_domain": "time",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요; ん 주의"
+      }
+    },
+    {
+      "id": "dict_ja_time_011",
+      "priority": 1091,
+      "aliases": [
+        "난푼"
+      ],
+      "surfaces": [
+        "何分",
+        "なんぷん"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "なんぷん",
+        "part_of_speech": "noun",
+        "homophone_group": null,
+        "usage_domain": "time",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요; ん 주의"
+      }
+    },
+    {
+      "id": "dict_ja_time_012",
+      "priority": 1092,
+      "aliases": [
+        "스구"
+      ],
+      "surfaces": [
+        "すぐ"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "すぐ",
+        "part_of_speech": "adverb",
+        "homophone_group": null,
+        "usage_domain": "time",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_time_013",
+      "priority": 1093,
+      "aliases": [
+        "삿키"
+      ],
+      "surfaces": [
+        "さっき"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "さっき",
+        "part_of_speech": "adverb",
+        "homophone_group": null,
+        "usage_domain": "time",
+        "politeness": "casual",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요; 촉음 주의"
+      }
+    },
+    {
+      "id": "dict_ja_time_014",
+      "priority": 1094,
+      "aliases": [
+        "아토데"
+      ],
+      "surfaces": [
+        "あとで",
+        "後で"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "あとで",
+        "part_of_speech": "adverb",
+        "homophone_group": null,
+        "usage_domain": "time",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_time_015",
+      "priority": 1095,
+      "aliases": [
+        "콘슈우"
+      ],
+      "surfaces": [
+        "今週",
+        "こんしゅう"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "こんしゅう",
+        "part_of_speech": "noun_adverb",
+        "homophone_group": null,
+        "usage_domain": "time",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요; 요음, ん, 장음 주의"
+      }
+    },
+    {
+      "id": "dict_ja_time_016",
+      "priority": 1096,
+      "aliases": [
+        "라이슈우"
+      ],
+      "surfaces": [
+        "来週",
+        "らいしゅう"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "らいしゅう",
+        "part_of_speech": "noun_adverb",
+        "homophone_group": null,
+        "usage_domain": "time",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요; 요음, 장음 주의"
+      }
+    },
+    {
+      "id": "dict_ja_time_017",
+      "priority": 1097,
+      "aliases": [
+        "센슈우"
+      ],
+      "surfaces": [
+        "先週",
+        "せんしゅう"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "せんしゅう",
+        "part_of_speech": "noun_adverb",
+        "homophone_group": null,
+        "usage_domain": "time",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요; 요음, ん, 장음 주의"
+      }
+    },
+    {
+      "id": "dict_ja_time_018",
+      "priority": 2098,
+      "aliases": [
+        "콘게츠"
+      ],
+      "surfaces": [
+        "今月",
+        "こんげつ"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "こんげつ",
+        "part_of_speech": "noun_adverb",
+        "homophone_group": null,
+        "usage_domain": "time",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요; ん 주의"
+      }
+    },
+    {
+      "id": "dict_ja_time_019",
+      "priority": 2099,
+      "aliases": [
+        "라이게츠"
+      ],
+      "surfaces": [
+        "来月",
+        "らいげつ"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "らいげつ",
+        "part_of_speech": "noun_adverb",
+        "homophone_group": null,
+        "usage_domain": "time",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_time_020",
+      "priority": 2100,
+      "aliases": [
+        "슈우마츠"
+      ],
+      "surfaces": [
+        "週末",
+        "しゅうまつ"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "しゅうまつ",
+        "part_of_speech": "noun_adverb",
+        "homophone_group": null,
+        "usage_domain": "time",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요; 요음, 장음 주의"
+      }
+    },
+    {
+      "id": "dict_ja_weather_001",
+      "priority": 301,
+      "aliases": [
+        "텐키"
+      ],
+      "surfaces": [
+        "天気",
+        "てんき"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "てんき",
+        "part_of_speech": "noun",
+        "homophone_group": null,
+        "usage_domain": "weather",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요; ん 주의"
+      }
+    },
+    {
+      "id": "dict_ja_weather_002",
+      "priority": 302,
+      "aliases": [
+        "하레"
+      ],
+      "surfaces": [
+        "晴れ",
+        "はれ"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "はれ",
+        "part_of_speech": "noun",
+        "homophone_group": null,
+        "usage_domain": "weather",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_weather_003",
+      "priority": 303,
+      "aliases": [
+        "쿠모리"
+      ],
+      "surfaces": [
+        "曇り",
+        "くもり"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "くもり",
+        "part_of_speech": "noun",
+        "homophone_group": null,
+        "usage_domain": "weather",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_weather_004",
+      "priority": 304,
+      "aliases": [
+        "아메"
+      ],
+      "surfaces": [
+        "雨",
+        "あめ"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "あめ",
+        "part_of_speech": "noun",
+        "homophone_group": null,
+        "usage_domain": "weather",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_weather_005",
+      "priority": 305,
+      "aliases": [
+        "유키"
+      ],
+      "surfaces": [
+        "雪",
+        "ゆき"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "ゆき",
+        "part_of_speech": "noun",
+        "homophone_group": null,
+        "usage_domain": "weather",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_weather_006",
+      "priority": 306,
+      "aliases": [
+        "카제"
+      ],
+      "surfaces": [
+        "風",
+        "かぜ"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "かぜ",
+        "part_of_speech": "noun",
+        "homophone_group": null,
+        "usage_domain": "weather",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_weather_007",
+      "priority": 307,
+      "aliases": [
+        "타이후우"
+      ],
+      "surfaces": [
+        "台風",
+        "たいふう"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "たいふう",
+        "part_of_speech": "noun",
+        "homophone_group": null,
+        "usage_domain": "weather",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_weather_008",
+      "priority": 308,
+      "aliases": [
+        "아츠이"
+      ],
+      "surfaces": [
+        "暑い",
+        "あつい"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "あつい",
+        "part_of_speech": "i_adjective",
+        "homophone_group": null,
+        "usage_domain": "weather",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_weather_009",
+      "priority": 309,
+      "aliases": [
+        "사무이"
+      ],
+      "surfaces": [
+        "寒い",
+        "さむい"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "さむい",
+        "part_of_speech": "i_adjective",
+        "homophone_group": null,
+        "usage_domain": "weather",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_weather_010",
+      "priority": 310,
+      "aliases": [
+        "아타타카이"
+      ],
+      "surfaces": [
+        "暖かい",
+        "あたたかい"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "あたたかい",
+        "part_of_speech": "i_adjective",
+        "homophone_group": null,
+        "usage_domain": "weather",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_weather_011",
+      "priority": 1111,
+      "aliases": [
+        "스즈시이"
+      ],
+      "surfaces": [
+        "涼しい",
+        "すずしい"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "すずしい",
+        "part_of_speech": "i_adjective",
+        "homophone_group": null,
+        "usage_domain": "weather",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_weather_012",
+      "priority": 1112,
+      "aliases": [
+        "무시아츠이"
+      ],
+      "surfaces": [
+        "蒸し暑い",
+        "むしあつい"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "むしあつい",
+        "part_of_speech": "i_adjective",
+        "homophone_group": null,
+        "usage_domain": "weather",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_weather_013",
+      "priority": 1113,
+      "aliases": [
+        "칸소오시테루"
+      ],
+      "surfaces": [
+        "乾燥してる",
+        "かんそうしてる"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "かんそうしてる",
+        "part_of_speech": "expression",
+        "homophone_group": null,
+        "usage_domain": "weather",
+        "politeness": "casual",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요; ん, 장음 주의"
+      }
+    },
+    {
+      "id": "dict_ja_weather_014",
+      "priority": 1114,
+      "aliases": [
+        "아메가훗테루"
+      ],
+      "surfaces": [
+        "雨が降ってる",
+        "あめがふってる"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "あめがふってる",
+        "part_of_speech": "expression",
+        "homophone_group": null,
+        "usage_domain": "weather",
+        "politeness": "casual",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요; 촉음 주의"
+      }
+    },
+    {
+      "id": "dict_ja_weather_015",
+      "priority": 1115,
+      "aliases": [
+        "유키가훗테루"
+      ],
+      "surfaces": [
+        "雪が降ってる",
+        "ゆきがふってる"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "ゆきがふってる",
+        "part_of_speech": "expression",
+        "homophone_group": null,
+        "usage_domain": "weather",
+        "politeness": "casual",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요; 촉음 주의"
+      }
+    },
+    {
+      "id": "dict_ja_weather_016",
+      "priority": 1116,
+      "aliases": [
+        "이이텐키"
+      ],
+      "surfaces": [
+        "いい天気",
+        "いいてんき"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "いいてんき",
+        "part_of_speech": "expression",
+        "homophone_group": null,
+        "usage_domain": "weather",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요; ん 주의"
+      }
+    },
+    {
+      "id": "dict_ja_weather_017",
+      "priority": 1117,
+      "aliases": [
+        "텐키요호오"
+      ],
+      "surfaces": [
+        "天気予報",
+        "てんきよほう"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "てんきよほう",
+        "part_of_speech": "noun",
+        "homophone_group": null,
+        "usage_domain": "weather",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요; ん 주의"
+      }
+    },
+    {
+      "id": "dict_ja_weather_018",
+      "priority": 2118,
+      "aliases": [
+        "카사"
+      ],
+      "surfaces": [
+        "傘",
+        "かさ"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "かさ",
+        "part_of_speech": "noun",
+        "homophone_group": null,
+        "usage_domain": "weather",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_weather_019",
+      "priority": 2119,
+      "aliases": [
+        "카미나리"
+      ],
+      "surfaces": [
+        "雷",
+        "かみなり"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "かみなり",
+        "part_of_speech": "noun",
+        "homophone_group": null,
+        "usage_domain": "weather",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_weather_020",
+      "priority": 2120,
+      "aliases": [
+        "키온"
+      ],
+      "surfaces": [
+        "気温",
+        "きおん"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "きおん",
+        "part_of_speech": "noun",
+        "homophone_group": null,
+        "usage_domain": "weather",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요; ん 주의"
+      }
+    },
+    {
+      "id": "dict_ja_school_work_001",
+      "priority": 321,
+      "aliases": [
+        "각코오"
+      ],
+      "surfaces": [
+        "学校",
+        "がっこう"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "がっこう",
+        "part_of_speech": "noun",
+        "homophone_group": null,
+        "usage_domain": "school_work",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요; 촉음, 장음 주의"
+      }
+    },
+    {
+      "id": "dict_ja_school_work_002",
+      "priority": 322,
+      "aliases": [
+        "다이가쿠"
+      ],
+      "surfaces": [
+        "大学",
+        "だいがく"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "だいがく",
+        "part_of_speech": "noun",
+        "homophone_group": null,
+        "usage_domain": "school_work",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_school_work_003",
+      "priority": 323,
+      "aliases": [
+        "주교오"
+      ],
+      "surfaces": [
+        "授業",
+        "じゅぎょう"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "じゅぎょう",
+        "part_of_speech": "noun",
+        "homophone_group": null,
+        "usage_domain": "school_work",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요; 요음, 장음 주의"
+      }
+    },
+    {
+      "id": "dict_ja_school_work_004",
+      "priority": 324,
+      "aliases": [
+        "슈쿠다이"
+      ],
+      "surfaces": [
+        "宿題",
+        "しゅくだい"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "しゅくだい",
+        "part_of_speech": "noun",
+        "homophone_group": null,
+        "usage_domain": "school_work",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요; 요음 주의"
+      }
+    },
+    {
+      "id": "dict_ja_school_work_005",
+      "priority": 325,
+      "aliases": [
+        "시켄"
+      ],
+      "surfaces": [
+        "試験",
+        "しけん"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "しけん",
+        "part_of_speech": "noun",
+        "homophone_group": null,
+        "usage_domain": "school_work",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요; ん 주의"
+      }
+    },
+    {
+      "id": "dict_ja_school_work_006",
+      "priority": 326,
+      "aliases": [
+        "벤쿄오"
+      ],
+      "surfaces": [
+        "勉強",
+        "べんきょう"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "べんきょう",
+        "part_of_speech": "noun_verb",
+        "homophone_group": null,
+        "usage_domain": "school_work",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요; 요음, ん, 장음 주의"
+      }
+    },
+    {
+      "id": "dict_ja_school_work_007",
+      "priority": 327,
+      "aliases": [
+        "센세이"
+      ],
+      "surfaces": [
+        "先生",
+        "せんせい"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "せんせい",
+        "part_of_speech": "noun",
+        "homophone_group": null,
+        "usage_domain": "school_work",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요; ん 주의"
+      }
+    },
+    {
+      "id": "dict_ja_school_work_008",
+      "priority": 328,
+      "aliases": [
+        "가쿠세이"
+      ],
+      "surfaces": [
+        "学生",
+        "がくせい"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "がくせい",
+        "part_of_speech": "noun",
+        "homophone_group": null,
+        "usage_domain": "school_work",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_school_work_009",
+      "priority": 329,
+      "aliases": [
+        "카이샤"
+      ],
+      "surfaces": [
+        "会社",
+        "かいしゃ"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "かいしゃ",
+        "part_of_speech": "noun",
+        "homophone_group": null,
+        "usage_domain": "school_work",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요; 요음 주의"
+      }
+    },
+    {
+      "id": "dict_ja_school_work_010",
+      "priority": 330,
+      "aliases": [
+        "시고토"
+      ],
+      "surfaces": [
+        "仕事",
+        "しごと"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "しごと",
+        "part_of_speech": "noun",
+        "homophone_group": null,
+        "usage_domain": "school_work",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_school_work_011",
+      "priority": 1131,
+      "aliases": [
+        "카이기"
+      ],
+      "surfaces": [
+        "会議",
+        "かいぎ"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "かいぎ",
+        "part_of_speech": "noun",
+        "homophone_group": null,
+        "usage_domain": "school_work",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_school_work_012",
+      "priority": 1132,
+      "aliases": [
+        "슛킨"
+      ],
+      "surfaces": [
+        "出勤",
+        "しゅっきん"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "しゅっきん",
+        "part_of_speech": "noun_verb",
+        "homophone_group": null,
+        "usage_domain": "school_work",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요; 촉음, 요음, ん 주의"
+      }
+    },
+    {
+      "id": "dict_ja_school_work_013",
+      "priority": 1133,
+      "aliases": [
+        "타이킨"
+      ],
+      "surfaces": [
+        "退勤",
+        "たいきん"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "たいきん",
+        "part_of_speech": "noun_verb",
+        "homophone_group": null,
+        "usage_domain": "school_work",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요; ん 주의"
+      }
+    },
+    {
+      "id": "dict_ja_school_work_014",
+      "priority": 1134,
+      "aliases": [
+        "잔교오"
+      ],
+      "surfaces": [
+        "残業",
+        "ざんぎょう"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "ざんぎょう",
+        "part_of_speech": "noun_verb",
+        "homophone_group": null,
+        "usage_domain": "school_work",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요; 요음, ん, 장음 주의"
+      }
+    },
+    {
+      "id": "dict_ja_school_work_015",
+      "priority": 1135,
+      "aliases": [
+        "야스미"
+      ],
+      "surfaces": [
+        "休み",
+        "やすみ"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "やすみ",
+        "part_of_speech": "noun",
+        "homophone_group": null,
+        "usage_domain": "school_work",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_school_work_016",
+      "priority": 1136,
+      "aliases": [
+        "큐우케이"
+      ],
+      "surfaces": [
+        "休憩",
+        "きゅうけい"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "きゅうけい",
+        "part_of_speech": "noun_verb",
+        "homophone_group": null,
+        "usage_domain": "school_work",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요; 요음, 장음 주의"
+      }
+    },
+    {
+      "id": "dict_ja_school_work_017",
+      "priority": 1137,
+      "aliases": [
+        "메에루"
+      ],
+      "surfaces": [
+        "メール",
+        "めーる"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "メール",
+        "part_of_speech": "noun",
+        "homophone_group": null,
+        "usage_domain": "school_work",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요; 장음 주의"
+      }
+    },
+    {
+      "id": "dict_ja_school_work_018",
+      "priority": 2138,
+      "aliases": [
+        "시료오"
+      ],
+      "surfaces": [
+        "資料",
+        "しりょう"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "しりょう",
+        "part_of_speech": "noun",
+        "homophone_group": null,
+        "usage_domain": "school_work",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요; 요음, 장음 주의"
+      }
+    },
+    {
+      "id": "dict_ja_school_work_019",
+      "priority": 2139,
+      "aliases": [
+        "시메키리"
+      ],
+      "surfaces": [
+        "締め切り",
+        "しめきり"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "しめきり",
+        "part_of_speech": "noun",
+        "homophone_group": null,
+        "usage_domain": "school_work",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_school_work_020",
+      "priority": 2140,
+      "aliases": [
+        "이소가시이"
+      ],
+      "surfaces": [
+        "忙しい",
+        "いそがしい"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "いそがしい",
+        "part_of_speech": "i_adjective",
+        "homophone_group": null,
+        "usage_domain": "school_work",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_food_001",
+      "priority": 341,
+      "aliases": [
+        "고한"
+      ],
+      "surfaces": [
+        "ご飯",
+        "ごはん"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "ごはん",
+        "part_of_speech": "noun",
+        "homophone_group": null,
+        "usage_domain": "food",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요; ん 주의"
+      }
+    },
+    {
+      "id": "dict_ja_food_002",
+      "priority": 342,
+      "aliases": [
+        "아사고한"
+      ],
+      "surfaces": [
+        "朝ご飯",
+        "あさごはん"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "あさごはん",
+        "part_of_speech": "noun",
+        "homophone_group": null,
+        "usage_domain": "food",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요; ん 주의"
+      }
+    },
+    {
+      "id": "dict_ja_food_003",
+      "priority": 343,
+      "aliases": [
+        "히루고한"
+      ],
+      "surfaces": [
+        "昼ご飯",
+        "ひるごはん"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "ひるごはん",
+        "part_of_speech": "noun",
+        "homophone_group": null,
+        "usage_domain": "food",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요; ん 주의"
+      }
+    },
+    {
+      "id": "dict_ja_food_004",
+      "priority": 344,
+      "aliases": [
+        "반고한"
+      ],
+      "surfaces": [
+        "晩ご飯",
+        "ばんごはん"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "ばんごはん",
+        "part_of_speech": "noun",
+        "homophone_group": null,
+        "usage_domain": "food",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요; ん 주의"
+      }
+    },
+    {
+      "id": "dict_ja_food_005",
+      "priority": 345,
+      "aliases": [
+        "미즈"
+      ],
+      "surfaces": [
+        "水",
+        "みず"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "みず",
+        "part_of_speech": "noun",
+        "homophone_group": null,
+        "usage_domain": "food",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_food_006",
+      "priority": 346,
+      "aliases": [
+        "오차"
+      ],
+      "surfaces": [
+        "お茶",
+        "おちゃ"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "おちゃ",
+        "part_of_speech": "noun",
+        "homophone_group": null,
+        "usage_domain": "food",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요; 요음 주의"
+      }
+    },
+    {
+      "id": "dict_ja_food_007",
+      "priority": 347,
+      "aliases": [
+        "주우스"
+      ],
+      "surfaces": [
+        "ジュース",
+        "じゅーす"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "ジュース",
+        "part_of_speech": "noun",
+        "homophone_group": null,
+        "usage_domain": "food",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요; 요음, 장음 주의"
+      }
+    },
+    {
+      "id": "dict_ja_food_008",
+      "priority": 348,
+      "aliases": [
+        "규우뉴우"
+      ],
+      "surfaces": [
+        "牛乳",
+        "ぎゅうにゅう"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "ぎゅうにゅう",
+        "part_of_speech": "noun",
+        "homophone_group": null,
+        "usage_domain": "food",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요; 요음, 장음 주의"
+      }
+    },
+    {
+      "id": "dict_ja_food_009",
+      "priority": 349,
+      "aliases": [
+        "판"
+      ],
+      "surfaces": [
+        "パン",
+        "ぱん"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "パン",
+        "part_of_speech": "noun",
+        "homophone_group": null,
+        "usage_domain": "food",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_food_010",
+      "priority": 350,
+      "aliases": [
+        "라아멘"
+      ],
+      "surfaces": [
+        "ラーメン",
+        "らーめん"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "ラーメン",
+        "part_of_speech": "noun",
+        "homophone_group": null,
+        "usage_domain": "food",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요; 장음 주의"
+      }
+    },
+    {
+      "id": "dict_ja_food_011",
+      "priority": 1151,
+      "aliases": [
+        "우돈"
+      ],
+      "surfaces": [
+        "うどん"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "うどん",
+        "part_of_speech": "noun",
+        "homophone_group": null,
+        "usage_domain": "food",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요; ん 주의"
+      }
+    },
+    {
+      "id": "dict_ja_food_012",
+      "priority": 1152,
+      "aliases": [
+        "스시"
+      ],
+      "surfaces": [
+        "寿司",
+        "すし"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "すし",
+        "part_of_speech": "noun",
+        "homophone_group": null,
+        "usage_domain": "food",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_food_013",
+      "priority": 1153,
+      "aliases": [
+        "야키니쿠"
+      ],
+      "surfaces": [
+        "焼肉",
+        "やきにく"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "やきにく",
+        "part_of_speech": "noun",
+        "homophone_group": null,
+        "usage_domain": "food",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_food_014",
+      "priority": 1154,
+      "aliases": [
+        "카레에"
+      ],
+      "surfaces": [
+        "カレー",
+        "かれー"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "カレー",
+        "part_of_speech": "noun",
+        "homophone_group": null,
+        "usage_domain": "food",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요; 장음 주의"
+      }
+    },
+    {
+      "id": "dict_ja_food_015",
+      "priority": 1155,
+      "aliases": [
+        "오이시이"
+      ],
+      "surfaces": [
+        "おいしい",
+        "美味しい"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "おいしい",
+        "part_of_speech": "i_adjective",
+        "homophone_group": null,
+        "usage_domain": "food",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_food_016",
+      "priority": 1156,
+      "aliases": [
+        "마즈이"
+      ],
+      "surfaces": [
+        "まずい"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "まずい",
+        "part_of_speech": "i_adjective",
+        "homophone_group": null,
+        "usage_domain": "food",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_food_017",
+      "priority": 1157,
+      "aliases": [
+        "아마이"
+      ],
+      "surfaces": [
+        "甘い",
+        "あまい"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "あまい",
+        "part_of_speech": "i_adjective",
+        "homophone_group": null,
+        "usage_domain": "food",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_food_018",
+      "priority": 2158,
+      "aliases": [
+        "카라이"
+      ],
+      "surfaces": [
+        "辛い",
+        "からい"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "からい",
+        "part_of_speech": "i_adjective",
+        "homophone_group": null,
+        "usage_domain": "food",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_food_019",
+      "priority": 2159,
+      "aliases": [
+        "오나카스이타"
+      ],
+      "surfaces": [
+        "お腹すいた",
+        "おなかすいた"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "おなかすいた",
+        "part_of_speech": "expression",
+        "homophone_group": null,
+        "usage_domain": "food",
+        "politeness": "casual",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_food_020",
+      "priority": 2160,
+      "aliases": [
+        "고치소오사마"
+      ],
+      "surfaces": [
+        "ごちそうさま"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "ごちそうさま",
+        "part_of_speech": "expression",
+        "homophone_group": null,
+        "usage_domain": "food",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요; 장음 주의"
+      }
+    },
+    {
+      "id": "dict_ja_shopping_001",
+      "priority": 361,
+      "aliases": [
+        "카우"
+      ],
+      "surfaces": [
+        "買う",
+        "かう"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "かう",
+        "part_of_speech": "verb",
+        "homophone_group": null,
+        "usage_domain": "shopping",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_shopping_002",
+      "priority": 362,
+      "aliases": [
+        "우루"
+      ],
+      "surfaces": [
+        "売る",
+        "うる"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "うる",
+        "part_of_speech": "verb",
+        "homophone_group": null,
+        "usage_domain": "shopping",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_shopping_003",
+      "priority": 363,
+      "aliases": [
+        "미세"
+      ],
+      "surfaces": [
+        "店",
+        "みせ"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "みせ",
+        "part_of_speech": "noun",
+        "homophone_group": null,
+        "usage_domain": "shopping",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_shopping_004",
+      "priority": 364,
+      "aliases": [
+        "네단"
+      ],
+      "surfaces": [
+        "値段",
+        "ねだん"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "ねだん",
+        "part_of_speech": "noun",
+        "homophone_group": null,
+        "usage_domain": "shopping",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요; ん 주의"
+      }
+    },
+    {
+      "id": "dict_ja_shopping_005",
+      "priority": 365,
+      "aliases": [
+        "이쿠라"
+      ],
+      "surfaces": [
+        "いくら"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "いくら",
+        "part_of_speech": "interrogative",
+        "homophone_group": null,
+        "usage_domain": "shopping",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_shopping_006",
+      "priority": 366,
+      "aliases": [
+        "타카이"
+      ],
+      "surfaces": [
+        "高い",
+        "たかい"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "たかい",
+        "part_of_speech": "i_adjective",
+        "homophone_group": null,
+        "usage_domain": "shopping",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_shopping_007",
+      "priority": 367,
+      "aliases": [
+        "야스이"
+      ],
+      "surfaces": [
+        "安い",
+        "やすい"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "やすい",
+        "part_of_speech": "i_adjective",
+        "homophone_group": null,
+        "usage_domain": "shopping",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_shopping_008",
+      "priority": 368,
+      "aliases": [
+        "세에루"
+      ],
+      "surfaces": [
+        "セール",
+        "せーる"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "セール",
+        "part_of_speech": "noun",
+        "homophone_group": null,
+        "usage_domain": "shopping",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요; 장음 주의"
+      }
+    },
+    {
+      "id": "dict_ja_shopping_009",
+      "priority": 369,
+      "aliases": [
+        "와리비키"
+      ],
+      "surfaces": [
+        "割引",
+        "わりびき"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "わりびき",
+        "part_of_speech": "noun",
+        "homophone_group": null,
+        "usage_domain": "shopping",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_shopping_010",
+      "priority": 370,
+      "aliases": [
+        "레지"
+      ],
+      "surfaces": [
+        "レジ",
+        "れじ"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "レジ",
+        "part_of_speech": "noun",
+        "homophone_group": null,
+        "usage_domain": "shopping",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_shopping_011",
+      "priority": 1171,
+      "aliases": [
+        "겐킨"
+      ],
+      "surfaces": [
+        "現金",
+        "げんきん"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "げんきん",
+        "part_of_speech": "noun",
+        "homophone_group": null,
+        "usage_domain": "shopping",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요; ん 주의"
+      }
+    },
+    {
+      "id": "dict_ja_shopping_012",
+      "priority": 1172,
+      "aliases": [
+        "카아도"
+      ],
+      "surfaces": [
+        "カード",
+        "かーど"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "カード",
+        "part_of_speech": "noun",
+        "homophone_group": null,
+        "usage_domain": "shopping",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요; 장음 주의"
+      }
+    },
+    {
+      "id": "dict_ja_shopping_013",
+      "priority": 1173,
+      "aliases": [
+        "덴시마네에"
+      ],
+      "surfaces": [
+        "電子マネー",
+        "でんしマネー"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "でんしまねー",
+        "part_of_speech": "noun",
+        "homophone_group": null,
+        "usage_domain": "shopping",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요; ん, 장음 주의"
+      }
+    },
+    {
+      "id": "dict_ja_shopping_014",
+      "priority": 1174,
+      "aliases": [
+        "후쿠로"
+      ],
+      "surfaces": [
+        "袋",
+        "ふくろ"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "ふくろ",
+        "part_of_speech": "noun",
+        "homophone_group": null,
+        "usage_domain": "shopping",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_shopping_015",
+      "priority": 1175,
+      "aliases": [
+        "사이즈"
+      ],
+      "surfaces": [
+        "サイズ",
+        "さいず"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "サイズ",
+        "part_of_speech": "noun",
+        "homophone_group": null,
+        "usage_domain": "shopping",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_shopping_016",
+      "priority": 1176,
+      "aliases": [
+        "이로"
+      ],
+      "surfaces": [
+        "色",
+        "いろ"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "いろ",
+        "part_of_speech": "noun",
+        "homophone_group": null,
+        "usage_domain": "shopping",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_shopping_017",
+      "priority": 1177,
+      "aliases": [
+        "시챠쿠"
+      ],
+      "surfaces": [
+        "試着",
+        "しちゃく"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "しちゃく",
+        "part_of_speech": "noun_verb",
+        "homophone_group": null,
+        "usage_domain": "shopping",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요; 요음 주의"
+      }
+    },
+    {
+      "id": "dict_ja_shopping_018",
+      "priority": 2178,
+      "aliases": [
+        "자이코"
+      ],
+      "surfaces": [
+        "在庫",
+        "ざいこ"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "ざいこ",
+        "part_of_speech": "noun",
+        "homophone_group": null,
+        "usage_domain": "shopping",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_shopping_019",
+      "priority": 2179,
+      "aliases": [
+        "헨핀"
+      ],
+      "surfaces": [
+        "返品",
+        "へんぴん"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "へんぴん",
+        "part_of_speech": "noun_verb",
+        "homophone_group": null,
+        "usage_domain": "shopping",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요; ん 주의"
+      }
+    },
+    {
+      "id": "dict_ja_shopping_020",
+      "priority": 2180,
+      "aliases": [
+        "레시이토"
+      ],
+      "surfaces": [
+        "レシート",
+        "れしーと"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "レシート",
+        "part_of_speech": "noun",
+        "homophone_group": null,
+        "usage_domain": "shopping",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요; 장음 주의"
+      }
+    },
+    {
+      "id": "dict_ja_travel_transport_001",
+      "priority": 381,
+      "aliases": [
+        "료코오"
+      ],
+      "surfaces": [
+        "旅行",
+        "りょこう"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "りょこう",
+        "part_of_speech": "noun",
+        "homophone_group": null,
+        "usage_domain": "travel_transport",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요; 요음, 장음 주의"
+      }
+    },
+    {
+      "id": "dict_ja_travel_transport_002",
+      "priority": 382,
+      "aliases": [
+        "에키"
+      ],
+      "surfaces": [
+        "駅",
+        "えき"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "えき",
+        "part_of_speech": "noun",
+        "homophone_group": null,
+        "usage_domain": "travel_transport",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_travel_transport_003",
+      "priority": 383,
+      "aliases": [
+        "덴샤"
+      ],
+      "surfaces": [
+        "電車",
+        "でんしゃ"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "でんしゃ",
+        "part_of_speech": "noun",
+        "homophone_group": null,
+        "usage_domain": "travel_transport",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요; 요음, ん 주의"
+      }
+    },
+    {
+      "id": "dict_ja_travel_transport_004",
+      "priority": 384,
+      "aliases": [
+        "치카테츠"
+      ],
+      "surfaces": [
+        "地下鉄",
+        "ちかてつ"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "ちかてつ",
+        "part_of_speech": "noun",
+        "homophone_group": null,
+        "usage_domain": "travel_transport",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_travel_transport_005",
+      "priority": 385,
+      "aliases": [
+        "바스"
+      ],
+      "surfaces": [
+        "バス",
+        "ばす"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "バス",
+        "part_of_speech": "noun",
+        "homophone_group": null,
+        "usage_domain": "travel_transport",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_travel_transport_006",
+      "priority": 386,
+      "aliases": [
+        "타쿠시이"
+      ],
+      "surfaces": [
+        "タクシー",
+        "たくしー"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "タクシー",
+        "part_of_speech": "noun",
+        "homophone_group": null,
+        "usage_domain": "travel_transport",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요; 장음 주의"
+      }
+    },
+    {
+      "id": "dict_ja_travel_transport_007",
+      "priority": 387,
+      "aliases": [
+        "쿠우코오"
+      ],
+      "surfaces": [
+        "空港",
+        "くうこう"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "くうこう",
+        "part_of_speech": "noun",
+        "homophone_group": null,
+        "usage_domain": "travel_transport",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요; 장음 주의"
+      }
+    },
+    {
+      "id": "dict_ja_travel_transport_008",
+      "priority": 388,
+      "aliases": [
+        "히코오키"
+      ],
+      "surfaces": [
+        "飛行機",
+        "ひこうき"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "ひこうき",
+        "part_of_speech": "noun",
+        "homophone_group": null,
+        "usage_domain": "travel_transport",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요; 장음 주의"
+      }
+    },
+    {
+      "id": "dict_ja_travel_transport_009",
+      "priority": 389,
+      "aliases": [
+        "신칸센"
+      ],
+      "surfaces": [
+        "新幹線",
+        "しんかんせん"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "しんかんせん",
+        "part_of_speech": "noun",
+        "homophone_group": null,
+        "usage_domain": "travel_transport",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요; ん 주의"
+      }
+    },
+    {
+      "id": "dict_ja_travel_transport_010",
+      "priority": 390,
+      "aliases": [
+        "킷푸"
+      ],
+      "surfaces": [
+        "切符",
+        "きっぷ"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "きっぷ",
+        "part_of_speech": "noun",
+        "homophone_group": null,
+        "usage_domain": "travel_transport",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요; 촉음 주의"
+      }
+    },
+    {
+      "id": "dict_ja_travel_transport_011",
+      "priority": 1191,
+      "aliases": [
+        "노루"
+      ],
+      "surfaces": [
+        "乗る",
+        "のる"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "のる",
+        "part_of_speech": "verb",
+        "homophone_group": null,
+        "usage_domain": "travel_transport",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_travel_transport_012",
+      "priority": 1192,
+      "aliases": [
+        "오리루"
+      ],
+      "surfaces": [
+        "降りる",
+        "おりる"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "おりる",
+        "part_of_speech": "verb",
+        "homophone_group": null,
+        "usage_domain": "travel_transport",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_travel_transport_013",
+      "priority": 1193,
+      "aliases": [
+        "노리카에"
+      ],
+      "surfaces": [
+        "乗り換え",
+        "のりかえ"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "のりかえ",
+        "part_of_speech": "noun_verb",
+        "homophone_group": null,
+        "usage_domain": "travel_transport",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_travel_transport_014",
+      "priority": 1194,
+      "aliases": [
+        "데구치"
+      ],
+      "surfaces": [
+        "出口",
+        "でぐち"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "でぐち",
+        "part_of_speech": "noun",
+        "homophone_group": null,
+        "usage_domain": "travel_transport",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_travel_transport_015",
+      "priority": 1195,
+      "aliases": [
+        "이리구치"
+      ],
+      "surfaces": [
+        "入口",
+        "いりぐち"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "いりぐち",
+        "part_of_speech": "noun",
+        "homophone_group": null,
+        "usage_domain": "travel_transport",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_travel_transport_016",
+      "priority": 1196,
+      "aliases": [
+        "미기"
+      ],
+      "surfaces": [
+        "右",
+        "みぎ"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "みぎ",
+        "part_of_speech": "noun",
+        "homophone_group": null,
+        "usage_domain": "travel_transport",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_travel_transport_017",
+      "priority": 1197,
+      "aliases": [
+        "히다리"
+      ],
+      "surfaces": [
+        "左",
+        "ひだり"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "ひだり",
+        "part_of_speech": "noun",
+        "homophone_group": null,
+        "usage_domain": "travel_transport",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_travel_transport_018",
+      "priority": 2198,
+      "aliases": [
+        "맛스구"
+      ],
+      "surfaces": [
+        "まっすぐ",
+        "真っ直ぐ"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "まっすぐ",
+        "part_of_speech": "adverb",
+        "homophone_group": null,
+        "usage_domain": "travel_transport",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요; 촉음 주의"
+      }
+    },
+    {
+      "id": "dict_ja_travel_transport_019",
+      "priority": 2199,
+      "aliases": [
+        "호테루"
+      ],
+      "surfaces": [
+        "ホテル",
+        "ほてる"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "ホテル",
+        "part_of_speech": "noun",
+        "homophone_group": null,
+        "usage_domain": "travel_transport",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "dict_ja_travel_transport_020",
+      "priority": 2200,
+      "aliases": [
+        "요야쿠"
+      ],
+      "surfaces": [
+        "予約",
+        "よやく"
+      ],
+      "reviewStatus": "review_required",
+      "metadata": {
+        "kana_reading": "よやく",
+        "part_of_speech": "noun_verb",
+        "homophone_group": null,
+        "usage_domain": "travel_transport",
+        "politeness": "neutral",
+        "source": "chatgpt_manual_draft_2026-09-23_no_corpus_claim",
+        "notes": "자동 초안; 원어민 검수 필요"
+      }
+    },
+    {
+      "id": "game_ja_cafe_milk",
+      "priority": 2201,
+      "aliases": [
+        "미루쿠"
+      ],
+      "surfaces": [
+        "ミルク"
+      ]
+    },
+    {
+      "id": "game_ja_cafe_strawberry",
+      "priority": 2202,
+      "aliases": [
+        "이치고미루쿠"
+      ],
+      "surfaces": [
+        "いちごミルク"
+      ]
+    },
+    {
+      "id": "game_rain_ja_speed_001",
+      "priority": 2203,
+      "aliases": [
+        "히카리"
+      ],
+      "surfaces": [
+        "光"
+      ]
+    },
+    {
+      "id": "game_rain_ja_speed_004",
+      "priority": 2204,
+      "aliases": [
+        "쿠모"
+      ],
+      "surfaces": [
+        "雲"
+      ]
+    },
+    {
+      "id": "game_rain_ja_speed_005",
+      "priority": 2205,
+      "aliases": [
+        "호시"
+      ],
+      "surfaces": [
+        "星"
+      ]
+    },
+    {
+      "id": "game_rain_ja_speed_008",
+      "priority": 2206,
+      "aliases": [
+        "미치"
+      ],
+      "surfaces": [
+        "道"
+      ]
+    },
+    {
+      "id": "game_rain_ja_speed_011",
+      "priority": 2207,
+      "aliases": [
+        "하시루"
+      ],
+      "surfaces": [
+        "走る"
+      ]
+    },
+    {
+      "id": "game_rain_ja_speed_012",
+      "priority": 2208,
+      "aliases": [
+        "토마루"
+      ],
+      "surfaces": [
+        "止まる"
+      ]
+    },
+    {
+      "id": "game_rain_ja_speed_013",
+      "priority": 2209,
+      "aliases": [
+        "이소구"
+      ],
+      "surfaces": [
+        "急ぐ"
+      ]
+    },
+    {
+      "id": "game_rain_ja_speed_014",
+      "priority": 2210,
+      "aliases": [
+        "모도루"
+      ],
+      "surfaces": [
+        "戻る"
+      ]
+    },
+    {
+      "id": "game_rain_ja_speed_015",
+      "priority": 2211,
+      "aliases": [
+        "토부"
+      ],
+      "surfaces": [
+        "飛ぶ"
+      ]
+    },
+    {
+      "id": "game_rain_ja_speed_016",
+      "priority": 2212,
+      "aliases": [
+        "와라우"
+      ],
+      "surfaces": [
+        "笑う"
+      ]
+    },
+    {
+      "id": "game_rain_ja_speed_017",
+      "priority": 2213,
+      "aliases": [
+        "나쿠"
+      ],
+      "surfaces": [
+        "泣く"
+      ]
+    },
+    {
+      "id": "game_rain_ja_speed_018",
+      "priority": 2214,
+      "aliases": [
+        "오도로쿠"
+      ],
+      "surfaces": [
+        "驚く"
+      ]
+    },
+    {
+      "id": "game_rain_ja_speed_021",
+      "priority": 2215,
+      "aliases": [
+        "아오"
+      ],
+      "surfaces": [
+        "青"
+      ]
+    },
+    {
+      "id": "game_rain_ja_speed_022",
+      "priority": 2216,
+      "aliases": [
+        "아카"
+      ],
+      "surfaces": [
+        "赤"
+      ]
+    },
+    {
+      "id": "game_rain_ja_speed_023",
+      "priority": 2217,
+      "aliases": [
+        "시로"
+      ],
+      "surfaces": [
+        "白"
+      ]
+    },
+    {
+      "id": "game_rain_ja_speed_024",
+      "priority": 2218,
+      "aliases": [
+        "쿠로"
+      ],
+      "surfaces": [
+        "黒"
+      ]
+    },
+    {
+      "id": "game_rain_ja_speed_025",
+      "priority": 2219,
+      "aliases": [
+        "오토"
+      ],
+      "surfaces": [
+        "音"
+      ]
+    },
+    {
+      "id": "game_rain_ja_speed_026",
+      "priority": 2220,
+      "aliases": [
+        "코에"
+      ],
+      "surfaces": [
+        "声"
+      ]
+    },
+    {
+      "id": "game_rain_ja_speed_027",
+      "priority": 2221,
+      "aliases": [
+        "유메"
+      ],
+      "surfaces": [
+        "夢"
+      ]
+    },
+    {
+      "id": "game_rain_ja_speed_028",
+      "priority": 2222,
+      "aliases": [
+        "나미"
+      ],
+      "surfaces": [
+        "波"
+      ]
+    },
+    {
+      "id": "game_rain_ja_speed_029",
+      "priority": 2223,
+      "aliases": [
+        "소라"
+      ],
+      "surfaces": [
+        "空"
+      ]
+    },
+    {
+      "id": "game_rain_ja_speed_030",
+      "priority": 2224,
+      "aliases": [
+        "츠키"
+      ],
+      "surfaces": [
+        "月"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_short_daily_001",
+      "priority": 2225,
+      "aliases": [
+        "쿄오와이이텐키데스"
+      ],
+      "surfaces": [
+        "今日はいい天気です。"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_short_daily_002",
+      "priority": 2226,
+      "aliases": [
+        "이마춋토이소가시이데스"
+      ],
+      "surfaces": [
+        "今ちょっと忙しいです。"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_short_daily_003",
+      "priority": 2227,
+      "aliases": [
+        "모오이에니츠이타요"
+      ],
+      "surfaces": [
+        "もう家に着いたよ。"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_short_daily_004",
+      "priority": 2228,
+      "aliases": [
+        "쿄오와하야쿠네마스"
+      ],
+      "surfaces": [
+        "今日は早く寝ます。"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_short_daily_005",
+      "priority": 2229,
+      "aliases": [
+        "이마카라데카케마스"
+      ],
+      "surfaces": [
+        "今から出かけます。"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_short_plans_001",
+      "priority": 2230,
+      "aliases": [
+        "아시타잇쇼니이코오"
+      ],
+      "surfaces": [
+        "明日一緒に行こう。"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_short_plans_002",
+      "priority": 2231,
+      "aliases": [
+        "난지니아이마스카"
+      ],
+      "surfaces": [
+        "何時に会いますか？"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_short_plans_003",
+      "priority": 2232,
+      "aliases": [
+        "에키데맛테루네"
+      ],
+      "surfaces": [
+        "駅で待ってるね。"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_short_plans_004",
+      "priority": 2233,
+      "aliases": [
+        "스코시오쿠레마스"
+      ],
+      "surfaces": [
+        "少し遅れます。"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_short_plans_005",
+      "priority": 2234,
+      "aliases": [
+        "마타콘도아오오"
+      ],
+      "surfaces": [
+        "また今度会おう。"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_short_weather_001",
+      "priority": 2235,
+      "aliases": [
+        "쿄오와토테모아츠이데스"
+      ],
+      "surfaces": [
+        "今日はとても暑いです。"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_short_weather_002",
+      "priority": 2236,
+      "aliases": [
+        "소토와아메가훗테이마스"
+      ],
+      "surfaces": [
+        "外は雨が降っています。"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_short_weather_003",
+      "priority": 2237,
+      "aliases": [
+        "아시타와하레루카나"
+      ],
+      "surfaces": [
+        "明日は晴れるかな。"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_short_weather_004",
+      "priority": 2238,
+      "aliases": [
+        "쿄오와카제가츠요이데스"
+      ],
+      "surfaces": [
+        "今日は風が強いです。"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_short_weather_005",
+      "priority": 2239,
+      "aliases": [
+        "아사와스코시사무캇타"
+      ],
+      "surfaces": [
+        "朝は少し寒かった。"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_short_school_work_001",
+      "priority": 2240,
+      "aliases": [
+        "쿄오와주교오가아리마스"
+      ],
+      "surfaces": [
+        "今日は授業があります。"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_short_school_work_002",
+      "priority": 2241,
+      "aliases": [
+        "슈쿠다이와모오오왓타"
+      ],
+      "surfaces": [
+        "宿題はもう終わった。"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_short_school_work_003",
+      "priority": 2242,
+      "aliases": [
+        "고고니카이기가아리마스"
+      ],
+      "surfaces": [
+        "午後に会議があります。"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_short_school_work_004",
+      "priority": 2243,
+      "aliases": [
+        "메에루오카쿠닌시마스"
+      ],
+      "surfaces": [
+        "メールを確認します。"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_short_school_work_005",
+      "priority": 2244,
+      "aliases": [
+        "쿄오와잔교오시마센"
+      ],
+      "surfaces": [
+        "今日は残業しません。"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_short_food_001",
+      "priority": 2245,
+      "aliases": [
+        "오나카가스키마시타"
+      ],
+      "surfaces": [
+        "お腹がすきました。"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_short_food_002",
+      "priority": 2246,
+      "aliases": [
+        "히루고한와나니니스루"
+      ],
+      "surfaces": [
+        "昼ご飯は何にする？"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_short_food_003",
+      "priority": 2247,
+      "aliases": [
+        "코노라아멘와오이시이"
+      ],
+      "surfaces": [
+        "このラーメンはおいしい。"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_short_food_004",
+      "priority": 2248,
+      "aliases": [
+        "미즈오잇파이쿠다사이"
+      ],
+      "surfaces": [
+        "水を一杯ください。"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_short_food_005",
+      "priority": 2249,
+      "aliases": [
+        "아마이모노가타베타이"
+      ],
+      "surfaces": [
+        "甘いものが食べたい。"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_short_shopping_001",
+      "priority": 2250,
+      "aliases": [
+        "코레와이쿠라데스카"
+      ],
+      "surfaces": [
+        "これはいくらですか？"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_short_shopping_002",
+      "priority": 2251,
+      "aliases": [
+        "모오스코시야스쿠나리마스카"
+      ],
+      "surfaces": [
+        "もう少し安くなりますか？"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_short_shopping_003",
+      "priority": 2252,
+      "aliases": [
+        "코노사이즈오쿠다사이"
+      ],
+      "surfaces": [
+        "このサイズをください。"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_short_shopping_004",
+      "priority": 2253,
+      "aliases": [
+        "카아도데하라이마스"
+      ],
+      "surfaces": [
+        "カードで払います。"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_short_shopping_005",
+      "priority": 2254,
+      "aliases": [
+        "레시이토와이리마센"
+      ],
+      "surfaces": [
+        "レシートはいりません。"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_short_travel_001",
+      "priority": 2255,
+      "aliases": [
+        "츠기노에키데오리마스"
+      ],
+      "surfaces": [
+        "次の駅で降ります。"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_short_travel_002",
+      "priority": 2256,
+      "aliases": [
+        "코코카라치카이데스카"
+      ],
+      "surfaces": [
+        "ここから近いですか？"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_short_travel_003",
+      "priority": 2257,
+      "aliases": [
+        "쿠우코오마데오네가이시마스"
+      ],
+      "surfaces": [
+        "空港までお願いします。"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_short_travel_004",
+      "priority": 2258,
+      "aliases": [
+        "미기니마갓테쿠다사이"
+      ],
+      "surfaces": [
+        "右に曲がってください。"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_short_travel_005",
+      "priority": 2259,
+      "aliases": [
+        "호테루오요야쿠시마시타"
+      ],
+      "surfaces": [
+        "ホテルを予約しました。"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_short_sns_chat_001",
+      "priority": 2260,
+      "aliases": [
+        "이마나니시테루"
+      ],
+      "surfaces": [
+        "今何してる？"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_short_sns_chat_002",
+      "priority": 2261,
+      "aliases": [
+        "샤신오쿳테쿠레루"
+      ],
+      "surfaces": [
+        "写真送ってくれる？"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_short_sns_chat_003",
+      "priority": 2262,
+      "aliases": [
+        "아토데덴와시테이이"
+      ],
+      "surfaces": [
+        "あとで電話していい？"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_short_sns_chat_004",
+      "priority": 2263,
+      "aliases": [
+        "쿄오모간바로오"
+      ],
+      "surfaces": [
+        "今日も頑張ろう。"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_short_sns_chat_005",
+      "priority": 2264,
+      "aliases": [
+        "마타멧세에지스루네"
+      ],
+      "surfaces": [
+        "またメッセージするね。"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_original_041",
+      "priority": 2265,
+      "aliases": [
+        "키미노코에가요카제니토케테이쿠"
+      ],
+      "surfaces": [
+        "君の声が夜風に溶けていく"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_original_042",
+      "priority": 2266,
+      "aliases": [
+        "네무레나이마치데호시오카조에타"
+      ],
+      "surfaces": [
+        "眠れない街で星を数えた"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_original_043",
+      "priority": 2267,
+      "aliases": [
+        "아사야케노무코오니유메오사가시타"
+      ],
+      "surfaces": [
+        "朝焼けの向こうに夢を探した"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_original_044",
+      "priority": 2268,
+      "aliases": [
+        "치이사나유우키오포켓토니이레타"
+      ],
+      "surfaces": [
+        "小さな勇気をポケットに入れた"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_original_045",
+      "priority": 2269,
+      "aliases": [
+        "아메아가리노소라가스코시와랏테루"
+      ],
+      "surfaces": [
+        "雨上がりの空が少し笑ってる"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_original_046",
+      "priority": 2270,
+      "aliases": [
+        "사요나라노아토모우타와노코루"
+      ],
+      "surfaces": [
+        "さよならのあとも歌は残る"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_original_047",
+      "priority": 2271,
+      "aliases": [
+        "토오메이나지칸오키미토아루이타"
+      ],
+      "surfaces": [
+        "透明な時間を君と歩いた"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_original_048",
+      "priority": 2272,
+      "aliases": [
+        "토오이키세츠노니오이오오모이다스"
+      ],
+      "surfaces": [
+        "遠い季節の匂いを思い出す"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_original_049",
+      "priority": 2273,
+      "aliases": [
+        "난도데모코코카라하지메요오"
+      ],
+      "surfaces": [
+        "何度でもここから始めよう"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_original_050",
+      "priority": 2274,
+      "aliases": [
+        "츠키아카리가카에리미치오테라스"
+      ],
+      "surfaces": [
+        "月明かりが帰り道を照らす"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_original_051",
+      "priority": 2275,
+      "aliases": [
+        "시즈카나요루니코코로가호도케테이쿠"
+      ],
+      "surfaces": [
+        "静かな夜に心がほどけていく"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_original_052",
+      "priority": 2276,
+      "aliases": [
+        "키미토미타케시키오와스레나이"
+      ],
+      "surfaces": [
+        "君と見た景色を忘れない"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_original_053",
+      "priority": 2277,
+      "aliases": [
+        "하루노카제가아타라시이페에지오메쿠루"
+      ],
+      "surfaces": [
+        "春の風が新しいページをめくる"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_original_054",
+      "priority": 2278,
+      "aliases": [
+        "쿠모노스키마카라히카리가사시코무"
+      ],
+      "surfaces": [
+        "雲の隙間から光が差し込む"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_original_055",
+      "priority": 2279,
+      "aliases": [
+        "쿄오노나미다와아시타노츠요사니나루"
+      ],
+      "surfaces": [
+        "今日の涙は明日の強さになる"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_original_056",
+      "priority": 2280,
+      "aliases": [
+        "이츠카코노슌칸오나츠카시쿠오모우"
+      ],
+      "surfaces": [
+        "いつかこの瞬間を懐かしく思う"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_original_057",
+      "priority": 2281,
+      "aliases": [
+        "카제노오토다케가코타에오싯테이루"
+      ],
+      "surfaces": [
+        "風の音だけが答えを知っている"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_original_058",
+      "priority": 2282,
+      "aliases": [
+        "요루가아케루마데하나시테이타이"
+      ],
+      "surfaces": [
+        "夜が明けるまで話していたい"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_original_059",
+      "priority": 2283,
+      "aliases": [
+        "마욧타미치모이츠카오모이데니나루"
+      ],
+      "surfaces": [
+        "迷った道もいつか思い出になる"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_original_060",
+      "priority": 2284,
+      "aliases": [
+        "아타라시이쿠츠데아시타에아루키다스"
+      ],
+      "surfaces": [
+        "新しい靴で明日へ歩き出す"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_original_061",
+      "priority": 2285,
+      "aliases": [
+        "손나카오시나이데찬토하나소오"
+      ],
+      "surfaces": [
+        "そんな顔しないで、ちゃんと話そう。"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_original_062",
+      "priority": 2286,
+      "aliases": [
+        "혼토오니소레데이이노"
+      ],
+      "surfaces": [
+        "本当にそれでいいの？"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_original_063",
+      "priority": 2287,
+      "aliases": [
+        "오소쿠낫테고멘맛타"
+      ],
+      "surfaces": [
+        "遅くなってごめん、待った？"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_original_064",
+      "priority": 2288,
+      "aliases": [
+        "쿄오와카에리타쿠나이나"
+      ],
+      "surfaces": [
+        "今日は帰りたくないな。"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_original_065",
+      "priority": 2289,
+      "aliases": [
+        "다이조오부와타시가소바니이루요"
+      ],
+      "surfaces": [
+        "大丈夫、私がそばにいるよ。"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_original_066",
+      "priority": 2290,
+      "aliases": [
+        "소노하나시모오이치도키카세테"
+      ],
+      "surfaces": [
+        "その話、もう一度聞かせて。"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_original_067",
+      "priority": 2291,
+      "aliases": [
+        "코코다케노히미츠니시요오"
+      ],
+      "surfaces": [
+        "ここだけの秘密にしよう。"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_original_068",
+      "priority": 2292,
+      "aliases": [
+        "사키니잇테스구오이츠쿠카라"
+      ],
+      "surfaces": [
+        "先に行って、すぐ追いつくから。"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_original_069",
+      "priority": 2293,
+      "aliases": [
+        "도오시테나니모잇테쿠레나캇타노"
+      ],
+      "surfaces": [
+        "どうして何も言ってくれなかったの？"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_original_070",
+      "priority": 2294,
+      "aliases": [
+        "콘도와와타시노반다네"
+      ],
+      "surfaces": [
+        "今度は私の番だね。"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_original_071",
+      "priority": 2295,
+      "aliases": [
+        "야쿠소쿠시타코토오보에테루"
+      ],
+      "surfaces": [
+        "約束したこと、覚えてる？"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_original_072",
+      "priority": 2296,
+      "aliases": [
+        "모오니게나잇테키메타"
+      ],
+      "surfaces": [
+        "もう逃げないって決めた。"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_original_073",
+      "priority": 2297,
+      "aliases": [
+        "스코시다케히토리니시테"
+      ],
+      "surfaces": [
+        "少しだけ一人にして。"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_original_074",
+      "priority": 2298,
+      "aliases": [
+        "소노코토바오즛토맛테타"
+      ],
+      "surfaces": [
+        "その言葉をずっと待ってた。"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_original_075",
+      "priority": 2299,
+      "aliases": [
+        "쿄오와와타시가고치소오스루요"
+      ],
+      "surfaces": [
+        "今日は私がごちそうするよ。"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_original_076",
+      "priority": 2300,
+      "aliases": [
+        "덴와자나쿠테앗테하나시타이"
+      ],
+      "surfaces": [
+        "電話じゃなくて会って話したい。"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_original_077",
+      "priority": 2301,
+      "aliases": [
+        "신파이시탄다카라네"
+      ],
+      "surfaces": [
+        "心配したんだからね。"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_original_078",
+      "priority": 2302,
+      "aliases": [
+        "모오스코시다케코코니이테"
+      ],
+      "surfaces": [
+        "もう少しだけここにいて。"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_original_079",
+      "priority": 2303,
+      "aliases": [
+        "소레나라잇쇼니얏테미요오"
+      ],
+      "surfaces": [
+        "それなら一緒にやってみよう。"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_original_080",
+      "priority": 2304,
+      "aliases": [
+        "아시타니나레바킷토와라에루요"
+      ],
+      "surfaces": [
+        "明日になればきっと笑えるよ。"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_original_081",
+      "priority": 2305,
+      "aliases": [
+        "아마츠부가마도니치이사나미치오에가쿠"
+      ],
+      "surfaces": [
+        "雨粒が窓に小さな道を描く"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_original_082",
+      "priority": 2306,
+      "aliases": [
+        "아사노히카리가시로이카아텐오유라스"
+      ],
+      "surfaces": [
+        "朝の光が白いカーテンを揺らす"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_original_083",
+      "priority": 2307,
+      "aliases": [
+        "에키마에노토케이다케가이소이데이루"
+      ],
+      "surfaces": [
+        "駅前の時計だけが急いでいる"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_original_084",
+      "priority": 2308,
+      "aliases": [
+        "우미노무코오데유우히가윳쿠리시즈무"
+      ],
+      "surfaces": [
+        "海の向こうで夕日がゆっくり沈む"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_original_085",
+      "priority": 2309,
+      "aliases": [
+        "후유노이키가가이토오노시타데시로쿠나루"
+      ],
+      "surfaces": [
+        "冬の息が街灯の下で白くなる"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_original_086",
+      "priority": 2310,
+      "aliases": [
+        "혼노아이다니무카시노킷푸가네뭇테이타"
+      ],
+      "surfaces": [
+        "本の間に昔の切符が眠っていた"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_original_087",
+      "priority": 2311,
+      "aliases": [
+        "코모레비가미치니유레루모요오오츠쿠루"
+      ],
+      "surfaces": [
+        "木漏れ日が道に揺れる模様を作る"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_original_088",
+      "priority": 2312,
+      "aliases": [
+        "토오쿠노덴샤가요루오요코깃테이쿠"
+      ],
+      "surfaces": [
+        "遠くの電車が夜を横切っていく"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_original_089",
+      "priority": 2313,
+      "aliases": [
+        "후우린노오토니나츠노고고가호도케루"
+      ],
+      "surfaces": [
+        "風鈴の音に夏の午後がほどける"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_original_090",
+      "priority": 2314,
+      "aliases": [
+        "다레모이나이코오엔데부란코가유레루"
+      ],
+      "surfaces": [
+        "誰もいない公園でブランコが揺れる"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_original_091",
+      "priority": 2315,
+      "aliases": [
+        "유키노아사와마치노오토마데야와라카이"
+      ],
+      "surfaces": [
+        "雪の朝は街の音まで柔らかい"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_original_092",
+      "priority": 2316,
+      "aliases": [
+        "후루이샤신노나카데민나가와랏테이루"
+      ],
+      "surfaces": [
+        "古い写真の中でみんなが笑っている"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_original_093",
+      "priority": 2317,
+      "aliases": [
+        "치이사나킷사텐니코오히이노카오리가미치루"
+      ],
+      "surfaces": [
+        "小さな喫茶店に珈琲の香りが満ちる"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_original_094",
+      "priority": 2318,
+      "aliases": [
+        "유우다치노아토니츠치노니오이가노콧타"
+      ],
+      "surfaces": [
+        "夕立のあとに土の匂いが残った"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_original_095",
+      "priority": 2319,
+      "aliases": [
+        "요조라노히코오키가시즈카나센오히쿠"
+      ],
+      "surfaces": [
+        "夜空の飛行機が静かな線を引く"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_original_096",
+      "priority": 2320,
+      "aliases": [
+        "하루노아메가아타라시이하오누라시테이루"
+      ],
+      "surfaces": [
+        "春の雨が新しい葉を濡らしている"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_original_097",
+      "priority": 2321,
+      "aliases": [
+        "카와조이노미치오지텐샤가하싯테이쿠"
+      ],
+      "surfaces": [
+        "川沿いの道を自転車が走っていく"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_original_098",
+      "priority": 2322,
+      "aliases": [
+        "아사이치노코에가네무이마치오오코시테이쿠"
+      ],
+      "surfaces": [
+        "朝市の声が眠い町を起こしていく"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_original_099",
+      "priority": 2323,
+      "aliases": [
+        "후루이하시노우에데카제가스코시츠메타캇타"
+      ],
+      "surfaces": [
+        "古い橋の上で風が少し冷たかった"
+      ]
+    },
+    {
+      "id": "game_sentence_ja_original_100",
+      "priority": 2324,
+      "aliases": [
+        "쿠모가나가레테오나지소라와니도토모도라나이"
+      ],
+      "surfaces": [
+        "雲が流れて同じ空は二度と戻らない"
+      ]
+    },
+    {
+      "id": "game_cafe_ja_002",
+      "priority": 2325,
+      "aliases": [
+        "카페라테"
+      ],
+      "surfaces": [
+        "カフェラテ"
+      ]
+    },
+    {
+      "id": "game_cafe_ja_003",
+      "priority": 2326,
+      "aliases": [
+        "카푸치이노"
+      ],
+      "surfaces": [
+        "カプチーノ"
+      ]
+    },
+    {
+      "id": "game_cafe_ja_004",
+      "priority": 2327,
+      "aliases": [
+        "에스푸렛소"
+      ],
+      "surfaces": [
+        "エスプレッソ"
+      ]
+    },
+    {
+      "id": "game_cafe_ja_005",
+      "priority": 2328,
+      "aliases": [
+        "아메리카아노"
+      ],
+      "surfaces": [
+        "アメリカーノ"
+      ]
+    },
+    {
+      "id": "game_cafe_ja_006",
+      "priority": 2329,
+      "aliases": [
+        "카페모카"
+      ],
+      "surfaces": [
+        "カフェモカ"
+      ]
+    },
+    {
+      "id": "game_cafe_ja_007",
+      "priority": 2330,
+      "aliases": [
+        "맛차라테"
+      ],
+      "surfaces": [
+        "抹茶ラテ"
+      ]
+    },
+    {
+      "id": "game_cafe_ja_008",
+      "priority": 2331,
+      "aliases": [
+        "코오차"
+      ],
+      "surfaces": [
+        "紅茶"
+      ]
+    },
+    {
+      "id": "game_cafe_ja_009",
+      "priority": 2332,
+      "aliases": [
+        "미루쿠티이"
+      ],
+      "surfaces": [
+        "ミルクティー"
+      ]
+    },
+    {
+      "id": "game_cafe_ja_010",
+      "priority": 2333,
+      "aliases": [
+        "레몬티이"
+      ],
+      "surfaces": [
+        "レモンティー"
+      ]
+    },
+    {
+      "id": "game_cafe_ja_011",
+      "priority": 2334,
+      "aliases": [
+        "코코아"
+      ],
+      "surfaces": [
+        "ココア"
+      ]
+    },
+    {
+      "id": "game_cafe_ja_013",
+      "priority": 2335,
+      "aliases": [
+        "오렌지주우스"
+      ],
+      "surfaces": [
+        "オレンジジュース"
+      ]
+    },
+    {
+      "id": "game_cafe_ja_014",
+      "priority": 2336,
+      "aliases": [
+        "링고주우스"
+      ],
+      "surfaces": [
+        "リンゴジュース"
+      ]
+    },
+    {
+      "id": "game_cafe_ja_015",
+      "priority": 2337,
+      "aliases": [
+        "레모네에도"
+      ],
+      "surfaces": [
+        "レモネード"
+      ]
+    },
+    {
+      "id": "game_cafe_ja_016",
+      "priority": 2338,
+      "aliases": [
+        "스무우지이"
+      ],
+      "surfaces": [
+        "スムージー"
+      ]
+    },
+    {
+      "id": "game_cafe_ja_017",
+      "priority": 2339,
+      "aliases": [
+        "탄산스이"
+      ],
+      "surfaces": [
+        "炭酸水"
+      ]
+    },
+    {
+      "id": "game_cafe_ja_019",
+      "priority": 2340,
+      "aliases": [
+        "아이스티이"
+      ],
+      "surfaces": [
+        "アイスティー"
+      ]
+    },
+    {
+      "id": "game_cafe_ja_020",
+      "priority": 2341,
+      "aliases": [
+        "홋토코오히이"
+      ],
+      "surfaces": [
+        "ホットコーヒー"
+      ]
+    },
+    {
+      "id": "game_cafe_ja_021",
+      "priority": 2342,
+      "aliases": [
+        "쿠로왓산"
+      ],
+      "surfaces": [
+        "クロワッサン"
+      ]
+    },
+    {
+      "id": "game_cafe_ja_022",
+      "priority": 2343,
+      "aliases": [
+        "베에구루"
+      ],
+      "surfaces": [
+        "ベーグル"
+      ]
+    },
+    {
+      "id": "game_cafe_ja_023",
+      "priority": 2344,
+      "aliases": [
+        "마핀"
+      ],
+      "surfaces": [
+        "マフィン"
+      ]
+    },
+    {
+      "id": "game_cafe_ja_024",
+      "priority": 2345,
+      "aliases": [
+        "도오나츠"
+      ],
+      "surfaces": [
+        "ドーナツ"
+      ]
+    },
+    {
+      "id": "game_cafe_ja_025",
+      "priority": 2346,
+      "aliases": [
+        "산도잇치"
+      ],
+      "surfaces": [
+        "サンドイッチ"
+      ]
+    },
+    {
+      "id": "game_cafe_ja_026",
+      "priority": 2347,
+      "aliases": [
+        "토오스토"
+      ],
+      "surfaces": [
+        "トースト"
+      ]
+    },
+    {
+      "id": "game_cafe_ja_027",
+      "priority": 2348,
+      "aliases": [
+        "케에키"
+      ],
+      "surfaces": [
+        "ケーキ"
+      ]
+    },
+    {
+      "id": "game_cafe_ja_028",
+      "priority": 2349,
+      "aliases": [
+        "치이즈케에키"
+      ],
+      "surfaces": [
+        "チーズケーキ"
+      ]
+    },
+    {
+      "id": "game_cafe_ja_029",
+      "priority": 2350,
+      "aliases": [
+        "초코케에키"
+      ],
+      "surfaces": [
+        "チョコケーキ"
+      ]
+    },
+    {
+      "id": "game_cafe_ja_030",
+      "priority": 2351,
+      "aliases": [
+        "쿳키이"
+      ],
+      "surfaces": [
+        "クッキー"
+      ]
+    },
+    {
+      "id": "game_cafe_ja_031",
+      "priority": 2352,
+      "aliases": [
+        "스코온"
+      ],
+      "surfaces": [
+        "スコーン"
+      ]
+    },
+    {
+      "id": "game_cafe_ja_032",
+      "priority": 2353,
+      "aliases": [
+        "푸린"
+      ],
+      "surfaces": [
+        "プリン"
+      ]
+    },
+    {
+      "id": "game_cafe_ja_033",
+      "priority": 2354,
+      "aliases": [
+        "왓후루"
+      ],
+      "surfaces": [
+        "ワッフル"
+      ]
+    },
+    {
+      "id": "game_cafe_ja_035",
+      "priority": 2355,
+      "aliases": [
+        "자무"
+      ],
+      "surfaces": [
+        "ジャム"
+      ]
+    },
+    {
+      "id": "game_cafe_ja_036",
+      "priority": 2356,
+      "aliases": [
+        "바타아"
+      ],
+      "surfaces": [
+        "バター"
+      ]
+    },
+    {
+      "id": "game_cafe_ja_037",
+      "priority": 2357,
+      "aliases": [
+        "하치미츠"
+      ],
+      "surfaces": [
+        "はちみつ"
+      ]
+    },
+    {
+      "id": "game_cafe_ja_038",
+      "priority": 2358,
+      "aliases": [
+        "나마쿠리이무"
+      ],
+      "surfaces": [
+        "生クリーム"
+      ]
+    },
+    {
+      "id": "game_cafe_ja_039",
+      "priority": 2359,
+      "aliases": [
+        "초코레에토"
+      ],
+      "surfaces": [
+        "チョコレート"
+      ]
+    },
+    {
+      "id": "game_cafe_ja_040",
+      "priority": 2360,
+      "aliases": [
+        "이치고"
+      ],
+      "surfaces": [
+        "いちご"
+      ]
+    },
+    {
+      "id": "game_cafe_ja_041",
+      "priority": 2361,
+      "aliases": [
+        "바니라"
+      ],
+      "surfaces": [
+        "バニラ"
+      ]
+    },
+    {
+      "id": "game_cafe_ja_042",
+      "priority": 2362,
+      "aliases": [
+        "시롯푸"
+      ],
+      "surfaces": [
+        "シロップ"
+      ]
+    },
+    {
+      "id": "game_cafe_ja_043",
+      "priority": 2363,
+      "aliases": [
+        "코오리"
+      ],
+      "surfaces": [
+        "氷"
+      ]
+    },
+    {
+      "id": "game_cafe_ja_044",
+      "priority": 2364,
+      "aliases": [
+        "사토오"
+      ],
+      "surfaces": [
+        "砂糖"
+      ]
+    },
+    {
+      "id": "game_cafe_ja_045",
+      "priority": 2365,
+      "aliases": [
+        "미루쿠츠이카"
+      ],
+      "surfaces": [
+        "ミルク追加"
+      ]
+    },
+    {
+      "id": "game_cafe_ja_046",
+      "priority": 2366,
+      "aliases": [
+        "숏토츠이카"
+      ],
+      "surfaces": [
+        "ショット追加"
+      ]
+    },
+    {
+      "id": "game_cafe_ja_047",
+      "priority": 2367,
+      "aliases": [
+        "코오리스쿠나메"
+      ],
+      "surfaces": [
+        "氷少なめ"
+      ]
+    },
+    {
+      "id": "game_cafe_ja_048",
+      "priority": 2368,
+      "aliases": [
+        "아마사히카에메"
+      ],
+      "surfaces": [
+        "甘さ控えめ"
+      ]
+    },
+    {
+      "id": "game_cafe_ja_049",
+      "priority": 2369,
+      "aliases": [
+        "모치카에리"
+      ],
+      "surfaces": [
+        "持ち帰り"
+      ]
+    },
+    {
+      "id": "game_cafe_ja_050",
+      "priority": 2370,
+      "aliases": [
+        "텐나이"
+      ],
+      "surfaces": [
+        "店内"
+      ]
+    },
+    {
+      "id": "game_cafe_ja_051",
+      "priority": 2371,
+      "aliases": [
+        "추우몬"
+      ],
+      "surfaces": [
+        "注文"
+      ]
+    },
+    {
+      "id": "game_cafe_ja_052",
+      "priority": 2372,
+      "aliases": [
+        "카이케이"
+      ],
+      "surfaces": [
+        "会計"
+      ]
+    },
+    {
+      "id": "game_cafe_ja_054",
+      "priority": 2373,
+      "aliases": [
+        "방고오후다"
+      ],
+      "surfaces": [
+        "番号札"
+      ]
+    },
+    {
+      "id": "game_cafe_ja_055",
+      "priority": 2374,
+      "aliases": [
+        "스토로오"
+      ],
+      "surfaces": [
+        "ストロー"
+      ]
+    },
+    {
+      "id": "game_cafe_ja_056",
+      "priority": 2375,
+      "aliases": [
+        "스푸운"
+      ],
+      "surfaces": [
+        "スプーン"
+      ]
+    },
+    {
+      "id": "game_cafe_ja_057",
+      "priority": 2376,
+      "aliases": [
+        "포오쿠"
+      ],
+      "surfaces": [
+        "フォーク"
+      ]
+    },
+    {
+      "id": "game_cafe_ja_058",
+      "priority": 2377,
+      "aliases": [
+        "나푸킨"
+      ],
+      "surfaces": [
+        "ナプキン"
+      ]
+    },
+    {
+      "id": "game_cafe_ja_059",
+      "priority": 2378,
+      "aliases": [
+        "오마타세시마시타"
+      ],
+      "surfaces": [
+        "お待たせしました"
+      ]
+    },
+    {
+      "id": "game_jamo_ja_word_vegetables",
+      "priority": 2379,
+      "aliases": [
+        "야사이"
+      ],
+      "surfaces": [
+        "野菜"
+      ]
+    }
+  ]
+}

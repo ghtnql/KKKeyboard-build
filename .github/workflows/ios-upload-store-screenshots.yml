@@ -1,0 +1,37 @@
+name: Upload prepared iOS App Store screenshots
+on:
+  workflow_dispatch:
+    inputs:
+      capture_run_id:
+        required: true
+        type: string
+      source_sha:
+        required: true
+        type: string
+permissions:
+  contents: read
+  actions: read
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    environment: testflight
+    timeout-minutes: 15
+    env:
+      APPSTORE_ISSUER_ID: ${{ vars.APPSTORE_ISSUER_ID }}
+      APPSTORE_API_KEY_ID: ${{ vars.APPSTORE_API_KEY_ID }}
+      APPSTORE_API_PRIVATE_KEY: ${{ secrets.APPSTORE_API_PRIVATE_KEY }}
+      SOURCE_SHA: ${{ inputs.source_sha }}
+      SCREENSHOTS_DIR: store-screenshots
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/download-artifact@v4
+        with:
+          name: ios-store-screenshots-${{ inputs.source_sha }}
+          run-id: ${{ inputs.capture_run_id }}
+          github-token: ${{ github.token }}
+          path: ${{ env.SCREENSHOTS_DIR }}
+      - run: python3 tools/upload-ios-store-screenshots.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: app-store-screenshot-upload-${{ inputs.capture_run_id }}
+          path: ${{ env.SCREENSHOTS_DIR }}/apple-upload-result.json

@@ -1,0 +1,1110 @@
+[
+  {
+    "id": "ohayou",
+    "input": "오하요",
+    "first": "おはよう",
+    "contains": [
+      "おはよう"
+    ]
+  },
+  {
+    "id": "ohayou_gozaimasu",
+    "input": "오하요고자이마스",
+    "first": "おはようございます",
+    "contains": [
+      "おはようございます"
+    ]
+  },
+  {
+    "id": "arigatou",
+    "input": "아리가토",
+    "first": "ありがとう",
+    "contains": [
+      "ありがとう"
+    ]
+  },
+  {
+    "id": "arigatou_gozaimasu",
+    "input": "아리가토고자이마스",
+    "first": "ありがとうございます",
+    "contains": [
+      "ありがとうございます"
+    ]
+  },
+  {
+    "id": "konnichiwa",
+    "input": "곤니치와",
+    "first": "こんにちは",
+    "contains": [
+      "こんにちは"
+    ]
+  },
+  {
+    "id": "konbanwa",
+    "input": "곤반와",
+    "first": "こんばんは",
+    "contains": [
+      "こんばんは"
+    ]
+  },
+  {
+    "id": "sumimasen",
+    "input": "스미마센",
+    "first": "すみません",
+    "contains": [
+      "すみません"
+    ]
+  },
+  {
+    "id": "gomennasai",
+    "input": "고멘나사이",
+    "first": "ごめんなさい",
+    "contains": [
+      "ごめんなさい"
+    ]
+  },
+  {
+    "id": "gomenn",
+    "input": "고멘",
+    "first": "ごめん",
+    "contains": [
+      "ごめん"
+    ]
+  },
+  {
+    "id": "hisashiburi",
+    "input": "히사시부리",
+    "first": "ひさしぶり",
+    "contains": [
+      "ひさしぶり",
+      "久しぶり"
+    ]
+  },
+  {
+    "id": "hisashiburidesu",
+    "input": "히사시부리데스",
+    "first": "ひさしぶりです",
+    "contains": [
+      "ひさしぶりです",
+      "久しぶりです"
+    ]
+  },
+  {
+    "id": "gozaimasu",
+    "input": "고자이마스",
+    "first": "ございます",
+    "contains": [
+      "ございます"
+    ]
+  },
+  {
+    "id": "onegaishimasu",
+    "input": "오네가이시마스",
+    "first": "おねがいします",
+    "contains": [
+      "おねがいします",
+      "お願いします"
+    ]
+  },
+  {
+    "id": "yoroshiku",
+    "input": "요로시쿠",
+    "first": "よろしく",
+    "contains": [
+      "よろしく"
+    ]
+  },
+  {
+    "id": "yoroshiku_onegaishimasu",
+    "input": "요로시쿠오네가이시마스",
+    "first": "よろしくお願いします",
+    "contains": [
+      "よろしくお願いします"
+    ]
+  },
+  {
+    "id": "hajimemashite",
+    "input": "하지메마시테",
+    "first": "はじめまして",
+    "contains": [
+      "はじめまして"
+    ]
+  },
+  {
+    "id": "oyasumi",
+    "input": "오야스미",
+    "first": "おやすみ",
+    "contains": [
+      "おやすみ"
+    ]
+  },
+  {
+    "id": "oyasuminasai",
+    "input": "오야스미나사이",
+    "first": "おやすみなさい",
+    "contains": [
+      "おやすみなさい"
+    ]
+  },
+  {
+    "id": "sayounara",
+    "input": "사요나라",
+    "first": "さようなら",
+    "contains": [
+      "さようなら"
+    ]
+  },
+  {
+    "id": "matane",
+    "input": "마타네",
+    "first": "またね",
+    "contains": [
+      "またね"
+    ]
+  },
+  {
+    "id": "mataashita",
+    "input": "마타아시타",
+    "first": "またあした",
+    "contains": [
+      "またあした",
+      "また明日"
+    ]
+  },
+  {
+    "id": "jaane",
+    "input": "자네",
+    "first": "じゃあね",
+    "contains": [
+      "じゃあね"
+    ]
+  },
+  {
+    "id": "tadaima",
+    "input": "타다이마",
+    "first": "ただいま",
+    "contains": [
+      "ただいま"
+    ]
+  },
+  {
+    "id": "okaeri",
+    "input": "오카에리",
+    "first": "おかえり",
+    "contains": [
+      "おかえり"
+    ]
+  },
+  {
+    "id": "okaerinasai",
+    "input": "오카에리나사이",
+    "first": "おかえりなさい",
+    "contains": [
+      "おかえりなさい"
+    ]
+  },
+  {
+    "id": "ittekimasu",
+    "input": "잇테키마스",
+    "first": "いってきます",
+    "contains": [
+      "いってきます",
+      "行ってきます"
+    ]
+  },
+  {
+    "id": "itterasshai",
+    "input": "잇테랏샤이",
+    "first": "いってらっしゃい",
+    "contains": [
+      "いってらっしゃい"
+    ]
+  },
+  {
+    "id": "itadakimasu",
+    "input": "이타다키마스",
+    "first": "いただきます",
+    "contains": [
+      "いただきます"
+    ]
+  },
+  {
+    "id": "gochisousama",
+    "input": "고치소사마",
+    "first": "ごちそうさま",
+    "contains": [
+      "ごちそうさま"
+    ]
+  },
+  {
+    "id": "gochisousamadeshita",
+    "input": "고치소사마데시타",
+    "first": "ごちそうさまでした",
+    "contains": [
+      "ごちそうさまでした"
+    ]
+  },
+  {
+    "id": "otsukaresama",
+    "input": "오츠카레사마",
+    "first": "おつかれさま",
+    "contains": [
+      "おつかれさま",
+      "お疲れ様"
+    ]
+  },
+  {
+    "id": "omedetou",
+    "input": "오메데토",
+    "first": "おめでとう",
+    "contains": [
+      "おめでとう"
+    ]
+  },
+  {
+    "id": "daijoubu",
+    "input": "다이조부",
+    "first": "だいじょうぶ",
+    "contains": [
+      "だいじょうぶ",
+      "大丈夫"
+    ]
+  },
+  {
+    "id": "daijoubudesu",
+    "input": "다이조부데스",
+    "first": "だいじょうぶです",
+    "contains": [
+      "だいじょうぶです",
+      "大丈夫です"
+    ]
+  },
+  {
+    "id": "wakarimashita",
+    "input": "와카리마시타",
+    "first": "わかりました",
+    "contains": [
+      "わかりました",
+      "分かりました"
+    ]
+  },
+  {
+    "id": "wakarimasen",
+    "input": "와카리마센",
+    "first": "わかりません",
+    "contains": [
+      "わかりません",
+      "分かりません"
+    ]
+  },
+  {
+    "id": "chottomatte",
+    "input": "춋토맛테",
+    "first": "ちょっとまって",
+    "contains": [
+      "ちょっとまって",
+      "ちょっと待って"
+    ]
+  },
+  {
+    "id": "kudasai",
+    "input": "쿠다사이",
+    "first": "ください",
+    "contains": [
+      "ください"
+    ]
+  },
+  {
+    "id": "douzo",
+    "input": "도조",
+    "first": "どうぞ",
+    "contains": [
+      "どうぞ"
+    ]
+  },
+  {
+    "id": "doumo",
+    "input": "도모",
+    "first": "どうも",
+    "contains": [
+      "どうも"
+    ]
+  },
+  {
+    "id": "hai",
+    "input": "하이",
+    "first": "はい",
+    "contains": [
+      "はい"
+    ]
+  },
+  {
+    "id": "iie",
+    "input": "이이에",
+    "first": "いいえ",
+    "contains": [
+      "いいえ"
+    ]
+  },
+  {
+    "id": "sou",
+    "input": "소우",
+    "first": "そう",
+    "contains": [
+      "そう"
+    ]
+  },
+  {
+    "id": "soudesu",
+    "input": "소데스",
+    "first": "そうです",
+    "contains": [
+      "そうです"
+    ]
+  },
+  {
+    "id": "soudesune",
+    "input": "소데스네",
+    "first": "そうですね",
+    "contains": [
+      "そうですね"
+    ]
+  },
+  {
+    "id": "desu",
+    "input": "데스",
+    "first": "です",
+    "contains": [
+      "です"
+    ]
+  },
+  {
+    "id": "deshita",
+    "input": "데시타",
+    "first": "でした",
+    "contains": [
+      "でした"
+    ]
+  },
+  {
+    "id": "suki",
+    "input": "스키",
+    "first": "すき",
+    "contains": [
+      "すき",
+      "好き"
+    ]
+  },
+  {
+    "id": "daisuki",
+    "input": "다이스키",
+    "first": "だいすき",
+    "contains": [
+      "だいすき",
+      "大好き"
+    ]
+  },
+  {
+    "id": "oishii",
+    "input": "오이시",
+    "first": "おいしい",
+    "contains": [
+      "おいしい",
+      "美味しい"
+    ]
+  },
+  {
+    "id": "kawaii",
+    "input": "카와이",
+    "first": "かわいい",
+    "contains": [
+      "かわいい",
+      "可愛い"
+    ]
+  },
+  {
+    "id": "sugoi",
+    "input": "스고이",
+    "first": "すごい",
+    "contains": [
+      "すごい"
+    ]
+  },
+  {
+    "id": "tanoshii",
+    "input": "타노시",
+    "first": "たのしい",
+    "contains": [
+      "たのしい",
+      "楽しい"
+    ]
+  },
+  {
+    "id": "genki",
+    "input": "겐키",
+    "first": "げんき",
+    "contains": [
+      "げんき",
+      "元気"
+    ]
+  },
+  {
+    "id": "watashi",
+    "input": "와타시",
+    "first": "わたし",
+    "contains": [
+      "わたし",
+      "私"
+    ]
+  },
+  {
+    "id": "anata",
+    "input": "아나타",
+    "first": "あなた",
+    "contains": [
+      "あなた"
+    ]
+  },
+  {
+    "id": "tomodachi",
+    "input": "토모다치",
+    "first": "ともだち",
+    "contains": [
+      "ともだち",
+      "友達"
+    ]
+  },
+  {
+    "id": "sensei",
+    "input": "센세",
+    "first": "せんせい",
+    "contains": [
+      "せんせい",
+      "先生"
+    ]
+  },
+  {
+    "id": "gakkou",
+    "input": "각코",
+    "first": "がっこう",
+    "contains": [
+      "がっこう",
+      "学校"
+    ]
+  },
+  {
+    "id": "gakusei",
+    "input": "가쿠세",
+    "first": "がくせい",
+    "contains": [
+      "がくせい",
+      "学生"
+    ]
+  },
+  {
+    "id": "nihon",
+    "input": "니혼",
+    "first": "にほん",
+    "contains": [
+      "にほん",
+      "日本"
+    ]
+  },
+  {
+    "id": "nihongo",
+    "input": "니혼고",
+    "first": "にほんご",
+    "contains": [
+      "にほんご",
+      "日本語"
+    ]
+  },
+  {
+    "id": "kankoku",
+    "input": "칸코쿠",
+    "first": "かんこく",
+    "contains": [
+      "かんこく",
+      "韓国"
+    ]
+  },
+  {
+    "id": "kankokugo",
+    "input": "칸코쿠고",
+    "first": "かんこくご",
+    "contains": [
+      "かんこくご",
+      "韓国語"
+    ]
+  },
+  {
+    "id": "tokyo",
+    "input": "도쿄",
+    "first": "とうきょう",
+    "contains": [
+      "とうきょう",
+      "東京"
+    ]
+  },
+  {
+    "id": "kyoto",
+    "input": "쿄토",
+    "first": "きょうと",
+    "contains": [
+      "きょうと",
+      "京都"
+    ]
+  },
+  {
+    "id": "osaka",
+    "input": "오사카",
+    "first": "おおさか",
+    "contains": [
+      "おおさか",
+      "大阪"
+    ]
+  },
+  {
+    "id": "shashin",
+    "input": "샤신",
+    "first": "しゃしん",
+    "contains": [
+      "しゃしん",
+      "写真"
+    ]
+  },
+  {
+    "id": "ryokou",
+    "input": "료코",
+    "first": "りょこう",
+    "contains": [
+      "りょこう"
+    ]
+  },
+  {
+    "id": "sushi",
+    "input": "스시",
+    "first": "すし",
+    "contains": [
+      "すし",
+      "寿司"
+    ]
+  },
+  {
+    "id": "koohii",
+    "input": "코히",
+    "first": "コーヒー",
+    "contains": [
+      "コーヒー"
+    ]
+  },
+  {
+    "id": "kitte",
+    "input": "킷테",
+    "first": "きって",
+    "contains": [
+      "きって"
+    ]
+  },
+  {
+    "id": "onna",
+    "input": "온나",
+    "first": "おんな",
+    "contains": [
+      "おんな"
+    ]
+  },
+  {
+    "id": "ramen",
+    "input": "라멘",
+    "first": "ラーメン",
+    "contains": [
+      "ラーメン"
+    ]
+  },
+  {
+    "id": "udon",
+    "input": "우동",
+    "first": "うどん",
+    "contains": [
+      "うどん"
+    ]
+  },
+  {
+    "id": "gohan",
+    "input": "고한",
+    "first": "ごはん",
+    "contains": [
+      "ごはん",
+      "ご飯"
+    ]
+  },
+  {
+    "id": "mizu",
+    "input": "미즈",
+    "first": "みず",
+    "contains": [
+      "みず",
+      "水"
+    ]
+  },
+  {
+    "id": "ocha",
+    "input": "오차",
+    "first": "おちゃ",
+    "contains": [
+      "おちゃ",
+      "お茶"
+    ]
+  },
+  {
+    "id": "eki",
+    "input": "에키",
+    "first": "えき",
+    "contains": [
+      "えき",
+      "駅"
+    ]
+  },
+  {
+    "id": "densha",
+    "input": "덴샤",
+    "first": "でんしゃ",
+    "contains": [
+      "でんしゃ",
+      "電車"
+    ]
+  },
+  {
+    "id": "kuukou",
+    "input": "쿠코",
+    "first": "くうこう",
+    "contains": [
+      "くうこう",
+      "空港"
+    ]
+  },
+  {
+    "id": "hoteru",
+    "input": "호테루",
+    "first": "ホテル",
+    "contains": [
+      "ホテル"
+    ]
+  },
+  {
+    "id": "toile",
+    "input": "토이레",
+    "first": "トイレ",
+    "contains": [
+      "トイレ"
+    ]
+  },
+  {
+    "id": "ikura",
+    "input": "이쿠라",
+    "first": "いくら",
+    "contains": [
+      "いくら"
+    ]
+  },
+  {
+    "id": "doko",
+    "input": "도코",
+    "first": "どこ",
+    "contains": [
+      "どこ"
+    ]
+  },
+  {
+    "id": "kore",
+    "input": "코레",
+    "first": "これ",
+    "contains": [
+      "これ"
+    ]
+  },
+  {
+    "id": "sore",
+    "input": "소레",
+    "first": "それ",
+    "contains": [
+      "それ"
+    ]
+  },
+  {
+    "id": "are",
+    "input": "아레",
+    "first": "あれ",
+    "contains": [
+      "あれ"
+    ]
+  },
+  {
+    "id": "kyou",
+    "input": "쿄우",
+    "first": "きょう",
+    "contains": [
+      "きょう",
+      "今日"
+    ]
+  },
+  {
+    "id": "ashita",
+    "input": "아시타",
+    "first": "あした",
+    "contains": [
+      "あした",
+      "明日"
+    ]
+  },
+  {
+    "id": "kinou",
+    "input": "키노",
+    "first": "きのう",
+    "contains": [
+      "きのう",
+      "昨日"
+    ]
+  },
+  {
+    "id": "ima",
+    "input": "이마",
+    "first": "いま",
+    "contains": [
+      "いま",
+      "今"
+    ]
+  },
+  {
+    "id": "jikan",
+    "input": "지칸",
+    "first": "じかん",
+    "contains": [
+      "じかん",
+      "時間"
+    ]
+  },
+  {
+    "id": "tenki",
+    "input": "텐키",
+    "first": "てんき",
+    "contains": [
+      "てんき",
+      "天気"
+    ]
+  },
+  {
+    "id": "denki",
+    "input": "덴키",
+    "first": "でんき",
+    "contains": [
+      "でんき",
+      "電気"
+    ]
+  },
+  {
+    "id": "ame_rain",
+    "input": "아메",
+    "first": "あめ",
+    "contains": [
+      "あめ",
+      "雨"
+    ]
+  },
+  {
+    "id": "ame_candy",
+    "input": "아메",
+    "contains": [
+      "飴"
+    ]
+  },
+  {
+    "id": "hashi_chopsticks",
+    "input": "하시",
+    "first": "はし",
+    "contains": [
+      "はし",
+      "箸"
+    ]
+  },
+  {
+    "id": "hashi_bridge",
+    "input": "하시",
+    "contains": [
+      "橋"
+    ]
+  },
+  {
+    "id": "namae",
+    "input": "나마에",
+    "first": "なまえ",
+    "contains": [
+      "なまえ",
+      "名前"
+    ]
+  },
+  {
+    "id": "korean-ohio",
+    "input": "오하이오",
+    "first": "おはよう",
+    "contains": [
+      "おはいお"
+    ],
+    "automaticFirst": "おはよう"
+  },
+  {
+    "id": "korean-arigatto",
+    "input": "아리가또",
+    "first": "ありがとう"
+  },
+  {
+    "id": "korean-arikato",
+    "input": "아리카토",
+    "first": "ありがとう"
+  },
+  {
+    "id": "long-vowel-dai",
+    "input": "다이죠부",
+    "first": "だいじょうぶ",
+    "contains": [
+      "大丈夫"
+    ]
+  },
+  {
+    "id": "konbanwa-orthography",
+    "input": "콘방와",
+    "first": "こんばんは"
+  },
+  {
+    "id": "word-suffix",
+    "input": "아리가토나",
+    "first": "ありがとうな",
+    "automaticFirst": "ありがとうな"
+  },
+  {
+    "id": "word-suffix-ne",
+    "input": "아리가또네",
+    "first": "ありがとうね"
+  },
+  {
+    "id": "hisashiburi-suffix",
+    "input": "히사시부리다나",
+    "first": "ひさしぶりだな",
+    "contains": [
+      "久しぶりだな"
+    ]
+  },
+  {
+    "id": "greeting-prefix",
+    "input": "아리",
+    "first": "ありがとう",
+    "contains": [
+      "ありがとうございます",
+      "あり",
+      "アリ"
+    ],
+    "automaticFirst": "あり"
+  },
+  {
+    "id": "ohayo-prefix",
+    "input": "오하",
+    "first": "おはよう",
+    "contains": [
+      "おはようございます",
+      "おは"
+    ],
+    "automaticFirst": "おは"
+  },
+  {
+    "id": "ohayo-final-in-progress",
+    "input": "오항",
+    "first": "おはよう",
+    "contains": [
+      "おはん"
+    ],
+    "automaticFirst": "おはん"
+  },
+  {
+    "id": "thankyou-final-in-progress",
+    "input": "아릭",
+    "first": "ありがとう"
+  },
+  {
+    "id": "thankyou-incomplete-consonant",
+    "input": "아리가ㅌ",
+    "first": "ありがとう",
+    "automaticEmpty": true
+  },
+  {
+    "id": "formal-prefix",
+    "input": "아리가토고자",
+    "first": "ありがとうございます"
+  },
+  {
+    "id": "incomplete-unknown",
+    "input": "오하요ㅃ",
+    "empty": true
+  },
+  {
+    "id": "short-nonspecific",
+    "input": "ㅇ",
+    "empty": true
+  },
+  {
+    "id": "short-vowel",
+    "input": "오",
+    "first": "お",
+    "forbidden": [
+      "おはよう"
+    ]
+  },
+  {
+    "id": "phrase",
+    "input": "오하이오 고자이마스",
+    "first": "おはようございます"
+  },
+  {
+    "id": "polite-phrase",
+    "input": "아리가또 고자이마스",
+    "first": "ありがとうございます"
+  },
+  {
+    "id": "two-words",
+    "input": "니혼칸코쿠",
+    "first": "にほんかんこく",
+    "contains": [
+      "にほん韓国",
+      "日本かんこく"
+    ]
+  },
+  {
+    "id": "two-words-space",
+    "input": "니혼 칸코쿠",
+    "first": "にほんかんこく"
+  },
+  {
+    "id": "literal-unknown",
+    "input": "가나다",
+    "first": "がなだ",
+    "contains": [
+      "ガナダ"
+    ]
+  },
+  {
+    "id": "tsu-chu-distinct",
+    "input": "츠츄",
+    "contains": [
+      "つちゅ",
+      "ツチュ"
+    ]
+  },
+  {
+    "id": "zu-dzu-dakuten",
+    "input": "즈",
+    "first": "ず",
+    "contains": [
+      "づ",
+      "ズ",
+      "ヅ"
+    ]
+  },
+  {
+    "id": "evangelion-vu",
+    "input": "에반게리온",
+    "first": "えばんげりおん",
+    "contains": [
+      "エヴァンゲリオン"
+    ]
+  },
+  {
+    "id": "literal-voicing",
+    "input": "바파",
+    "first": "ばぱ",
+    "contains": [
+      "バパ",
+      "ヴァパ"
+    ]
+  },
+  {
+    "id": "homophones",
+    "input": "하시",
+    "first": "はし",
+    "contains": [
+      "箸",
+      "橋"
+    ]
+  },
+  {
+    "id": "denki",
+    "input": "덴키",
+    "first": "でんき",
+    "contains": [
+      "電気"
+    ],
+    "forbidden": [
+      "てんき",
+      "天気"
+    ]
+  },
+  {
+    "id": "invalid-latin",
+    "input": "hello",
+    "empty": true
+  },
+  {
+    "id": "invalid-punctuation",
+    "input": "아리!",
+    "empty": true
+  },
+  {
+    "id": "empty",
+    "input": "",
+    "empty": true
+  },
+  {
+    "id": "leading-space",
+    "input": " 아리",
+    "empty": true
+  },
+  {
+    "id": "trailing-space",
+    "input": "아리 ",
+    "empty": true
+  },
+  {
+    "id": "overlength",
+    "input": "아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아아",
+    "empty": true
+  },
+  {
+    "id": "full_chottomate",
+    "input": "춋토마테",
+    "contains": [
+      "ちょっと待って"
+    ],
+    "automaticFirst": "ちょっとまって"
+  },
+  {
+    "id": "full_chottomatte",
+    "input": "춋토마떼",
+    "contains": [
+      "ちょっと待って"
+    ],
+    "automaticFirst": "ちょっとまって"
+  },
+  {
+    "id": "prefix_chotto",
+    "input": "춋토",
+    "contains": [
+      "ちょっと待って"
+    ]
+  },
+  {
+    "id": "prefix_chottoma",
+    "input": "춋토마",
+    "contains": [
+      "ちょっと待って"
+    ]
+  }
+]

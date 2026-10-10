@@ -1,0 +1,10 @@
+"onboarding.title" = "Get started with ㅋㅋ Keyboard";
+"onboarding.instructions" = "1. Open Settings > General > Keyboard > Keyboards and choose Add New Keyboard.\n2. Add ㅋㅋ Keyboard.\n3. Tap the field below, use the 🌐 key to select ㅋㅋ Keyboard, and verify input.\n\nCore input does not require Full Access.";
+"onboarding.settings_button" = "Open Settings";
+"onboarding.test_placeholder" = "Test keyboard input here";
+"onboarding.test_accessibility" = "ㅋㅋ Keyboard input test";
+"language.setting.title" = "App language";
+"language.setting.accessibility" = "App language";
+"language.option.korean" = "Korean";
+"language.option.japanese" = "Japanese";
+"language.option.english" = "English";

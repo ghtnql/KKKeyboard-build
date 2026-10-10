@@ -1,0 +1,140 @@
+{
+  "version": 1,
+  "gridDp": 8,
+  "themes": {
+    "basic_dark": {
+      "label": "일반 다크모드",
+      "app": {
+        "background": "#0F1418",
+        "surface": "#161A1D",
+        "surfaceElevated": "#20262B",
+        "surfaceMuted": "#2B3136",
+        "outline": "#56616A",
+        "textPrimary": "#F5F7F8",
+        "textSecondary": "#B4BFC7",
+        "accent": "#5AC8A8",
+        "onAccent": "#0B211A",
+        "accentContainer": "#375B51",
+        "onAccentContainer": "#F5F7F8",
+        "success": "#63D39B",
+        "warning": "#E8B25F",
+        "danger": "#FF7B86",
+        "scrim": "#B0000000"
+      },
+      "keyboardCanonical": {
+        "keyboardSurface": "#161A1D",
+        "keySurface": "#2B3136",
+        "controlSurface": "#3A4248",
+        "border": "#56616A",
+        "text": "#F5F7F8",
+        "accent": "#5AC8A8",
+        "onAccent": "#0B211A"
+      },
+      "art": { "enabled": false }
+    },
+    "seoul_day": {
+      "label": "서울 낮",
+      "app": {
+        "background": "#F4F9FC",
+        "surface": "#FDFEFF",
+        "surfaceElevated": "#FFFFFF",
+        "surfaceMuted": "#E8F2F7",
+        "outline": "#A8C7DA",
+        "textPrimary": "#1C3043",
+        "textSecondary": "#566D7C",
+        "accent": "#4484B4",
+        "onAccent": "#FFFFFF",
+        "accentContainer": "#D8EAF5",
+        "onAccentContainer": "#113652",
+        "success": "#287B5B",
+        "warning": "#9A651B",
+        "danger": "#B84952",
+        "scrim": "#28FFFFFF"
+      },
+      "keyboardCanonical": {
+        "keyboardSurface": "#D8E7ED",
+        "keySurface": "#C6FAFCFD",
+        "controlSurface": "#BED7EBF7",
+        "border": "#7EB1D0",
+        "text": "#1C3043",
+        "accent": "#4484B4",
+        "onAccent": "#113652"
+      },
+      "art": {
+        "enabled": true,
+        "source": "shared/themes/images/seoul_day_background.jpg",
+        "composeTarget": "sharedUI/src/commonMain/composeResources/drawable/seoul_day_app_background.jpg",
+        "headerAlpha": 0.18,
+        "fullPageAlphaMax": 0.08,
+        "contentScale": "Crop",
+        "gradientProtection": true
+      }
+    },
+    "seoul_night": {
+      "label": "서울 밤",
+      "app": {
+        "background": "#0C1426",
+        "surface": "#15213A",
+        "surfaceElevated": "#1B2A48",
+        "surfaceMuted": "#223352",
+        "outline": "#526B9A",
+        "textPrimary": "#F7F9FF",
+        "textSecondary": "#CBD5EA",
+        "accent": "#7A91D0",
+        "onAccent": "#FFFFFF",
+        "accentContainer": "#2A3E69",
+        "onAccentContainer": "#F7F9FF",
+        "success": "#63D39B",
+        "warning": "#F0BF66",
+        "danger": "#FF8690",
+        "scrim": "#A00A0F2E"
+      },
+      "keyboardCanonical": {
+        "keyboardSurface": "#182540",
+        "keySurface": "#9E5C6796",
+        "controlSurface": "#A634416F",
+        "border": "#BECFFF",
+        "text": "#FFFFFF",
+        "accent": "#5D79C0",
+        "onAccent": "#FFFFFF"
+      },
+      "art": {
+        "enabled": true,
+        "source": "shared/themes/images/seoul_night_background.jpg",
+        "composeTarget": "sharedUI/src/commonMain/composeResources/drawable/seoul_night_app_background.jpg",
+        "headerAlpha": 0.24,
+        "fullPageAlphaMax": 0.10,
+        "contentScale": "Crop",
+        "gradientProtection": true
+      }
+    }
+  },
+  "components": {
+    "pageHorizontalPaddingDp": 20,
+    "normalVerticalGapDp": 16,
+    "gameHorizontalPaddingDp": 12,
+    "gameVerticalPaddingDp": 4,
+    "panelPaddingDp": 18,
+    "panelGapDp": 10,
+    "panelRadiusDp": 16,
+    "buttonHeightDp": 52,
+    "buttonRadiusDp": 10,
+    "headerTitleSp": 25,
+    "sectionTitleSp": 19,
+    "bodySp": 16,
+    "captionSp": 12,
+    "topBarTitleSp": 18,
+    "topBarBackSp": 17,
+    "outlineWidthDp": 1,
+    "focusOutlineWidthDp": 2
+  },
+  "rules": {
+    "doNotAddBottomNavigation": true,
+    "doNotChangePageGraph": true,
+    "doNotChangeGameArt": true,
+    "doNotChangeKeyboardLayout": true,
+    "themeSelectionAffectsAppAndKeyboard": true,
+    "seoulThemeAdUnlockFlowMustRemain": true,
+    "minimumBodyContrastTarget": "WCAG AA where practical"
+  }
+}

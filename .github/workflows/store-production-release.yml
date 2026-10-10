@@ -1,0 +1,93 @@
+name: Submit existing store builds for production
+on:
+  workflow_dispatch:
+    inputs:
+      apple_only:
+        type: boolean
+        default: false
+      prepare_metadata:
+        type: boolean
+        default: false
+      submit:
+        type: boolean
+        default: false
+      publish_101:
+        type: boolean
+        default: false
+      ios_marketing_version:
+        type: string
+        default: '1.0.1'
+      ios_build_number:
+        type: string
+        default: ''
+jobs:
+  apple:
+    runs-on: ubuntu-latest
+    environment: testflight
+    permissions:
+      contents: read
+    env:
+      APPSTORE_ISSUER_ID: ${{ vars.APPSTORE_ISSUER_ID }}
+      APPSTORE_API_KEY_ID: ${{ vars.APPSTORE_API_KEY_ID }}
+      APPSTORE_API_PRIVATE_KEY: ${{ secrets.APPSTORE_API_PRIVATE_KEY }}
+      SUBMIT_RELEASE: ${{ inputs.submit }}
+      PREPARE_METADATA: ${{ inputs.prepare_metadata }}
+      SUBMIT_101: ${{ inputs.submit }}
+      IOS_BUILD_NUMBER: ${{ inputs.ios_build_number }}
+      IOS_MARKETING_VERSION: ${{ inputs.ios_marketing_version }}
+    steps:
+      - uses: actions/checkout@v4
+      - if: ${{ !inputs.publish_101 }}
+        run: python3 tools/store-release.py
+      - if: ${{ inputs.publish_101 }}
+        run: python3 tools/publish-ios-101.py
+      - if: ${{ inputs.publish_101 }}
+        name: Read back target version and listing assets
+        run: python3 tools/read-ios-store-version.py
+  google:
+    if: ${{ !inputs.apple_only }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+      - uses: google-github-actions/auth@v2
+        id: auth
+        with:
+          workload_identity_provider: ${{ secrets.GCP_WORKLOAD_IDENTITY_PROVIDER }}
+          service_account: ${{ secrets.GCP_SERVICE_ACCOUNT }}
+          token_format: access_token
+          access_token_scopes: https://www.googleapis.com/auth/androidpublisher
+      - name: Promote existing v314 to production
+        env:
+          ACCESS_TOKEN: ${{ steps.auth.outputs.access_token }}
+          SUBMIT_RELEASE: ${{ inputs.submit }}
+        run: |
+          python3 - <<'PY'
+          import json, os, urllib.request, urllib.error
+          base = 'https://androidpublisher.googleapis.com/androidpublisher/v3/applications/com.ghtnql.kkkeyboard/edits'
+          def req(url, method='GET', data=None):
+              request = urllib.request.Request(url, method=method, data=None if data is None else json.dumps(data).encode(), headers={'Authorization':'Bearer '+os.environ['ACCESS_TOKEN'], 'Content-Type':'application/json'})
+              try:
+                  with urllib.request.urlopen(request, timeout=60) as r:
+                      raw=r.read()
+                      return json.loads(raw) if raw else {}
+              except urllib.error.HTTPError as e:
+                  print('GOOGLE_ERROR',e.code,e.read().decode())
+                  raise
+          edit=req(base,'POST',{})['id']
+          url=base+'/'+edit
+          try:
+              tracks=req(url+'/tracks')
+              print('TRACKS_BEFORE',json.dumps(tracks,ensure_ascii=False))
+              source=next(t for t in tracks['tracks'] if t['track']=='ㅋㅋ키보드')
+              release=next(r for r in source['releases'] if '314' in r.get('versionCodes',[]))
+              assert release['status']=='completed'
+              if os.environ['SUBMIT_RELEASE']=='true':
+                  release=dict(release,name='v314 production release',status='completed')
+                  print('PRODUCTION_UPDATE',json.dumps(req(url+'/tracks/production','PUT',{'track':'production','releases':[release]}),ensure_ascii=False))
+                  print('COMMIT',json.dumps(req(url+':commit','POST',{})))
+                  edit=None
+          finally:
+              if edit: req(base+'/'+edit,'DELETE')
+          PY

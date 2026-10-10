@@ -1,0 +1,94 @@
+name: List Google Play tracks
+
+on:
+  workflow_dispatch:
+    inputs:
+      upload_315:
+        description: 'Publish tested 1.0.1 signed App Bundle to Google Play'
+        type: boolean
+        default: false
+
+jobs:
+  list:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: read
+      id-token: write
+
+    steps:
+      - name: Authenticate to Google Cloud with GitHub OIDC
+        id: google-auth
+        uses: google-github-actions/auth@v2
+        with:
+          workload_identity_provider: ${{ secrets.GCP_WORKLOAD_IDENTITY_PROVIDER }}
+          service_account: ${{ secrets.GCP_SERVICE_ACCOUNT }}
+          token_format: access_token
+          access_token_scopes: https://www.googleapis.com/auth/androidpublisher
+
+      - name: List track identifiers
+        env:
+          ACCESS_TOKEN: ${{ steps.google-auth.outputs.access_token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          package_name='com.ghtnql.kkkeyboard'
+          api_base="https://androidpublisher.googleapis.com/androidpublisher/v3/applications/${package_name}/edits"
+          edit_id=''
+
+          cleanup() {
+            if [[ -n "$edit_id" ]]; then
+              curl --fail --silent --show-error \
+                --request DELETE \
+                --header "Authorization: Bearer ${ACCESS_TOKEN}" \
+                "${api_base}/${edit_id}" >/dev/null || true
+            fi
+          }
+          trap cleanup EXIT
+
+          edit_response="$(curl --fail --silent --show-error \
+            --request POST \
+            --header "Authorization: Bearer ${ACCESS_TOKEN}" \
+            --header 'Content-Type: application/json' \
+            --data '{}' \
+            "${api_base}")"
+          edit_id="$(jq --exit-status --raw-output '.id' <<<"$edit_response")"
+
+          tracks_response="$(curl --fail --silent --show-error \
+            --header "Authorization: Bearer ${ACCESS_TOKEN}" \
+            "${api_base}/${edit_id}/tracks")"
+          mapfile -t tracks < <(jq --exit-status --raw-output '.tracks[]?.track' <<<"$tracks_response")
+          if (( ${#tracks[@]} == 0 )); then
+            echo 'No Google Play tracks were returned.' >&2
+            exit 1
+          fi
+
+          printf 'Available Google Play track IDs:\n'
+          printf '  %s\n' "${tracks[@]}"
+
+  publish_315:
+    if: ${{ inputs.upload_315 == true }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: google-github-actions/auth@v2
+        id: google-auth
+        with:
+          workload_identity_provider: ${{ secrets.GCP_WORKLOAD_IDENTITY_PROVIDER }}
+          service_account: ${{ secrets.GCP_SERVICE_ACCOUNT }}
+          token_format: access_token
+          access_token_scopes: https://www.googleapis.com/auth/androidpublisher
+      - name: Download signed AAB from private release asset
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release download upload-v315-a38253b -R ghtnql/KKKeyboard -p 'play-upload-v315.aab' --clobber
+      - name: Verify exact release artifact
+        run: echo '8f8f5993ace0b1778d442a09520e65e145b78cace77227198f6408d5d8240140  play-upload-v315.aab' | sha256sum -c -
+      - name: Upload 1.0.1 bundle and update tracks
+        env:
+          ACCESS_TOKEN: ${{ steps.google-auth.outputs.access_token }}
+        run: python3 tools/upload-play-315.py

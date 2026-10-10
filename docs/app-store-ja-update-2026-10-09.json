@@ -1,0 +1,13 @@
+{
+  "locale": "ja-JP",
+  "appInfoLocalization": {
+    "name": "ㅋㅋキーボード",
+    "subtitle": "ハングル入力で日本語変換・韓国語学習"
+  },
+  "appStoreVersionLocalization": {
+    "description": "ㅋㅋキーボードは、ハングルを使って日本語の発音を入力し、日本語の変換候補を選べるキーボードアプリです。韓国語の文字入力に慣れながら、練習やミニゲームで楽しく学べます。\n\n【主な機能】\n・ハングルで入力した日本語の発音から、ひらがな・カタカナの候補を表示\n・辞書に登録された語句は、漢字を含む日本語の変換候補も選択可能\n・日本語の候補変換だけでなく、通常の韓国語入力にも対応\n・QWERTY、チョンジイン、ハングルフリックから入力配列を選択\n・単語・短文・変換練習、Rain／Cafeのタイピングゲーム\n・日本語、ハングルでの読み方、韓国語訳を並べた学習コンテンツ\n・ライト／ダークとソウル昼／夜のテーマ、キーの高さなどを設定\n\n【キーボードの追加方法】\niPhoneの「設定」→「一般」→「キーボード」→「キーボード」→「新しいキーボードを追加」から「ㅋㅋキーボード」を追加してください。文字入力画面の地球儀キーでキーボードを切り替えられます。\n基本的な文字入力と端末内での日本語候補変換には、「フルアクセスを許可」は必要ありません。\n\n【プライバシーと広告】\nキーボードの入力内容や練習の解答を独自のサーバーには送信しません。広告はアプリ本体やゲーム内で表示され、キーボードの入力画面には表示されません。広告サービスによるデータの取り扱いは、プライバシーポリシーをご確認ください。アカウント登録は不要です。\n\nお問い合わせ：ghtnqlaa@naver.com",
+    "keywords": "韓国語,日本語,ハングル,タイピング,フリック,学習,文字入力",
+    "promotionalText": "ハングルを使って日本語を入力。韓国語の文字入力を、練習とミニゲームで身につけよう。"
+  },
+  "note": "2026-10-09 localization ready for next iOS App Store version. Not live/published; Japanese metadata currently missing per earlier release records. Do not submit a version or trigger a build until its candidate-word regression fix is tested."
+}

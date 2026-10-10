@@ -1,0 +1,98 @@
+[
+  {
+    "inputHangul": "아리가토",
+    "expectedCandidates": ["ありがとう"],
+    "category": "basic",
+    "notes": "Common greeting/thanks seed fixture"
+  },
+  {
+    "inputHangul": "곤니치와",
+    "expectedCandidates": ["こんにちは"],
+    "category": "orthographic-exception",
+    "notes": "Final wa sound is written は in the greeting"
+  },
+  {
+    "inputHangul": "스시",
+    "expectedCandidates": ["すし", "寿司"],
+    "category": "multiple-candidates",
+    "notes": "Kana plus common kanji candidate"
+  },
+  {
+    "inputHangul": "코히",
+    "expectedCandidates": ["コーヒー"],
+    "category": "long-vowel",
+    "notes": "Long vowel mark must be preserved in the katakana candidate"
+  },
+  {
+    "inputHangul": "킷테",
+    "expectedCandidates": ["きって"],
+    "category": "sokuon",
+    "notes": "Small っ represents the geminate consonant"
+  },
+  {
+    "inputHangul": "온나",
+    "expectedCandidates": ["おんな"],
+    "category": "nasal-n",
+    "notes": "Japanese moraic nasal ん must not be dropped"
+  },
+  {
+    "inputHangul": "료코",
+    "expectedCandidates": ["りょこう"],
+    "category": "youon",
+    "notes": "Small ょ is required for the palatalized ryō sequence"
+  },
+  {
+    "inputHangul": "오하요",
+    "expectedCandidates": ["おはよう"],
+    "category": "reported-core-flow",
+    "notes": "Common Korean pronunciation input for ohayou"
+  },
+  {
+    "inputHangul": "오하요우",
+    "expectedCandidates": ["おはよう"],
+    "category": "reported-core-flow",
+    "notes": "Explicit long-vowel pronunciation input"
+  },
+  {
+    "inputHangul": "오하이오",
+    "expectedCandidates": ["おはよう"],
+    "category": "reported-core-flow",
+    "notes": "Tolerated spelling reported during device testing"
+  },
+  {
+    "inputHangul": "고자이마스",
+    "expectedCandidates": ["ございます"],
+    "category": "reported-core-flow",
+    "notes": "Polite greeting suffix"
+  },
+  {
+    "inputHangul": "오하요 고자이마스",
+    "expectedCandidates": ["おはようございます"],
+    "category": "phrase",
+    "notes": "Candidate source remains active across one typed space"
+  },
+  {
+    "inputHangul": "가나다",
+    "expectedCandidates": ["がなだ", "ガナダ"],
+    "category": "dakuten-rule-fallback",
+    "notes": "Korean ㄱ distinguishes the voiced が-row from ㅋ as the unvoiced か-row"
+  },
+  {
+    "inputHangul": "츠츄",
+    "expectedCandidates": ["つちゅ", "ツチュ"],
+    "category": "tsu-youon",
+    "notes": "츠 and 츄 must remain distinct: つ versus ちゅ"
+  },
+  {
+    "inputHangul": "즈",
+    "expectedCandidates": ["ず", "ズ", "づ", "ヅ"],
+    "category": "dakuten-ambiguity",
+    "notes": "Modern ず and づ are homophonic; keep both selectable"
+  },
+  {
+    "inputHangul": "에반게리온",
+    "expectedCandidates": ["えばんげりおん", "エバンゲリオン", "えゔぁんげりおん", "エヴァンゲリオン"],
+    "category": "v-dakuten-loanword",
+    "notes": "Offer the voiced ウ / ヴ loanword spelling without replacing the ordinary バ-row reading"
+  }
+]

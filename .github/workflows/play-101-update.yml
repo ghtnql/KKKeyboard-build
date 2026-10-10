@@ -1,0 +1,29 @@
+name: Publish KKKeyboard 1.0.1 Play update
+on:
+  workflow_dispatch:
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    permissions:
+      contents: read
+      id-token: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: google-github-actions/auth@v2
+        id: google-auth
+        with:
+          workload_identity_provider: ${{ secrets.GCP_WORKLOAD_IDENTITY_PROVIDER }}
+          service_account: ${{ secrets.GCP_SERVICE_ACCOUNT }}
+          token_format: access_token
+          access_token_scopes: https://www.googleapis.com/auth/androidpublisher
+      - name: Download verified App Bundle
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release download upload-v315-a38253b -R ghtnql/KKKeyboard -p 'play-upload-v315.aab' --clobber
+      - name: Verify release bundle checksum
+        run: echo '8f8f5993ace0b1778d442a09520e65e145b78cace77227198f6408d5d8240140  play-upload-v315.aab' | sha256sum -c -
+      - name: Upload v315 and update tracks
+        env:
+          ACCESS_TOKEN: ${{ steps.google-auth.outputs.access_token }}
+        run: python3 tools/upload-play-315.py

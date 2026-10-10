@@ -1,0 +1,97 @@
+[
+  {
+    "input": "뵤우인",
+    "surface": "病院",
+    "requireAutomatic": true
+  },
+  {
+    "input": "야쿠소쿠",
+    "surface": "約束",
+    "requireAutomatic": true
+  },
+  {
+    "input": "요야쿠",
+    "surface": "予約",
+    "requireAutomatic": true
+  },
+  {
+    "input": "시하라이",
+    "surface": "支払い",
+    "requireAutomatic": true
+  },
+  {
+    "input": "켄코우",
+    "surface": "健康",
+    "requireAutomatic": true
+  },
+  {
+    "input": "호켄",
+    "surface": "保険",
+    "requireAutomatic": true
+  },
+  {
+    "input": "쥬우쇼",
+    "surface": "住所",
+    "requireAutomatic": true
+  },
+  {
+    "input": "렌라쿠",
+    "surface": "連絡",
+    "requireAutomatic": true
+  },
+  {
+    "input": "슛킨",
+    "surface": "出勤",
+    "requireAutomatic": true
+  },
+  {
+    "input": "타이킨",
+    "surface": "退勤",
+    "requireAutomatic": true
+  },
+  {
+    "input": "켄사",
+    "surface": "検査",
+    "requireAutomatic": true
+  },
+  {
+    "input": "야쿠쇼",
+    "surface": "役所",
+    "requireAutomatic": true
+  },
+  {
+    "input": "각코",
+    "surface": "学校",
+    "requireAutomatic": true
+  },
+  {
+    "input": "케이야쿠",
+    "surface": "契約",
+    "requireAutomatic": true
+  },
+  {
+    "input": "신세이",
+    "surface": "申請",
+    "requireAutomatic": true
+  },
+  {
+    "input": "슈우리",
+    "surface": "修理",
+    "requireAutomatic": true
+  },
+  {
+    "input": "아시타뵤우인니이키마스",
+    "surface": "明日病院に行きます",
+    "requireAutomatic": false
+  },
+  {
+    "input": "요야쿠오헨코우시타이데스",
+    "surface": "予約を変更したいです",
+    "requireAutomatic": false
+  },
+  {
+    "input": "야쿠소쿠노지칸오카쿠닌시마스",
+    "surface": "約束の時間を確認します",
+    "requireAutomatic": false
+  }
+]

@@ -1,0 +1,10 @@
+"onboarding.title" = "ㅋㅋキーボードを始める";
+"onboarding.instructions" = "1. 設定 > 一般 > キーボード > キーボードで「新しいキーボードを追加」を選択します。\n2. ㅋㅋキーボードを追加します。\n3. 下の入力欄をタップし、🌐キーからㅋㅋキーボードを選んで入力を確認します。\n\n基本入力に「フルアクセスを許可」は必要ありません。";
+"onboarding.settings_button" = "設定を開く";
+"onboarding.test_placeholder" = "ここでキーボード入力をテスト";
+"onboarding.test_accessibility" = "ㅋㅋキーボード入力テスト";
+"language.setting.title" = "アプリの表示言語";
+"language.setting.accessibility" = "アプリの表示言語";
+"language.option.korean" = "韓国語";
+"language.option.japanese" = "日本語";
+"language.option.english" = "英語";

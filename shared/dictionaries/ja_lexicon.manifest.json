@@ -1,0 +1,24 @@
+{
+  "source": "https://github.com/google/mozc",
+  "commit": "18e76511af9371a9a4409b1d13c3e30884b53e9c",
+  "general_pos_cost_limit": 7500,
+  "proper_noun_cost_max": 4500,
+  "proper_noun_penalty": 4000,
+  "single_kanji_included": true,
+  "long_vowel_alias_cost_max": 7500,
+  "max_surfaces_per_reading": 8,
+  "readings": 340850,
+  "entries": 491589,
+  "unique_kanji": 4448,
+  "bytes": 17319688,
+  "sha256": "3807d3c602491ff3d11471587da560231e644a0e4ec50655cb954484828590b4",
+  "joyo_inventory_count": 2136,
+  "supplements": {
+    "source": "https://www.bunka.go.jp/seisaku/kokugo_nihongo/kokugo_shisaku/joyokanjihyo_sakuin/",
+    "surfaces": [
+      "充塡",
+      "御璽",
+      "朕"
+    ]
+  }
+}

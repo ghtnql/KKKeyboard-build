@@ -1,0 +1,54 @@
+# ==========================================
+# KKKeyboard .gitignore
+# ==========================================
+
+# 1. OS 임시 및 캐시 파일
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# 2. 개발 도구 및 IDE 캐시
+.idea/
+.vscode/
+*.iml
+*.iws
+*.ipr
+*.swp
+*~
+
+# 3. 파이썬 캐시 및 가상환경
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+env/
+venv/
+.venv/
+
+# 4. 빌드 로그 및 임시 스크래치 파일
+*.log
+tmp/
+temp/
+scratch_*
+
+# 5. Android 빌드 산출물
+.gradle/
+.kotlin/
+build/
+*/build/
+*.apk
+*.aab
+local.properties
+.cxx/
+
+# 6. iOS 빌드 산출물
+*.xcodeproj/xcuserdata/
+*.xcworkspace/xcuserdata/
+DerivedData/
+*.ipa
+.build/
+Pods/

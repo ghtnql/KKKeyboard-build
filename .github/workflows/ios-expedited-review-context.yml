@@ -1,0 +1,20 @@
+name: Add requested Hangul Day context to submitted iOS review
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  context:
+    runs-on: ubuntu-latest
+    environment: testflight
+    env:
+      APPSTORE_ISSUER_ID: ${{ vars.APPSTORE_ISSUER_ID }}
+      APPSTORE_API_KEY_ID: ${{ vars.APPSTORE_API_KEY_ID }}
+      APPSTORE_API_PRIVATE_KEY: ${{ secrets.APPSTORE_API_PRIVATE_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 tools/prepare-expedited-review.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: expedited-review-context
+          path: expedited-review-context.json
